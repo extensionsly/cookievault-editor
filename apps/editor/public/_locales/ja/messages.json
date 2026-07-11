@@ -1,0 +1,584 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "MV3 対応の Cookie マネージャー：編集・検索・インポート・エクスポート。オープンソース。"
+  },
+  "filterPlaceholder": {
+    "message": "ドメインまたは名前で絞り込み…"
+  },
+  "filterAriaLabel": {
+    "message": "ドメインまたは名前で Cookie を絞り込み"
+  },
+  "buttonAdd": {
+    "message": "追加"
+  },
+  "buttonImport": {
+    "message": "インポート"
+  },
+  "buttonExport": {
+    "message": "エクスポート"
+  },
+  "loadingCookies": {
+    "message": "Cookie を読み込み中…"
+  },
+  "clearFilter": {
+    "message": "絞り込みを解除"
+  },
+  "errorReadCookies": {
+    "message": "Cookie を読み取れませんでした。"
+  },
+  "statsFiltered": {
+    "message": "$1 / $2 · $3 ドメイン"
+  },
+  "statsAll": {
+    "message": "$1 · $2 ドメイン"
+  },
+  "cookieFlagsAria": {
+    "message": "Cookie フラグ"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "パーティション化（CHIPS）"
+  },
+  "emptyValue": {
+    "message": "空"
+  },
+  "editAria": {
+    "message": "$1 を編集"
+  },
+  "editTitle": {
+    "message": "編集"
+  },
+  "deleteAria": {
+    "message": "$1 を削除"
+  },
+  "deleteTitle": {
+    "message": "削除"
+  },
+  "noCookiesMatch": {
+    "message": "「$1」に一致する Cookie はありません。"
+  },
+  "noCookiesYet": {
+    "message": "このページにはまだ Cookie がありません。"
+  },
+  "optionsButton": {
+    "message": "オプション"
+  },
+  "dismiss": {
+    "message": "閉じる"
+  },
+  "deleteCookieTitle": {
+    "message": "Cookie を削除しますか？"
+  },
+  "deleteCookieMessage": {
+    "message": "$2 の「$1」を削除しますか？この操作は取り消せません。"
+  },
+  "buttonDelete": {
+    "message": "削除"
+  },
+  "cancel": {
+    "message": "キャンセル"
+  },
+  "toastDeleted": {
+    "message": "$1 を削除しました"
+  },
+  "toastSaved": {
+    "message": "$1 を保存しました"
+  },
+  "toastExported": {
+    "message": "$1 個の Cookie をエクスポートしました"
+  },
+  "toastImported": {
+    "message": "$2 から $1 個の Cookie をインポートしました"
+  },
+  "toastImportedPartial": {
+    "message": "$2 個中 $1 個をインポート（$3 個失敗）"
+  },
+  "editCookieTitle": {
+    "message": "Cookie を編集"
+  },
+  "close": {
+    "message": "閉じる"
+  },
+  "fieldName": {
+    "message": "名前"
+  },
+  "fieldDomain": {
+    "message": "ドメイン"
+  },
+  "fieldPath": {
+    "message": "パス"
+  },
+  "fieldValue": {
+    "message": "値"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "ホストのみ"
+  },
+  "expiryLegend": {
+    "message": "有効期限"
+  },
+  "expirySession": {
+    "message": "セッション"
+  },
+  "expiryUntil": {
+    "message": "期限"
+  },
+  "timezoneHint": {
+    "message": "時刻はお使いのローカルタイムゾーンで表示されます。"
+  },
+  "buttonSave": {
+    "message": "保存"
+  },
+  "saving": {
+    "message": "保存中…"
+  },
+  "profilesLoading": {
+    "message": "プロファイル…"
+  },
+  "setupVault": {
+    "message": "プロファイル · 保管庫を設定 →"
+  },
+  "unlockInOptions": {
+    "message": "プロファイルはロック中 · オプションでロック解除 →"
+  },
+  "profileScopeAria": {
+    "message": "プロファイルの範囲"
+  },
+  "lockVault": {
+    "message": "保管庫をロック"
+  },
+  "lockButton": {
+    "message": "ロック"
+  },
+  "noProfilesForScope": {
+    "message": "$1 のプロファイルはありません。"
+  },
+  "saveOne": {
+    "message": "1 つ保存 →"
+  },
+  "switchButton": {
+    "message": "切り替え"
+  },
+  "switching": {
+    "message": "切り替え中…"
+  },
+  "cookiesInScope": {
+    "message": "範囲内の Cookie"
+  },
+  "tabsNeedRefresh": {
+    "message": "$2 のタブ $1 件を再読み込みする必要があります"
+  },
+  "reloadButton": {
+    "message": "再読み込み"
+  },
+  "switchProfileTitle": {
+    "message": "プロファイルを切り替えますか？"
+  },
+  "switchProfileMessage": {
+    "message": "「$1」に切り替えますか？現在の $2 の Cookie は置き換えられます。"
+  },
+  "switchConfirm": {
+    "message": "切り替え"
+  },
+  "toastSwitchFailed": {
+    "message": "切り替えに失敗 — $1 件中 0 件適用。ロールバックしました。"
+  },
+  "toastSwitched": {
+    "message": "「$1」に切り替えました（$2 個の Cookie）"
+  },
+  "toastSwitchedPartial": {
+    "message": "切り替え — $1 件適用、$2 件失敗"
+  },
+  "toastReloaded": {
+    "message": "$2 のタブ $1 件を再読み込みしました"
+  },
+  "justNow": {
+    "message": "たった今"
+  },
+  "minutesAgo": {
+    "message": "$1 分前"
+  },
+  "hoursAgo": {
+    "message": "$1 時間前"
+  },
+  "apAccount": {
+    "message": "アカウント"
+  },
+  "apSignInLede": {
+    "message": "メールでサインインすると、暗号化されたデバイス間同期が有効になります。同期はエンドツーエンドで暗号化され、私たちでも同期データを読み取れません。"
+  },
+  "apEmail": {
+    "message": "メール"
+  },
+  "apSending": {
+    "message": "送信中…"
+  },
+  "apSendMagicLink": {
+    "message": "マジックリンクを送信"
+  },
+  "apMagicSent": {
+    "message": "マジックリンクを送信しました——メールをご確認ください。リンクは 3 分で失効します。"
+  },
+  "apSignedInAs": {
+    "message": "サインイン中："
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "無料"
+  },
+  "apPlanLabel": {
+    "message": "プラン"
+  },
+  "apUpgrade": {
+    "message": "アップグレード"
+  },
+  "apSyncing": {
+    "message": "同期中…"
+  },
+  "apSyncNow": {
+    "message": "今すぐ同期"
+  },
+  "apSignOut": {
+    "message": "サインアウト"
+  },
+  "apLastSynced": {
+    "message": "最終同期 $1"
+  },
+  "apNotSynced": {
+    "message": "まだ同期していません"
+  },
+  "apReloadBanner": {
+    "message": "リモート保管庫を取得しました。適用するにはこのページを再読み込みしてください。"
+  },
+  "apReload": {
+    "message": "再読み込み"
+  },
+  "apConflict": {
+    "message": "競合——別のデバイスがこの保管庫を更新しました。解決してください："
+  },
+  "apKeepMine": {
+    "message": "自分のを使う"
+  },
+  "apKeepMineTitle": {
+    "message": "リモート保管庫をローカル版で上書きします。他デバイスの変更は失われます。"
+  },
+  "apTakeTheirs": {
+    "message": "リモートを使う"
+  },
+  "apTakeTheirsTitle": {
+    "message": "ローカル保管庫をリモート版で置き換えます。未同期のローカル変更は失われます。"
+  },
+  "apResultSynced": {
+    "message": "最新です。"
+  },
+  "apResultPushed": {
+    "message": "ローカルの変更をサーバーに送信しました。"
+  },
+  "apResultPulled": {
+    "message": "リモート保管庫を取得しました。再読み込みで反映されます。"
+  },
+  "apResultNoAuth": {
+    "message": "サインインが必要です。"
+  },
+  "apResultConflict": {
+    "message": "競合——上で解決してください。"
+  },
+  "apResultOffline": {
+    "message": "オフラインです——オンラインに戻ると同期を再試行します。"
+  },
+  "apResultError": {
+    "message": "同期エラー：$1"
+  },
+  "apTelemetry": {
+    "message": "匿名のエラーレポートを送信——URL・Cookie ドメイン・メールアドレスは含みません。既定でオフ。"
+  },
+  "apHowThisWorks": {
+    "message": "仕組みについて"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — オプション"
+  },
+  "eoLead": {
+    "message": "暗号化された Cookie プロファイルを管理します。ログイン状態を保存し、いつでもアカウントを切り替えられます。"
+  },
+  "eoLoadingVault": {
+    "message": "保管庫を読み込み中…"
+  },
+  "eoStrengthAria": {
+    "message": "強度：$1"
+  },
+  "eoCracksIn": {
+    "message": "· 解読まで $1"
+  },
+  "eoPassphraseWeak": {
+    "message": "パスフレーズが「$1」です。もっと強いものにしてください——長いランダムな文が最適です。"
+  },
+  "eoPassMismatch": {
+    "message": "パスフレーズが一致しません。"
+  },
+  "eoSetupHeading": {
+    "message": "プロファイル保管庫を設定"
+  },
+  "eoSetupLede": {
+    "message": "プロファイルの Cookie は AES-256-GCM で保存時に暗号化されます。鍵は PBKDF2（600,000 回反復）でパスフレーズから導出します。パスフレーズは保存されず、この端末から出ることはありません。"
+  },
+  "eoPassphrase": {
+    "message": "パスフレーズ"
+  },
+  "eoConfirm": {
+    "message": "確認"
+  },
+  "eoCreating": {
+    "message": "作成中…"
+  },
+  "eoCreateVault": {
+    "message": "保管庫を作成"
+  },
+  "eoWarnForget": {
+    "message": "パスフレーズを忘れると、プロファイルは復元できません。リセット用リンクはありません。"
+  },
+  "eoWarnReenter": {
+    "message": "ブラウザのセッションごとに 1 回パスフレーズを再入力します。"
+  },
+  "eoTooManyAttempts": {
+    "message": "失敗回数が多すぎます。ロックの解除をお待ちください。"
+  },
+  "eoLockedOut60": {
+    "message": "パスフレーズが違います——60 秒間ロックしました。"
+  },
+  "eoWrongPassAttempts": {
+    "message": "パスフレーズが違います。ロックまで残り $1 回です。"
+  },
+  "eoUnlockHeading": {
+    "message": "プロファイル保管庫をロック解除"
+  },
+  "eoUnlockLede": {
+    "message": "保存済みプロファイルにアクセスするにはパスフレーズを入力してください。"
+  },
+  "eoLockedTryAgain": {
+    "message": "ロック中——$1 秒後に再試行"
+  },
+  "eoUnlocking": {
+    "message": "ロック解除中…"
+  },
+  "eoUnlock": {
+    "message": "ロック解除"
+  },
+  "eoResetVault": {
+    "message": "保管庫をリセット"
+  },
+  "eoResetTitle": {
+    "message": "保管庫をリセットしますか？"
+  },
+  "eoResetMessage": {
+    "message": "保存済みのプロファイルがすべて完全に破棄されます。取り消しもリセット用リンクもありません——復元できません。"
+  },
+  "eoCouldNotReadLive": {
+    "message": "現在の Cookie を読み取れませんでした：$1"
+  },
+  "eoSavedProfile": {
+    "message": "「$1」を $2 個の Cookie とともに保存しました。"
+  },
+  "eoSwitchFailedBanner": {
+    "message": "「$1」への切り替えに失敗——$2 個中 0 個適用。前の状態にロールバックしました。"
+  },
+  "eoSwitchedApplied": {
+    "message": "「$1」に切り替えました（$2 個の Cookie を適用）。"
+  },
+  "eoSwitchedPartial": {
+    "message": "「$1」に切り替えました——$2 個適用、$3 個失敗。"
+  },
+  "eoDeletedProfile": {
+    "message": "「$1」を削除しました。"
+  },
+  "eoReloadedTabs": {
+    "message": "$2 のタブ $1 件を再読み込みしました。"
+  },
+  "eoVaultUnlocked": {
+    "message": "保管庫はロック解除済み"
+  },
+  "eoLockVault": {
+    "message": "保管庫をロック"
+  },
+  "eoScopeHeading": {
+    "message": "範囲"
+  },
+  "eoScopeLede": {
+    "message": "プロファイルは固定のホストサフィックス群を対象に動作します。プロファイルの切り替えはこの範囲に一致する Cookie のみに影響し、他のサイトはそのままです。"
+  },
+  "eoSite": {
+    "message": "サイト"
+  },
+  "eoCountingLive": {
+    "message": "現在の Cookie を集計中…"
+  },
+  "eoLiveCount": {
+    "message": "このブラウザに現在 $1 個の $2 Cookie があります"
+  },
+  "eoSaveHeading": {
+    "message": "現在のセッションをプロファイルとして保存"
+  },
+  "eoSaveLede": {
+    "message": "アクティブな範囲に一致するすべての Cookie を取り込みます。記憶したい $1 アカウントにログインした状態で使用してください。"
+  },
+  "eoProfileName": {
+    "message": "プロファイル名"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "例：「QA アカウント 3」"
+  },
+  "eoSavingProfile": {
+    "message": "保存中…"
+  },
+  "eoSaveProfile": {
+    "message": "プロファイルを保存"
+  },
+  "eoProfilesHeading": {
+    "message": "プロファイル"
+  },
+  "eoNoProfilesYet": {
+    "message": "まだプロファイルがありません。上で現在のセッションを保存して作成してください。"
+  },
+  "eoProfilesCount": {
+    "message": "この保管庫に $1 個のプロファイルがあります。"
+  },
+  "eoNoProfilesScope": {
+    "message": "アクティブな範囲に一致するプロファイルはありません。"
+  },
+  "eoProfileCookies": {
+    "message": "$1 個の Cookie"
+  },
+  "eoProfileSwitching": {
+    "message": "切り替え中…"
+  },
+  "eoProfileSwitch": {
+    "message": "切り替え"
+  },
+  "eoProfileDelete": {
+    "message": "削除"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "開いているタブ $1 件を再読み込みする必要があります。"
+  },
+  "eoReloadTabs": {
+    "message": "タブを再読み込み"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "プロファイルを切り替えますか？"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "「$1」に切り替えますか？現在の $2 の Cookie は置き換えられ、開いている $2 のタブは後で再読み込みが必要です。"
+  },
+  "eoSwitchConfirm": {
+    "message": "切り替え"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "プロファイルを削除しますか？"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "「$1」を削除しますか？この操作は取り消せません。"
+  },
+  "eoDeleteConfirm": {
+    "message": "削除"
+  },
+  "eoSafetyHeading": {
+    "message": "安全に関する注意"
+  },
+  "eoSafety1": {
+    "message": "プロファイルは、自分が所有するかテストを許可されたアカウントにのみ使用してください。管理権限のないアカウントでセッション Cookie を再利用することは、多くのサイトで利用規約違反となり、違法となる場合があります。"
+  },
+  "eoSafety2": {
+    "message": "新しい Cookie を反映するには、ブラウザが開いている $1 のタブを再読み込みする必要があります。長時間維持される WebSocket / SSE 接続に紐づく Cookie は、ページが再読み込みされるまで残る場合があります。"
+  },
+  "eoSafety3": {
+    "message": "一部のサイトはセッション Cookie を他のシグナル（デバイスのフィンガープリント、IP）に紐づけます。Cookie だけを切り替えると再ログインやセキュリティ確認が発生することがあります——それはサイト側のリスク管理であり、CookieVault のバグではありません。"
+  },
+  "themeToggle": {
+    "message": "テーマを切り替え"
+  },
+  "apCodeLabel": {
+    "message": "サインインコード"
+  },
+  "apVerifyCode": {
+    "message": "サインインを完了"
+  },
+  "apVerifying": {
+    "message": "確認中…"
+  },
+  "scopeCurrent": {
+    "message": "このサイト"
+  },
+  "scopeAll": {
+    "message": "すべての Cookie"
+  },
+  "copyValue": {
+    "message": "値をコピー"
+  },
+  "copied": {
+    "message": "コピーしました"
+  },
+  "deleteDomain": {
+    "message": "このドメインのすべてを削除"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "これらの Cookie を削除しますか?"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "$1 のすべての Cookie を削除しますか?"
+  },
+  "noCookiesThisSite": {
+    "message": "このサイトの Cookie はありません。"
+  },
+  "toastCopied": {
+    "message": "値をコピーしました"
+  },
+  "errNameFormat": {
+    "message": "Cookie 名にスペース、`;`、`=` は使用できません。"
+  },
+  "errDomainFormat": {
+    "message": "ドメインが無効なようです。スペースやスキームなしのホスト名を入力してください。"
+  },
+  "errHostPrefix": {
+    "message": "__Host- Cookie は Secure で、パス \"/\" を使用し、host-only（ドメインなし）である必要があります。"
+  },
+  "errSecurePrefix": {
+    "message": "__Secure- Cookie は Secure である必要があります。"
+  },
+  "errExpiryInvalid": {
+    "message": "有効な有効期限を選択してください。"
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "検索をクリア"
+  },
+  "moreFields": {
+    "message": "その他の項目…"
+  },
+  "prefLanguage": {
+    "message": "言語"
+  },
+  "langSystem": {
+    "message": "システム（ブラウザ）"
+  }
+}

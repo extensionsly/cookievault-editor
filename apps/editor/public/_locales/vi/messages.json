@@ -1,0 +1,584 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "Trình quản lý cookie MV3: chỉnh sửa, tìm kiếm, nhập & xuất — mã nguồn mở."
+  },
+  "filterPlaceholder": {
+    "message": "Lọc theo tên miền hoặc tên…"
+  },
+  "filterAriaLabel": {
+    "message": "Lọc cookie theo tên miền hoặc tên"
+  },
+  "buttonAdd": {
+    "message": "Thêm"
+  },
+  "buttonImport": {
+    "message": "Nhập"
+  },
+  "buttonExport": {
+    "message": "Xuất"
+  },
+  "loadingCookies": {
+    "message": "Đang tải cookie…"
+  },
+  "clearFilter": {
+    "message": "Xóa bộ lọc"
+  },
+  "errorReadCookies": {
+    "message": "Không thể đọc cookie."
+  },
+  "statsFiltered": {
+    "message": "$1 trong $2 · $3 tên miền"
+  },
+  "statsAll": {
+    "message": "$1 · $2 tên miền"
+  },
+  "cookieFlagsAria": {
+    "message": "cờ cookie"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "Partitioned (CHIPS)"
+  },
+  "emptyValue": {
+    "message": "trống"
+  },
+  "editAria": {
+    "message": "Chỉnh sửa $1"
+  },
+  "editTitle": {
+    "message": "Chỉnh sửa"
+  },
+  "deleteAria": {
+    "message": "Xóa $1"
+  },
+  "deleteTitle": {
+    "message": "Xóa"
+  },
+  "noCookiesMatch": {
+    "message": "Không có cookie nào khớp với “$1”."
+  },
+  "noCookiesYet": {
+    "message": "Chưa có cookie nào trên trang này."
+  },
+  "optionsButton": {
+    "message": "Tùy chọn"
+  },
+  "dismiss": {
+    "message": "Bỏ qua"
+  },
+  "deleteCookieTitle": {
+    "message": "Xóa cookie?"
+  },
+  "deleteCookieMessage": {
+    "message": "Xóa “$1” trên $2? Thao tác này không thể hoàn tác."
+  },
+  "buttonDelete": {
+    "message": "Xóa"
+  },
+  "cancel": {
+    "message": "Hủy"
+  },
+  "toastDeleted": {
+    "message": "Đã xóa $1"
+  },
+  "toastSaved": {
+    "message": "Đã lưu $1"
+  },
+  "toastExported": {
+    "message": "Đã xuất $1 cookie"
+  },
+  "toastImported": {
+    "message": "Đã nhập $1 cookie từ $2"
+  },
+  "toastImportedPartial": {
+    "message": "Đã nhập $1 trong $2 ($3 thất bại)"
+  },
+  "editCookieTitle": {
+    "message": "Chỉnh sửa cookie"
+  },
+  "close": {
+    "message": "Đóng"
+  },
+  "fieldName": {
+    "message": "Tên"
+  },
+  "fieldDomain": {
+    "message": "Tên miền"
+  },
+  "fieldPath": {
+    "message": "Đường dẫn"
+  },
+  "fieldValue": {
+    "message": "Giá trị"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "Host-only"
+  },
+  "expiryLegend": {
+    "message": "Hết hạn"
+  },
+  "expirySession": {
+    "message": "Phiên"
+  },
+  "expiryUntil": {
+    "message": "Cho đến"
+  },
+  "timezoneHint": {
+    "message": "Thời gian theo múi giờ địa phương của bạn."
+  },
+  "buttonSave": {
+    "message": "Lưu"
+  },
+  "saving": {
+    "message": "Đang lưu…"
+  },
+  "profilesLoading": {
+    "message": "Hồ sơ…"
+  },
+  "setupVault": {
+    "message": "Hồ sơ · Thiết lập kho →"
+  },
+  "unlockInOptions": {
+    "message": "Hồ sơ đã khóa · Mở khóa trong Tùy chọn →"
+  },
+  "profileScopeAria": {
+    "message": "Phạm vi hồ sơ"
+  },
+  "lockVault": {
+    "message": "Khóa kho"
+  },
+  "lockButton": {
+    "message": "Khóa"
+  },
+  "noProfilesForScope": {
+    "message": "Không có hồ sơ cho $1."
+  },
+  "saveOne": {
+    "message": "Lưu một hồ sơ →"
+  },
+  "switchButton": {
+    "message": "Chuyển"
+  },
+  "switching": {
+    "message": "Đang chuyển…"
+  },
+  "cookiesInScope": {
+    "message": "cookie trong phạm vi"
+  },
+  "tabsNeedRefresh": {
+    "message": "$1 tab $2 cần làm mới"
+  },
+  "reloadButton": {
+    "message": "Tải lại"
+  },
+  "switchProfileTitle": {
+    "message": "Chuyển hồ sơ?"
+  },
+  "switchProfileMessage": {
+    "message": "Chuyển sang “$1”? Các cookie $2 hiện tại của bạn sẽ bị thay thế."
+  },
+  "switchConfirm": {
+    "message": "Chuyển"
+  },
+  "toastSwitchFailed": {
+    "message": "Chuyển thất bại — 0 trong $1 cookie được áp dụng. Đã khôi phục lại."
+  },
+  "toastSwitched": {
+    "message": "Đã chuyển sang “$1” ($2 cookie)"
+  },
+  "toastSwitchedPartial": {
+    "message": "Đã chuyển — $1 áp dụng, $2 thất bại"
+  },
+  "toastReloaded": {
+    "message": "Đã tải lại $1 tab $2"
+  },
+  "justNow": {
+    "message": "vừa xong"
+  },
+  "minutesAgo": {
+    "message": "$1 phút trước"
+  },
+  "hoursAgo": {
+    "message": "$1 giờ trước"
+  },
+  "apAccount": {
+    "message": "Tài khoản"
+  },
+  "apSignInLede": {
+    "message": "Đăng nhập bằng email để bật đồng bộ mã hóa giữa các thiết bị. Đồng bộ được mã hóa đầu cuối — ngay cả chúng tôi cũng không thể đọc dữ liệu đã đồng bộ của bạn."
+  },
+  "apEmail": {
+    "message": "Email"
+  },
+  "apSending": {
+    "message": "Đang gửi…"
+  },
+  "apSendMagicLink": {
+    "message": "Gửi liên kết đăng nhập"
+  },
+  "apMagicSent": {
+    "message": "Đã gửi liên kết đăng nhập — kiểm tra email của bạn. Liên kết hết hạn sau 3 phút."
+  },
+  "apSignedInAs": {
+    "message": "Đã đăng nhập với tư cách"
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "Miễn phí"
+  },
+  "apPlanLabel": {
+    "message": "gói"
+  },
+  "apUpgrade": {
+    "message": "Nâng cấp"
+  },
+  "apSyncing": {
+    "message": "Đang đồng bộ…"
+  },
+  "apSyncNow": {
+    "message": "Đồng bộ ngay"
+  },
+  "apSignOut": {
+    "message": "Đăng xuất"
+  },
+  "apLastSynced": {
+    "message": "Đồng bộ lần cuối $1"
+  },
+  "apNotSynced": {
+    "message": "Chưa đồng bộ"
+  },
+  "apReloadBanner": {
+    "message": "Đã tải kho từ xa về. Tải lại trang này để áp dụng."
+  },
+  "apReload": {
+    "message": "Tải lại"
+  },
+  "apConflict": {
+    "message": "Xung đột — một thiết bị khác đã cập nhật kho này. Giải quyết:"
+  },
+  "apKeepMine": {
+    "message": "Giữ bản của tôi"
+  },
+  "apKeepMineTitle": {
+    "message": "Ghi đè kho từ xa bằng phiên bản cục bộ của bạn. Các thay đổi của thiết bị kia sẽ bị mất."
+  },
+  "apTakeTheirs": {
+    "message": "Lấy bản của họ"
+  },
+  "apTakeTheirsTitle": {
+    "message": "Thay thế kho cục bộ bằng phiên bản từ xa. Các thay đổi cục bộ chưa đồng bộ của bạn sẽ bị mất."
+  },
+  "apResultSynced": {
+    "message": "Đã ở bản mới nhất."
+  },
+  "apResultPushed": {
+    "message": "Đã đẩy các thay đổi cục bộ lên máy chủ."
+  },
+  "apResultPulled": {
+    "message": "Đã tải kho từ xa về. Tải lại để có hiệu lực."
+  },
+  "apResultNoAuth": {
+    "message": "Cần đăng nhập."
+  },
+  "apResultConflict": {
+    "message": "Xung đột — giải quyết ở trên."
+  },
+  "apResultOffline": {
+    "message": "Bạn đang ngoại tuyến — đồng bộ sẽ thử lại khi bạn trực tuyến trở lại."
+  },
+  "apResultError": {
+    "message": "Lỗi đồng bộ: $1"
+  },
+  "apTelemetry": {
+    "message": "Gửi báo cáo lỗi ẩn danh — không có URL, tên miền cookie hay địa chỉ email. Mặc định tắt."
+  },
+  "apHowThisWorks": {
+    "message": "Cách hoạt động"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — Tùy chọn"
+  },
+  "eoLead": {
+    "message": "Quản lý hồ sơ cookie được mã hóa — lưu trạng thái đăng nhập và chuyển đổi giữa các tài khoản bất cứ lúc nào."
+  },
+  "eoLoadingVault": {
+    "message": "Đang tải kho…"
+  },
+  "eoStrengthAria": {
+    "message": "Độ mạnh: $1"
+  },
+  "eoCracksIn": {
+    "message": "· bị bẻ khóa trong $1"
+  },
+  "eoPassphraseWeak": {
+    "message": "Cụm mật khẩu đang ở mức “$1”. Hãy chọn cụm mạnh hơn — một câu dài ngẫu nhiên là tốt nhất."
+  },
+  "eoPassMismatch": {
+    "message": "Cụm mật khẩu không khớp."
+  },
+  "eoSetupHeading": {
+    "message": "Thiết lập kho hồ sơ"
+  },
+  "eoSetupLede": {
+    "message": "Cookie hồ sơ được mã hóa khi lưu trữ bằng AES-256-GCM. Khóa được tạo từ cụm mật khẩu của bạn qua PBKDF2 (600.000 vòng lặp). Cụm mật khẩu không bao giờ được lưu và không bao giờ rời khỏi thiết bị này."
+  },
+  "eoPassphrase": {
+    "message": "Cụm mật khẩu"
+  },
+  "eoConfirm": {
+    "message": "Xác nhận"
+  },
+  "eoCreating": {
+    "message": "Đang tạo…"
+  },
+  "eoCreateVault": {
+    "message": "Tạo kho"
+  },
+  "eoWarnForget": {
+    "message": "Nếu bạn quên cụm mật khẩu, các hồ sơ của bạn không thể khôi phục. Không có liên kết đặt lại."
+  },
+  "eoWarnReenter": {
+    "message": "Bạn sẽ nhập lại cụm mật khẩu một lần cho mỗi phiên trình duyệt."
+  },
+  "eoTooManyAttempts": {
+    "message": "Quá nhiều lần thử sai. Đợi hết thời gian khóa."
+  },
+  "eoLockedOut60": {
+    "message": "Sai cụm mật khẩu — bị khóa trong 60 giây."
+  },
+  "eoWrongPassAttempts": {
+    "message": "Sai cụm mật khẩu. Còn $1 lần thử trước khi bị khóa."
+  },
+  "eoUnlockHeading": {
+    "message": "Mở khóa kho hồ sơ"
+  },
+  "eoUnlockLede": {
+    "message": "Nhập cụm mật khẩu để truy cập các hồ sơ đã lưu."
+  },
+  "eoLockedTryAgain": {
+    "message": "Đã khóa — thử lại sau $1 giây"
+  },
+  "eoUnlocking": {
+    "message": "Đang mở khóa…"
+  },
+  "eoUnlock": {
+    "message": "Mở khóa"
+  },
+  "eoResetVault": {
+    "message": "Đặt lại kho"
+  },
+  "eoResetTitle": {
+    "message": "Đặt lại kho?"
+  },
+  "eoResetMessage": {
+    "message": "Thao tác này xóa vĩnh viễn tất cả các hồ sơ đã lưu. Không thể hoàn tác và không có liên kết đặt lại — chúng không thể khôi phục."
+  },
+  "eoCouldNotReadLive": {
+    "message": "Không thể đọc cookie đang hoạt động: $1"
+  },
+  "eoSavedProfile": {
+    "message": "Đã lưu “$1” với $2 cookie."
+  },
+  "eoSwitchFailedBanner": {
+    "message": "Chuyển sang “$1” thất bại — 0 trong $2 cookie được áp dụng. Đã khôi phục về trạng thái trước đó."
+  },
+  "eoSwitchedApplied": {
+    "message": "Đã chuyển sang “$1” ($2 cookie được áp dụng)."
+  },
+  "eoSwitchedPartial": {
+    "message": "Đã chuyển sang “$1” — $2 áp dụng, $3 thất bại."
+  },
+  "eoDeletedProfile": {
+    "message": "Đã xóa “$1”."
+  },
+  "eoReloadedTabs": {
+    "message": "Đã tải lại $1 tab $2."
+  },
+  "eoVaultUnlocked": {
+    "message": "Kho đã mở khóa"
+  },
+  "eoLockVault": {
+    "message": "Khóa kho"
+  },
+  "eoScopeHeading": {
+    "message": "Phạm vi"
+  },
+  "eoScopeLede": {
+    "message": "Hồ sơ hoạt động trên một tập hậu tố máy chủ cố định. Chuyển hồ sơ chỉ tác động đến các cookie khớp với phạm vi này — các trang khác không bị ảnh hưởng."
+  },
+  "eoSite": {
+    "message": "Trang"
+  },
+  "eoCountingLive": {
+    "message": "Đang đếm cookie đang hoạt động…"
+  },
+  "eoLiveCount": {
+    "message": "$1 cookie $2 đang hoạt động trong trình duyệt này ngay bây giờ"
+  },
+  "eoSaveHeading": {
+    "message": "Lưu phiên hiện tại làm hồ sơ"
+  },
+  "eoSaveLede": {
+    "message": "Thu thập mọi cookie khớp với phạm vi đang hoạt động. Dùng tính năng này khi đang đăng nhập vào tài khoản $1 mà bạn muốn ghi nhớ."
+  },
+  "eoProfileName": {
+    "message": "Tên hồ sơ"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "ví dụ “Tài khoản QA 3”"
+  },
+  "eoSavingProfile": {
+    "message": "Đang lưu…"
+  },
+  "eoSaveProfile": {
+    "message": "Lưu hồ sơ"
+  },
+  "eoProfilesHeading": {
+    "message": "Hồ sơ"
+  },
+  "eoNoProfilesYet": {
+    "message": "Chưa có hồ sơ nào. Lưu phiên hiện tại ở trên để tạo một hồ sơ."
+  },
+  "eoProfilesCount": {
+    "message": "$1 hồ sơ trong kho này."
+  },
+  "eoNoProfilesScope": {
+    "message": "Không có hồ sơ nào khớp với phạm vi đang hoạt động."
+  },
+  "eoProfileCookies": {
+    "message": "$1 cookie"
+  },
+  "eoProfileSwitching": {
+    "message": "Đang chuyển…"
+  },
+  "eoProfileSwitch": {
+    "message": "Chuyển"
+  },
+  "eoProfileDelete": {
+    "message": "Xóa"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "$1 tab đang mở cần làm mới."
+  },
+  "eoReloadTabs": {
+    "message": "Tải lại tab"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "Chuyển hồ sơ?"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "Chuyển sang “$1”? Các cookie $2 hiện tại của bạn sẽ bị thay thế, và các tab $2 đang mở cần làm mới sau đó."
+  },
+  "eoSwitchConfirm": {
+    "message": "Chuyển"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "Xóa hồ sơ?"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "Xóa “$1”? Thao tác này không thể hoàn tác."
+  },
+  "eoDeleteConfirm": {
+    "message": "Xóa"
+  },
+  "eoSafetyHeading": {
+    "message": "Lưu ý an toàn"
+  },
+  "eoSafety1": {
+    "message": "Chỉ sử dụng hồ sơ cho các tài khoản bạn sở hữu hoặc được phép kiểm thử. Tái sử dụng cookie phiên trên các tài khoản bạn không kiểm soát là vi phạm Điều khoản Dịch vụ trên hầu hết các trang và có thể là bất hợp pháp."
+  },
+  "eoSafety2": {
+    "message": "Trình duyệt phải làm mới các tab $1 đang mở để nhận cookie mới. Cookie gắn với các kết nối WebSocket / SSE tồn tại lâu có thể vẫn duy trì cho đến khi trang được tải lại."
+  },
+  "eoSafety3": {
+    "message": "Một số trang ràng buộc cookie phiên với các tín hiệu khác (vân tay thiết bị, IP). Chỉ chuyển cookie có thể kích hoạt yêu cầu đăng nhập lại hoặc thử thách bảo mật — đó là biện pháp kiểm soát rủi ro của trang, không phải lỗi của CookieVault."
+  },
+  "themeToggle": {
+    "message": "Đổi giao diện"
+  },
+  "apCodeLabel": {
+    "message": "Mã đăng nhập"
+  },
+  "apVerifyCode": {
+    "message": "Hoàn tất đăng nhập"
+  },
+  "apVerifying": {
+    "message": "Đang xác minh…"
+  },
+  "scopeCurrent": {
+    "message": "Trang web này"
+  },
+  "scopeAll": {
+    "message": "Tất cả cookie"
+  },
+  "copyValue": {
+    "message": "Sao chép giá trị"
+  },
+  "copied": {
+    "message": "Đã sao chép"
+  },
+  "deleteDomain": {
+    "message": "Xóa tất cả trong miền này"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "Xóa các cookie này?"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "Xóa tất cả cookie cho $1?"
+  },
+  "noCookiesThisSite": {
+    "message": "Không có cookie cho trang web này."
+  },
+  "toastCopied": {
+    "message": "Đã sao chép giá trị"
+  },
+  "errNameFormat": {
+    "message": "Tên cookie không được chứa dấu cách, `;` hoặc `=`."
+  },
+  "errDomainFormat": {
+    "message": "Miền có vẻ không hợp lệ — nhập tên máy chủ, không có dấu cách hoặc lược đồ."
+  },
+  "errHostPrefix": {
+    "message": "Cookie __Host- phải là Secure, dùng đường dẫn \"/\" và chỉ dành cho máy chủ (host-only, không có miền)."
+  },
+  "errSecurePrefix": {
+    "message": "Cookie __Secure- phải là Secure."
+  },
+  "errExpiryInvalid": {
+    "message": "Chọn ngày hết hạn hợp lệ."
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "Xóa tìm kiếm"
+  },
+  "moreFields": {
+    "message": "Thêm trường…"
+  },
+  "prefLanguage": {
+    "message": "Ngôn ngữ"
+  },
+  "langSystem": {
+    "message": "Hệ thống (trình duyệt)"
+  }
+}

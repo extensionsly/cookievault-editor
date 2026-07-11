@@ -1,0 +1,864 @@
+@import '@cookievault/ui/tokens.css';
+@import '@cookievault/ui/theme.css';
+@import '@cookievault/ui/confirm-dialog.css';
+@import '@cookievault/ui/toast.css';
+
+:root {
+  --accent: #0061b6; /* solid button bg, white text — AA */
+  --accent-soft: #e3f2ff; /* tinted fill (profile bar, flag tags, secondary buttons) */
+  --accent-on: #00509d; /* AA-clean text/icon on --accent-soft */
+  font-family: var(--cv-font);
+}
+
+[data-theme='dark'] {
+  --accent: #53a3f2;
+  --accent-soft: #142f4b;
+  --accent-on: #8fc4f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  width: 380px;
+  font-size: 13px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  max-height: 600px;
+}
+
+main.status {
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  color: var(--muted);
+}
+
+main.status.error code {
+  display: block;
+  margin-top: 8px;
+  color: var(--danger);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  word-break: break-word;
+}
+
+header {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 1;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #0a86dc, var(--accent));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.brand-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--fg);
+}
+
+.header-spacer {
+  flex: 1;
+}
+
+.settings-btn {
+  font-size: 15px;
+}
+
+/* Rounded search pill with leading icon + optional clear (design §3.1). */
+.search-pill {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+}
+
+.search-pill:focus-within {
+  border-color: var(--accent);
+}
+
+.search-pill .search-icon {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.search-pill input[type='search'] {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  color: var(--fg);
+  font-size: 12.5px;
+  padding: 0;
+}
+
+.search-pill input[type='search']:focus {
+  outline: none;
+}
+
+.search-pill input[type='search']::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-clear {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0 2px;
+  line-height: 1;
+}
+
+.search-clear:hover {
+  color: var(--fg);
+}
+
+.stats {
+  color: var(--muted);
+  font-size: 11px;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.toolbar button {
+  background: var(--accent-soft);
+  border: 1px solid transparent;
+  color: var(--accent-on);
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+/* First toolbar action (Add) is the primary, solid-accent button. */
+.toolbar button:first-child {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.toolbar button:hover:not(:disabled) {
+  filter: brightness(0.96);
+}
+
+.toolbar button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.domain-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.domain-list > li {
+  border-bottom: 1px solid var(--border);
+}
+
+.domain-list summary {
+  cursor: pointer;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.domain-list summary:hover {
+  background: var(--row-hover);
+}
+
+.domain-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.domain-list summary::before {
+  content: '▸';
+  color: var(--muted);
+  display: inline-block;
+  width: 12px;
+  transition: transform 120ms ease;
+}
+
+details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.domain {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.count {
+  color: var(--muted);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cookie-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 14px 8px 26px;
+  font-size: 12px;
+}
+
+.cookie-list li {
+  border-top: 1px dashed var(--border);
+}
+
+.cookie-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  padding: 4px 0;
+  align-items: center;
+}
+
+/* The name/value/flags area is one big button that expands inline editing. */
+.row-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) auto;
+  gap: 8px;
+  align-items: center;
+  min-width: 0;
+  background: none;
+  border: none;
+  padding: 3px 4px;
+  margin: -3px -4px;
+  border-radius: 6px;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.row-main:hover {
+  background: var(--row-hover);
+}
+
+.cookie-row .actions {
+  display: inline-flex;
+  gap: 2px;
+}
+
+button.icon {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+button.icon:hover {
+  background: var(--row-hover);
+  color: var(--fg);
+}
+
+button.icon.danger:hover {
+  color: var(--danger);
+}
+
+.cookie-list li:first-child {
+  border-top: none;
+}
+
+.name {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.value {
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.flags {
+  display: inline-flex;
+  gap: 2px;
+  color: var(--accent-on);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.flags span {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--accent-soft);
+  color: var(--accent-on);
+}
+
+/* CHIPS / Partitioned flag carries the unifying Vault indigo tint (§07). */
+.flags span.vault {
+  background: var(--cv-vault-soft);
+  color: var(--cv-vault-on);
+}
+
+/* SameSite fallback chip (shown when a cookie has no other flag): neutral. */
+.flags span.neutral {
+  background: var(--row-hover);
+  color: var(--fg-2);
+  text-transform: capitalize;
+}
+
+/* Inline quick-edit panel — expand a row to edit common fields (design §3.1).
+   Full-field editing (domain/path/expiry + validation) stays in EditDialog. */
+.cookie-inline {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 2px 0 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cookie-inline .field-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  margin-bottom: 3px;
+}
+
+.cookie-inline input[type='text'],
+.cookie-inline select {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--fg);
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.cookie-inline input.mono {
+  font-family: var(--cv-font-mono);
+}
+
+.cookie-inline input:focus,
+.cookie-inline select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.inline-row2 {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.inline-row2 .field {
+  flex: 1;
+  min-width: 0;
+}
+
+.chip-group {
+  display: flex;
+  gap: 6px;
+  padding-bottom: 1px;
+}
+
+.chip {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  background: var(--card);
+  border: 1px solid var(--border-strong);
+  color: var(--muted);
+  font-family: inherit;
+}
+
+.chip.on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.inline-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.inline-actions .spacer {
+  flex: 1;
+}
+
+.inline-actions button {
+  font-size: 12px;
+  font-family: inherit;
+  padding: 5px 11px;
+  border-radius: 7px;
+  cursor: pointer;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--fg);
+}
+
+.inline-actions button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.inline-actions button.danger-text {
+  color: var(--danger);
+  border-color: transparent;
+  background: transparent;
+}
+
+.inline-actions button.danger-text:hover {
+  background: var(--row-hover);
+}
+
+.empty {
+  padding: 24px 14px;
+  text-align: center;
+  color: var(--muted);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--muted);
+  font-size: 11px;
+}
+
+footer button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--fg);
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+footer button:hover {
+  background: var(--row-hover);
+}
+
+/* .toast styling now comes from @cookievault/ui/toast.css */
+
+/* --- Edit dialog ------------------------------------------------- */
+.edit-dialog {
+  width: 340px;
+  max-width: calc(100vw - 24px);
+  max-height: calc(100vh - 24px);
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.edit-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.edit-dialog form {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 24px);
+}
+
+.edit-dialog header {
+  position: static;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edit-dialog header h2 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.edit-dialog fieldset {
+  border: none;
+  padding: 10px 12px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.edit-dialog label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.edit-dialog input[type='text'],
+.edit-dialog input[type='datetime-local'],
+.edit-dialog select,
+.edit-dialog textarea {
+  width: 100%;
+  padding: 5px 7px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.edit-dialog textarea {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  resize: vertical;
+}
+
+.edit-dialog input:focus,
+.edit-dialog select:focus,
+.edit-dialog textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.edit-dialog .flag-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.edit-dialog .checkbox-row {
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  color: var(--fg);
+  font-size: 12px;
+}
+
+.edit-dialog .checkbox-row input {
+  width: auto;
+  margin: 0;
+}
+
+.edit-dialog .expiry {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.edit-dialog .expiry legend {
+  font-size: 11px;
+  color: var(--muted);
+  padding: 0 4px;
+}
+
+.edit-dialog .error {
+  color: var(--danger);
+  font-size: 11px;
+  margin: 0;
+}
+
+.edit-dialog footer {
+  position: static;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.edit-dialog footer button {
+  font-size: 12px;
+  padding: 5px 12px;
+}
+
+.edit-dialog footer button.primary {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+}
+
+.edit-dialog footer button.primary:hover:not(:disabled) {
+  filter: brightness(0.94);
+}
+
+/* --- Profile bar ------------------------------------------------- */
+.profile-bar {
+  border-bottom: 1px solid var(--border);
+  padding: 8px 14px;
+  background: var(--accent-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-bar.status {
+  color: var(--muted);
+  font-size: 11px;
+  padding: 6px 14px;
+}
+
+.profile-bar.cta {
+  padding: 0;
+}
+
+.profile-bar .cta-button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  color: var(--accent);
+  text-align: left;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.profile-bar .cta-button:hover {
+  background: var(--row-hover);
+}
+
+.profile-bar .scope-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.profile-bar select {
+  flex: 1;
+  padding: 4px 6px;
+  font-size: 12px;
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.profile-bar select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.profile-bar .spacer {
+  flex: 1;
+}
+
+.profile-bar .lock-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  font-family: inherit;
+}
+
+.profile-bar .lock-btn:hover {
+  background: var(--row-hover);
+  color: var(--fg);
+}
+
+.profile-bar .empty {
+  margin: 4px 0 2px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.profile-bar .empty .link {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+}
+
+.profile-bar .empty .link:hover {
+  text-decoration: underline;
+}
+
+.profile-bar .profile-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.profile-bar .profile-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.profile-bar .profile-row .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+  color: var(--accent-on);
+}
+
+.profile-bar .profile-row .count {
+  color: var(--muted);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.profile-bar .switch-btn {
+  background: var(--accent);
+  color: #ffffff;
+  border: 1px solid var(--accent);
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  font-family: inherit;
+}
+
+.profile-bar .switch-btn:hover:not(:disabled) {
+  filter: brightness(0.94);
+}
+
+.profile-bar .switch-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.profile-bar .pending-reload {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--muted);
+  padding-top: 4px;
+  border-top: 1px dashed var(--border);
+}
+
+.profile-bar .reload-btn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  font-family: inherit;
+}
+
+.profile-bar .reload-btn:hover:not(:disabled) {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.profile-bar .reload-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* .confirm-dialog styling now comes from @cookievault/ui/confirm-dialog.css */
+
+/* Inline text-button link + form hint, shared across the popup. */
+.empty .link,
+button.link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.hint {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--muted, var(--fg));
+  opacity: 0.8;
+}

@@ -1,0 +1,584 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "MV3 cookie मैनेजर: संपादित करें, खोजें, आयात व निर्यात करें — ओपन सोर्स।"
+  },
+  "filterPlaceholder": {
+    "message": "डोमेन या नाम से फ़िल्टर करें…"
+  },
+  "filterAriaLabel": {
+    "message": "डोमेन या नाम से cookies फ़िल्टर करें"
+  },
+  "buttonAdd": {
+    "message": "जोड़ें"
+  },
+  "buttonImport": {
+    "message": "आयात करें"
+  },
+  "buttonExport": {
+    "message": "निर्यात करें"
+  },
+  "loadingCookies": {
+    "message": "cookies लोड हो रहे हैं…"
+  },
+  "clearFilter": {
+    "message": "फ़िल्टर साफ़ करें"
+  },
+  "errorReadCookies": {
+    "message": "cookies नहीं पढ़ी जा सकीं।"
+  },
+  "statsFiltered": {
+    "message": "$2 में से $1 · $3 डोमेन"
+  },
+  "statsAll": {
+    "message": "$1 · $2 डोमेन"
+  },
+  "cookieFlagsAria": {
+    "message": "cookie फ़्लैग"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "Partitioned (CHIPS)"
+  },
+  "emptyValue": {
+    "message": "खाली"
+  },
+  "editAria": {
+    "message": "$1 संपादित करें"
+  },
+  "editTitle": {
+    "message": "संपादित करें"
+  },
+  "deleteAria": {
+    "message": "$1 हटाएँ"
+  },
+  "deleteTitle": {
+    "message": "हटाएँ"
+  },
+  "noCookiesMatch": {
+    "message": "“$1” से मेल खाने वाली कोई cookies नहीं।"
+  },
+  "noCookiesYet": {
+    "message": "इस पेज पर अभी कोई cookies नहीं हैं।"
+  },
+  "optionsButton": {
+    "message": "विकल्प"
+  },
+  "dismiss": {
+    "message": "खारिज करें"
+  },
+  "deleteCookieTitle": {
+    "message": "cookie हटाएँ?"
+  },
+  "deleteCookieMessage": {
+    "message": "$2 पर “$1” हटाएँ? इसे पूर्ववत नहीं किया जा सकता।"
+  },
+  "buttonDelete": {
+    "message": "हटाएँ"
+  },
+  "cancel": {
+    "message": "रद्द करें"
+  },
+  "toastDeleted": {
+    "message": "$1 हटाया गया"
+  },
+  "toastSaved": {
+    "message": "$1 सहेजा गया"
+  },
+  "toastExported": {
+    "message": "$1 cookies निर्यात किए गए"
+  },
+  "toastImported": {
+    "message": "$2 से $1 cookies आयात किए गए"
+  },
+  "toastImportedPartial": {
+    "message": "$2 में से $1 आयात किए गए ($3 विफल)"
+  },
+  "editCookieTitle": {
+    "message": "cookie संपादित करें"
+  },
+  "close": {
+    "message": "बंद करें"
+  },
+  "fieldName": {
+    "message": "नाम"
+  },
+  "fieldDomain": {
+    "message": "डोमेन"
+  },
+  "fieldPath": {
+    "message": "पाथ"
+  },
+  "fieldValue": {
+    "message": "मान"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "Host-only"
+  },
+  "expiryLegend": {
+    "message": "समाप्ति"
+  },
+  "expirySession": {
+    "message": "सत्र"
+  },
+  "expiryUntil": {
+    "message": "तक"
+  },
+  "timezoneHint": {
+    "message": "समय आपके स्थानीय टाइमज़ोन में हैं।"
+  },
+  "buttonSave": {
+    "message": "सहेजें"
+  },
+  "saving": {
+    "message": "सहेजा जा रहा है…"
+  },
+  "profilesLoading": {
+    "message": "प्रोफ़ाइल…"
+  },
+  "setupVault": {
+    "message": "प्रोफ़ाइल · वॉल्ट सेट करें →"
+  },
+  "unlockInOptions": {
+    "message": "प्रोफ़ाइल लॉक हैं · विकल्प में अनलॉक करें →"
+  },
+  "profileScopeAria": {
+    "message": "प्रोफ़ाइल स्कोप"
+  },
+  "lockVault": {
+    "message": "वॉल्ट लॉक करें"
+  },
+  "lockButton": {
+    "message": "लॉक करें"
+  },
+  "noProfilesForScope": {
+    "message": "$1 के लिए कोई प्रोफ़ाइल नहीं।"
+  },
+  "saveOne": {
+    "message": "एक सहेजें →"
+  },
+  "switchButton": {
+    "message": "स्विच करें"
+  },
+  "switching": {
+    "message": "स्विच हो रहा है…"
+  },
+  "cookiesInScope": {
+    "message": "स्कोप में cookies"
+  },
+  "tabsNeedRefresh": {
+    "message": "$1 $2 टैब को रिफ़्रेश की ज़रूरत है"
+  },
+  "reloadButton": {
+    "message": "रीलोड करें"
+  },
+  "switchProfileTitle": {
+    "message": "प्रोफ़ाइल स्विच करें?"
+  },
+  "switchProfileMessage": {
+    "message": "“$1” पर स्विच करें? आपकी मौजूदा $2 cookies बदल दी जाएँगी।"
+  },
+  "switchConfirm": {
+    "message": "स्विच करें"
+  },
+  "toastSwitchFailed": {
+    "message": "स्विच विफल — $1 में से 0 cookies लागू हुईं। वापस रोल किया गया।"
+  },
+  "toastSwitched": {
+    "message": "“$1” पर स्विच किया गया ($2 cookies)"
+  },
+  "toastSwitchedPartial": {
+    "message": "स्विच किया गया — $1 लागू, $2 विफल"
+  },
+  "toastReloaded": {
+    "message": "$1 $2 टैब रीलोड किए गए"
+  },
+  "justNow": {
+    "message": "अभी-अभी"
+  },
+  "minutesAgo": {
+    "message": "$1 मि पहले"
+  },
+  "hoursAgo": {
+    "message": "$1 घं पहले"
+  },
+  "apAccount": {
+    "message": "खाता"
+  },
+  "apSignInLede": {
+    "message": "एन्क्रिप्टेड क्रॉस-डिवाइस सिंक चालू करने के लिए ईमेल से साइन इन करें। सिंक एंड-टू-एंड एन्क्रिप्टेड है — आपके सिंक किए गए डेटा को हम भी नहीं पढ़ सकते।"
+  },
+  "apEmail": {
+    "message": "ईमेल"
+  },
+  "apSending": {
+    "message": "भेजा जा रहा है…"
+  },
+  "apSendMagicLink": {
+    "message": "मैजिक लिंक भेजें"
+  },
+  "apMagicSent": {
+    "message": "मैजिक लिंक भेज दिया गया — अपना ईमेल देखें। लिंक 3 मिनट में समाप्त हो जाएगा।"
+  },
+  "apSignedInAs": {
+    "message": "साइन इन"
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "Free"
+  },
+  "apPlanLabel": {
+    "message": "प्लान"
+  },
+  "apUpgrade": {
+    "message": "अपग्रेड करें"
+  },
+  "apSyncing": {
+    "message": "सिंक हो रहा है…"
+  },
+  "apSyncNow": {
+    "message": "अभी सिंक करें"
+  },
+  "apSignOut": {
+    "message": "साइन आउट करें"
+  },
+  "apLastSynced": {
+    "message": "अंतिम सिंक $1"
+  },
+  "apNotSynced": {
+    "message": "अभी सिंक नहीं हुआ"
+  },
+  "apReloadBanner": {
+    "message": "रिमोट वॉल्ट खींचा गया। इसे लागू करने के लिए यह पेज रीलोड करें।"
+  },
+  "apReload": {
+    "message": "रीलोड करें"
+  },
+  "apConflict": {
+    "message": "कॉन्फ़्लिक्ट — किसी अन्य डिवाइस ने यह वॉल्ट अपडेट किया है। हल करें:"
+  },
+  "apKeepMine": {
+    "message": "मेरा रखें"
+  },
+  "apKeepMineTitle": {
+    "message": "रिमोट वॉल्ट को अपने लोकल संस्करण से अधिलेखित करें। दूसरे डिवाइस के बदलाव खो जाएँगे।"
+  },
+  "apTakeTheirs": {
+    "message": "उनका लें"
+  },
+  "apTakeTheirsTitle": {
+    "message": "अपने लोकल वॉल्ट को रिमोट संस्करण से बदलें। आपके बिना सिंक हुए लोकल बदलाव खो जाएँगे।"
+  },
+  "apResultSynced": {
+    "message": "अप टू डेट।"
+  },
+  "apResultPushed": {
+    "message": "लोकल बदलाव सर्वर पर भेजे गए।"
+  },
+  "apResultPulled": {
+    "message": "रिमोट वॉल्ट खींचा गया। प्रभावी होने के लिए रीलोड करें।"
+  },
+  "apResultNoAuth": {
+    "message": "साइन इन आवश्यक है।"
+  },
+  "apResultConflict": {
+    "message": "कॉन्फ़्लिक्ट — ऊपर हल करें।"
+  },
+  "apResultOffline": {
+    "message": "आप ऑफ़लाइन हैं — ऑनलाइन होने पर सिंक फिर से प्रयास करेगा।"
+  },
+  "apResultError": {
+    "message": "सिंक त्रुटि: $1"
+  },
+  "apTelemetry": {
+    "message": "गुमनाम त्रुटि रिपोर्ट भेजें — कोई URL, cookie डोमेन या ईमेल पता नहीं। डिफ़ॉल्ट रूप से बंद।"
+  },
+  "apHowThisWorks": {
+    "message": "यह कैसे काम करता है"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — विकल्प"
+  },
+  "eoLead": {
+    "message": "एन्क्रिप्टेड कुकी प्रोफ़ाइल प्रबंधित करें — लॉगिन स्थिति सहेजें और कभी भी खातों के बीच स्विच करें।"
+  },
+  "eoLoadingVault": {
+    "message": "वॉल्ट लोड हो रहा है…"
+  },
+  "eoStrengthAria": {
+    "message": "मज़बूती: $1"
+  },
+  "eoCracksIn": {
+    "message": "· $1 में क्रैक हो जाएगा"
+  },
+  "eoPassphraseWeak": {
+    "message": "पासफ़्रेज़ “$1” है। कुछ मज़बूत चुनें — एक लंबा यादृच्छिक वाक्य सबसे अच्छा रहता है।"
+  },
+  "eoPassMismatch": {
+    "message": "पासफ़्रेज़ मेल नहीं खाते।"
+  },
+  "eoSetupHeading": {
+    "message": "प्रोफ़ाइल वॉल्ट सेट करें"
+  },
+  "eoSetupLede": {
+    "message": "प्रोफ़ाइल cookies स्टोरेज में AES-256-GCM से एन्क्रिप्ट की जाती हैं। कुंजी आपके पासफ़्रेज़ से PBKDF2 (600,000 बार दोहराव) के ज़रिए प्राप्त होती है। पासफ़्रेज़ कभी सेव नहीं होता और इस डिवाइस से कभी बाहर नहीं जाता।"
+  },
+  "eoPassphrase": {
+    "message": "पासफ़्रेज़"
+  },
+  "eoConfirm": {
+    "message": "पुष्टि करें"
+  },
+  "eoCreating": {
+    "message": "बनाया जा रहा है…"
+  },
+  "eoCreateVault": {
+    "message": "वॉल्ट बनाएँ"
+  },
+  "eoWarnForget": {
+    "message": "यदि आप पासफ़्रेज़ भूल जाते हैं, तो आपकी प्रोफ़ाइल पुनर्प्राप्त नहीं की जा सकतीं। कोई रीसेट लिंक नहीं है।"
+  },
+  "eoWarnReenter": {
+    "message": "आपको प्रति ब्राउज़र सत्र एक बार पासफ़्रेज़ फिर से दर्ज करना होगा।"
+  },
+  "eoTooManyAttempts": {
+    "message": "बहुत अधिक गलत प्रयास। लॉकआउट समाप्त होने की प्रतीक्षा करें।"
+  },
+  "eoLockedOut60": {
+    "message": "गलत पासफ़्रेज़ — 60 सेकंड के लिए लॉक किया गया।"
+  },
+  "eoWrongPassAttempts": {
+    "message": "गलत पासफ़्रेज़। लॉकआउट से पहले $1 प्रयास शेष।"
+  },
+  "eoUnlockHeading": {
+    "message": "प्रोफ़ाइल वॉल्ट अनलॉक करें"
+  },
+  "eoUnlockLede": {
+    "message": "सहेजी गई प्रोफ़ाइल तक पहुँचने के लिए अपना पासफ़्रेज़ दर्ज करें।"
+  },
+  "eoLockedTryAgain": {
+    "message": "लॉक — $1 सेकंड में फिर प्रयास करें"
+  },
+  "eoUnlocking": {
+    "message": "अनलॉक हो रहा है…"
+  },
+  "eoUnlock": {
+    "message": "अनलॉक करें"
+  },
+  "eoResetVault": {
+    "message": "वॉल्ट रीसेट करें"
+  },
+  "eoResetTitle": {
+    "message": "वॉल्ट रीसेट करें?"
+  },
+  "eoResetMessage": {
+    "message": "यह सभी सहेजी गई प्रोफ़ाइल स्थायी रूप से नष्ट कर देता है। कोई पूर्ववत और कोई रीसेट लिंक नहीं — उन्हें पुनर्प्राप्त नहीं किया जा सकता।"
+  },
+  "eoCouldNotReadLive": {
+    "message": "लाइव cookies नहीं पढ़ी जा सकीं: $1"
+  },
+  "eoSavedProfile": {
+    "message": "“$1” को $2 cookies के साथ सहेजा गया।"
+  },
+  "eoSwitchFailedBanner": {
+    "message": "“$1” पर स्विच विफल — $2 में से 0 cookies लागू हुईं। पिछली स्थिति पर वापस रोल किया गया।"
+  },
+  "eoSwitchedApplied": {
+    "message": "“$1” पर स्विच किया गया ($2 cookies लागू)।"
+  },
+  "eoSwitchedPartial": {
+    "message": "“$1” पर स्विच किया गया — $2 लागू, $3 विफल।"
+  },
+  "eoDeletedProfile": {
+    "message": "“$1” हटाया गया।"
+  },
+  "eoReloadedTabs": {
+    "message": "$1 $2 टैब रीलोड किए गए।"
+  },
+  "eoVaultUnlocked": {
+    "message": "वॉल्ट अनलॉक किया गया"
+  },
+  "eoLockVault": {
+    "message": "वॉल्ट लॉक करें"
+  },
+  "eoScopeHeading": {
+    "message": "स्कोप"
+  },
+  "eoScopeLede": {
+    "message": "प्रोफ़ाइल होस्ट प्रत्ययों के एक निश्चित सेट पर काम करती हैं। प्रोफ़ाइल स्विच करने से केवल इस स्कोप से मेल खाने वाली cookies प्रभावित होती हैं — अन्य साइटें अछूती रहती हैं।"
+  },
+  "eoSite": {
+    "message": "साइट"
+  },
+  "eoCountingLive": {
+    "message": "लाइव cookies गिनी जा रही हैं…"
+  },
+  "eoLiveCount": {
+    "message": "इस ब्राउज़र में अभी $1 लाइव $2 cookies"
+  },
+  "eoSaveHeading": {
+    "message": "वर्तमान सत्र को प्रोफ़ाइल के रूप में सहेजें"
+  },
+  "eoSaveLede": {
+    "message": "सक्रिय स्कोप से मेल खाने वाली हर cookie कैप्चर करता है। इसे उस $1 खाते में लॉग इन रहते हुए उपयोग करें जिसे आप याद रखना चाहते हैं।"
+  },
+  "eoProfileName": {
+    "message": "प्रोफ़ाइल नाम"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "जैसे “QA खाता 3”"
+  },
+  "eoSavingProfile": {
+    "message": "सहेजा जा रहा है…"
+  },
+  "eoSaveProfile": {
+    "message": "प्रोफ़ाइल सहेजें"
+  },
+  "eoProfilesHeading": {
+    "message": "प्रोफ़ाइल"
+  },
+  "eoNoProfilesYet": {
+    "message": "अभी कोई प्रोफ़ाइल नहीं। एक बनाने के लिए ऊपर अपना वर्तमान सत्र सहेजें।"
+  },
+  "eoProfilesCount": {
+    "message": "इस वॉल्ट में $1 प्रोफ़ाइल।"
+  },
+  "eoNoProfilesScope": {
+    "message": "सक्रिय स्कोप से कोई प्रोफ़ाइल मेल नहीं खाती।"
+  },
+  "eoProfileCookies": {
+    "message": "$1 cookies"
+  },
+  "eoProfileSwitching": {
+    "message": "स्विच हो रहा है…"
+  },
+  "eoProfileSwitch": {
+    "message": "स्विच करें"
+  },
+  "eoProfileDelete": {
+    "message": "हटाएँ"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "$1 खुले टैब को रिफ़्रेश की ज़रूरत है।"
+  },
+  "eoReloadTabs": {
+    "message": "टैब रीलोड करें"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "प्रोफ़ाइल स्विच करें?"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "“$1” पर स्विच करें? आपकी मौजूदा $2 cookies बदल दी जाएँगी, और बाद में खुले $2 टैब को रिफ़्रेश की ज़रूरत होगी।"
+  },
+  "eoSwitchConfirm": {
+    "message": "स्विच करें"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "प्रोफ़ाइल हटाएँ?"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "“$1” हटाएँ? इसे पूर्ववत नहीं किया जा सकता।"
+  },
+  "eoDeleteConfirm": {
+    "message": "हटाएँ"
+  },
+  "eoSafetyHeading": {
+    "message": "सुरक्षा नोट्स"
+  },
+  "eoSafety1": {
+    "message": "प्रोफ़ाइल का उपयोग केवल उन खातों के लिए करें जिनके आप स्वामी हैं या परीक्षण के लिए अधिकृत हैं। उन खातों पर सत्र cookies का पुनः उपयोग जिन्हें आप नियंत्रित नहीं करते, अधिकांश साइटों पर सेवा की शर्तों का उल्लंघन है और अवैध हो सकता है।"
+  },
+  "eoSafety2": {
+    "message": "नई cookies उठाने के लिए ब्राउज़र को खुले $1 टैब रिफ़्रेश करने होंगे। लंबे समय तक चलने वाले WebSocket / SSE कनेक्शन से जुड़ी cookies पेज रीलोड होने तक बनी रह सकती हैं।"
+  },
+  "eoSafety3": {
+    "message": "कुछ साइटें सत्र cookies को अन्य संकेतों (डिवाइस फ़िंगरप्रिंट, IP) से बाँध देती हैं। केवल cookies स्विच करने से री-लॉगिन या सुरक्षा चुनौती ट्रिगर हो सकती है — यह साइट का जोखिम नियंत्रण है, CookieVault में बग नहीं।"
+  },
+  "themeToggle": {
+    "message": "थीम बदलें"
+  },
+  "apCodeLabel": {
+    "message": "साइन-इन कोड"
+  },
+  "apVerifyCode": {
+    "message": "साइन-इन पूरा करें"
+  },
+  "apVerifying": {
+    "message": "सत्यापित किया जा रहा है…"
+  },
+  "scopeCurrent": {
+    "message": "यह साइट"
+  },
+  "scopeAll": {
+    "message": "सभी कुकीज़"
+  },
+  "copyValue": {
+    "message": "मान कॉपी करें"
+  },
+  "copied": {
+    "message": "कॉपी हो गया"
+  },
+  "deleteDomain": {
+    "message": "इस डोमेन की सभी हटाएँ"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "ये कुकीज़ हटाएँ?"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "$1 की सभी कुकीज़ हटाएँ?"
+  },
+  "noCookiesThisSite": {
+    "message": "इस साइट के लिए कोई कुकी नहीं।"
+  },
+  "toastCopied": {
+    "message": "मान कॉपी हो गया"
+  },
+  "errNameFormat": {
+    "message": "कुकी नाम में स्पेस, `;` या `=` नहीं हो सकते।"
+  },
+  "errDomainFormat": {
+    "message": "डोमेन अमान्य लगता है — होस्टनाम दर्ज करें, बिना स्पेस या स्कीम के।"
+  },
+  "errHostPrefix": {
+    "message": "__Host- कुकीज़ Secure होनी चाहिए, पथ \"/\" का उपयोग करें, और host-only होनी चाहिए (कोई डोमेन नहीं)।"
+  },
+  "errSecurePrefix": {
+    "message": "__Secure- कुकीज़ Secure होनी चाहिए।"
+  },
+  "errExpiryInvalid": {
+    "message": "एक मान्य समाप्ति तिथि चुनें।"
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "खोज साफ़ करें"
+  },
+  "moreFields": {
+    "message": "और फ़ील्ड…"
+  },
+  "prefLanguage": {
+    "message": "भाषा"
+  },
+  "langSystem": {
+    "message": "सिस्टम (ब्राउज़र)"
+  }
+}

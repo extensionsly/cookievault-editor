@@ -1,0 +1,584 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "Pengelola cookie MV3: edit, cari, impor & ekspor — sumber terbuka."
+  },
+  "filterPlaceholder": {
+    "message": "Saring berdasarkan domain atau nama…"
+  },
+  "filterAriaLabel": {
+    "message": "Saring cookie berdasarkan domain atau nama"
+  },
+  "buttonAdd": {
+    "message": "Tambah"
+  },
+  "buttonImport": {
+    "message": "Impor"
+  },
+  "buttonExport": {
+    "message": "Ekspor"
+  },
+  "loadingCookies": {
+    "message": "Memuat cookie…"
+  },
+  "clearFilter": {
+    "message": "Hapus saringan"
+  },
+  "errorReadCookies": {
+    "message": "Tidak dapat membaca cookie."
+  },
+  "statsFiltered": {
+    "message": "$1 dari $2 · $3 domain"
+  },
+  "statsAll": {
+    "message": "$1 · $2 domain"
+  },
+  "cookieFlagsAria": {
+    "message": "atribut cookie"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "Partitioned (CHIPS)"
+  },
+  "emptyValue": {
+    "message": "kosong"
+  },
+  "editAria": {
+    "message": "Ubah $1"
+  },
+  "editTitle": {
+    "message": "Ubah"
+  },
+  "deleteAria": {
+    "message": "Hapus $1"
+  },
+  "deleteTitle": {
+    "message": "Hapus"
+  },
+  "noCookiesMatch": {
+    "message": "Tidak ada cookie yang cocok dengan “$1”."
+  },
+  "noCookiesYet": {
+    "message": "Belum ada cookie di halaman ini."
+  },
+  "optionsButton": {
+    "message": "Opsi"
+  },
+  "dismiss": {
+    "message": "Tutup"
+  },
+  "deleteCookieTitle": {
+    "message": "Hapus cookie?"
+  },
+  "deleteCookieMessage": {
+    "message": "Hapus “$1” di $2? Tindakan ini tidak dapat dibatalkan."
+  },
+  "buttonDelete": {
+    "message": "Hapus"
+  },
+  "cancel": {
+    "message": "Batal"
+  },
+  "toastDeleted": {
+    "message": "$1 dihapus"
+  },
+  "toastSaved": {
+    "message": "$1 disimpan"
+  },
+  "toastExported": {
+    "message": "$1 cookie diekspor"
+  },
+  "toastImported": {
+    "message": "$1 cookie diimpor dari $2"
+  },
+  "toastImportedPartial": {
+    "message": "$1 dari $2 diimpor ($3 gagal)"
+  },
+  "editCookieTitle": {
+    "message": "Ubah cookie"
+  },
+  "close": {
+    "message": "Tutup"
+  },
+  "fieldName": {
+    "message": "Nama"
+  },
+  "fieldDomain": {
+    "message": "Domain"
+  },
+  "fieldPath": {
+    "message": "Jalur"
+  },
+  "fieldValue": {
+    "message": "Nilai"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "Host-only"
+  },
+  "expiryLegend": {
+    "message": "Kedaluwarsa"
+  },
+  "expirySession": {
+    "message": "Sesi"
+  },
+  "expiryUntil": {
+    "message": "Sampai"
+  },
+  "timezoneHint": {
+    "message": "Waktu ditampilkan dalam zona waktu lokal Anda."
+  },
+  "buttonSave": {
+    "message": "Simpan"
+  },
+  "saving": {
+    "message": "Menyimpan…"
+  },
+  "profilesLoading": {
+    "message": "Profil…"
+  },
+  "setupVault": {
+    "message": "Profil · Siapkan brankas →"
+  },
+  "unlockInOptions": {
+    "message": "Profil terkunci · Buka di Opsi →"
+  },
+  "profileScopeAria": {
+    "message": "Cakupan profil"
+  },
+  "lockVault": {
+    "message": "Kunci brankas"
+  },
+  "lockButton": {
+    "message": "Kunci"
+  },
+  "noProfilesForScope": {
+    "message": "Tidak ada profil untuk $1."
+  },
+  "saveOne": {
+    "message": "Simpan satu →"
+  },
+  "switchButton": {
+    "message": "Ganti"
+  },
+  "switching": {
+    "message": "Mengganti…"
+  },
+  "cookiesInScope": {
+    "message": "cookie dalam cakupan"
+  },
+  "tabsNeedRefresh": {
+    "message": "$1 $2 tab perlu disegarkan"
+  },
+  "reloadButton": {
+    "message": "Muat ulang"
+  },
+  "switchProfileTitle": {
+    "message": "Ganti profil?"
+  },
+  "switchProfileMessage": {
+    "message": "Ganti ke “$1”? Cookie $2 Anda saat ini akan diganti."
+  },
+  "switchConfirm": {
+    "message": "Ganti"
+  },
+  "toastSwitchFailed": {
+    "message": "Gagal mengganti — 0 dari $1 cookie diterapkan. Dikembalikan."
+  },
+  "toastSwitched": {
+    "message": "Beralih ke “$1” ($2 cookie)"
+  },
+  "toastSwitchedPartial": {
+    "message": "Beralih — $1 diterapkan, $2 gagal"
+  },
+  "toastReloaded": {
+    "message": "$1 $2 tab dimuat ulang"
+  },
+  "justNow": {
+    "message": "baru saja"
+  },
+  "minutesAgo": {
+    "message": "$1 mnt lalu"
+  },
+  "hoursAgo": {
+    "message": "$1 jam lalu"
+  },
+  "apAccount": {
+    "message": "Akun"
+  },
+  "apSignInLede": {
+    "message": "Masuk dengan email untuk mengaktifkan sinkronisasi terenkripsi lintas perangkat. Sinkronisasi dienkripsi ujung-ke-ujung — bahkan kami pun tidak dapat membaca data sinkron Anda."
+  },
+  "apEmail": {
+    "message": "Email"
+  },
+  "apSending": {
+    "message": "Mengirim…"
+  },
+  "apSendMagicLink": {
+    "message": "Kirim tautan masuk"
+  },
+  "apMagicSent": {
+    "message": "Tautan masuk terkirim — periksa email Anda. Tautan kedaluwarsa dalam 3 menit."
+  },
+  "apSignedInAs": {
+    "message": "Masuk sebagai"
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "Gratis"
+  },
+  "apPlanLabel": {
+    "message": "paket"
+  },
+  "apUpgrade": {
+    "message": "Tingkatkan"
+  },
+  "apSyncing": {
+    "message": "Menyinkronkan…"
+  },
+  "apSyncNow": {
+    "message": "Sinkronkan sekarang"
+  },
+  "apSignOut": {
+    "message": "Keluar"
+  },
+  "apLastSynced": {
+    "message": "Terakhir disinkronkan $1"
+  },
+  "apNotSynced": {
+    "message": "Belum disinkronkan"
+  },
+  "apReloadBanner": {
+    "message": "Brankas jarak jauh telah ditarik. Muat ulang halaman ini untuk menerapkannya."
+  },
+  "apReload": {
+    "message": "Muat ulang"
+  },
+  "apConflict": {
+    "message": "Konflik — perangkat lain memperbarui brankas ini. Selesaikan:"
+  },
+  "apKeepMine": {
+    "message": "Pakai milik saya"
+  },
+  "apKeepMineTitle": {
+    "message": "Timpa brankas jarak jauh dengan versi lokal Anda. Perubahan dari perangkat lain akan hilang."
+  },
+  "apTakeTheirs": {
+    "message": "Pakai milik mereka"
+  },
+  "apTakeTheirsTitle": {
+    "message": "Ganti brankas lokal Anda dengan versi jarak jauh. Perubahan lokal yang belum disinkronkan akan hilang."
+  },
+  "apResultSynced": {
+    "message": "Sudah terbaru."
+  },
+  "apResultPushed": {
+    "message": "Perubahan lokal dikirim ke server."
+  },
+  "apResultPulled": {
+    "message": "Brankas jarak jauh ditarik. Muat ulang agar berlaku."
+  },
+  "apResultNoAuth": {
+    "message": "Perlu masuk terlebih dahulu."
+  },
+  "apResultConflict": {
+    "message": "Konflik — selesaikan di atas."
+  },
+  "apResultOffline": {
+    "message": "Anda sedang luring — sinkronisasi akan dicoba lagi saat Anda kembali daring."
+  },
+  "apResultError": {
+    "message": "Galat sinkronisasi: $1"
+  },
+  "apTelemetry": {
+    "message": "Kirim laporan galat anonim — tanpa URL, domain cookie, atau alamat email. Nonaktif secara bawaan."
+  },
+  "apHowThisWorks": {
+    "message": "Cara kerjanya"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — Opsi"
+  },
+  "eoLead": {
+    "message": "Kelola profil cookie terenkripsi — simpan status login dan beralih antar akun kapan saja."
+  },
+  "eoLoadingVault": {
+    "message": "Memuat brankas…"
+  },
+  "eoStrengthAria": {
+    "message": "Kekuatan: $1"
+  },
+  "eoCracksIn": {
+    "message": "· dibobol dalam $1"
+  },
+  "eoPassphraseWeak": {
+    "message": "Frasa sandi tergolong “$1”. Pilih yang lebih kuat — kalimat acak yang panjang paling efektif."
+  },
+  "eoPassMismatch": {
+    "message": "Frasa sandi tidak cocok."
+  },
+  "eoSetupHeading": {
+    "message": "Siapkan brankas profil"
+  },
+  "eoSetupLede": {
+    "message": "Cookie profil dienkripsi saat tersimpan dengan AES-256-GCM. Kuncinya diturunkan dari frasa sandi Anda melalui PBKDF2 (600.000 iterasi). Frasa sandi tidak pernah disimpan dan tidak pernah meninggalkan perangkat ini."
+  },
+  "eoPassphrase": {
+    "message": "Frasa sandi"
+  },
+  "eoConfirm": {
+    "message": "Konfirmasi"
+  },
+  "eoCreating": {
+    "message": "Membuat…"
+  },
+  "eoCreateVault": {
+    "message": "Buat brankas"
+  },
+  "eoWarnForget": {
+    "message": "Jika Anda lupa frasa sandi, profil Anda tidak dapat dipulihkan. Tidak ada tautan setel ulang."
+  },
+  "eoWarnReenter": {
+    "message": "Anda akan memasukkan frasa sandi sekali per sesi peramban."
+  },
+  "eoTooManyAttempts": {
+    "message": "Terlalu banyak percobaan salah. Tunggu hingga masa penguncian berakhir."
+  },
+  "eoLockedOut60": {
+    "message": "Frasa sandi salah — terkunci selama 60 detik."
+  },
+  "eoWrongPassAttempts": {
+    "message": "Frasa sandi salah. $1 percobaan tersisa sebelum penguncian."
+  },
+  "eoUnlockHeading": {
+    "message": "Buka brankas profil"
+  },
+  "eoUnlockLede": {
+    "message": "Masukkan frasa sandi Anda untuk mengakses profil tersimpan."
+  },
+  "eoLockedTryAgain": {
+    "message": "Terkunci — coba lagi dalam $1d"
+  },
+  "eoUnlocking": {
+    "message": "Membuka…"
+  },
+  "eoUnlock": {
+    "message": "Buka"
+  },
+  "eoResetVault": {
+    "message": "Setel ulang brankas"
+  },
+  "eoResetTitle": {
+    "message": "Setel ulang brankas?"
+  },
+  "eoResetMessage": {
+    "message": "Ini menghancurkan secara permanen semua profil tersimpan. Tidak ada pembatalan dan tidak ada tautan setel ulang — profil tidak dapat dipulihkan."
+  },
+  "eoCouldNotReadLive": {
+    "message": "Tidak dapat membaca cookie langsung: $1"
+  },
+  "eoSavedProfile": {
+    "message": "Menyimpan “$1” dengan $2 cookie."
+  },
+  "eoSwitchFailedBanner": {
+    "message": "Gagal beralih ke “$1” — 0 dari $2 cookie diterapkan. Dikembalikan ke kondisi sebelumnya."
+  },
+  "eoSwitchedApplied": {
+    "message": "Beralih ke “$1” ($2 cookie diterapkan)."
+  },
+  "eoSwitchedPartial": {
+    "message": "Beralih ke “$1” — $2 diterapkan, $3 gagal."
+  },
+  "eoDeletedProfile": {
+    "message": "Menghapus “$1”."
+  },
+  "eoReloadedTabs": {
+    "message": "$1 $2 tab dimuat ulang."
+  },
+  "eoVaultUnlocked": {
+    "message": "Brankas terbuka"
+  },
+  "eoLockVault": {
+    "message": "Kunci brankas"
+  },
+  "eoScopeHeading": {
+    "message": "Cakupan"
+  },
+  "eoScopeLede": {
+    "message": "Profil beroperasi pada sekumpulan akhiran host yang tetap. Mengganti profil hanya menyentuh cookie yang cocok dengan cakupan ini — situs lain tetap utuh."
+  },
+  "eoSite": {
+    "message": "Situs"
+  },
+  "eoCountingLive": {
+    "message": "Menghitung cookie langsung…"
+  },
+  "eoLiveCount": {
+    "message": "$1 cookie $2 aktif di peramban ini saat ini"
+  },
+  "eoSaveHeading": {
+    "message": "Simpan sesi saat ini sebagai profil"
+  },
+  "eoSaveLede": {
+    "message": "Menangkap setiap cookie yang cocok dengan cakupan aktif. Gunakan ini saat Anda masuk ke akun $1 yang ingin Anda ingat."
+  },
+  "eoProfileName": {
+    "message": "Nama profil"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "mis. “Akun QA 3”"
+  },
+  "eoSavingProfile": {
+    "message": "Menyimpan…"
+  },
+  "eoSaveProfile": {
+    "message": "Simpan profil"
+  },
+  "eoProfilesHeading": {
+    "message": "Profil"
+  },
+  "eoNoProfilesYet": {
+    "message": "Belum ada profil. Simpan sesi Anda saat ini di atas untuk membuat satu."
+  },
+  "eoProfilesCount": {
+    "message": "$1 profil dalam brankas ini."
+  },
+  "eoNoProfilesScope": {
+    "message": "Tidak ada profil yang cocok dengan cakupan aktif."
+  },
+  "eoProfileCookies": {
+    "message": "$1 cookie"
+  },
+  "eoProfileSwitching": {
+    "message": "Mengganti…"
+  },
+  "eoProfileSwitch": {
+    "message": "Ganti"
+  },
+  "eoProfileDelete": {
+    "message": "Hapus"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "$1 tab terbuka perlu disegarkan."
+  },
+  "eoReloadTabs": {
+    "message": "Muat ulang tab"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "Ganti profil?"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "Ganti ke “$1”? Cookie $2 Anda saat ini akan diganti, dan tab $2 yang terbuka perlu disegarkan setelahnya."
+  },
+  "eoSwitchConfirm": {
+    "message": "Ganti"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "Hapus profil?"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "Hapus “$1”? Tindakan ini tidak dapat dibatalkan."
+  },
+  "eoDeleteConfirm": {
+    "message": "Hapus"
+  },
+  "eoSafetyHeading": {
+    "message": "Catatan keamanan"
+  },
+  "eoSafety1": {
+    "message": "Hanya gunakan profil untuk akun yang Anda miliki atau yang Anda berwenang untuk uji. Menggunakan kembali cookie sesi pada akun yang tidak Anda kendalikan adalah pelanggaran Ketentuan Layanan di sebagian besar situs dan dapat melanggar hukum."
+  },
+  "eoSafety2": {
+    "message": "Peramban harus menyegarkan tab $1 yang terbuka untuk mengambil cookie baru. Cookie yang terhubung ke koneksi WebSocket / SSE jangka panjang mungkin bertahan hingga halaman dimuat ulang."
+  },
+  "eoSafety3": {
+    "message": "Beberapa situs mengikat cookie sesi ke sinyal lain (sidik jari perangkat, IP). Mengganti cookie saja dapat memicu login ulang atau tantangan keamanan — itu kontrol risiko situs, bukan bug di CookieVault."
+  },
+  "themeToggle": {
+    "message": "Ganti tema"
+  },
+  "apCodeLabel": {
+    "message": "Kode masuk"
+  },
+  "apVerifyCode": {
+    "message": "Selesaikan proses masuk"
+  },
+  "apVerifying": {
+    "message": "Memverifikasi…"
+  },
+  "scopeCurrent": {
+    "message": "Situs ini"
+  },
+  "scopeAll": {
+    "message": "Semua cookie"
+  },
+  "copyValue": {
+    "message": "Salin nilai"
+  },
+  "copied": {
+    "message": "Disalin"
+  },
+  "deleteDomain": {
+    "message": "Hapus semua di domain ini"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "Hapus cookie ini?"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "Hapus semua cookie untuk $1?"
+  },
+  "noCookiesThisSite": {
+    "message": "Tidak ada cookie untuk situs ini."
+  },
+  "toastCopied": {
+    "message": "Nilai disalin"
+  },
+  "errNameFormat": {
+    "message": "Nama cookie tidak boleh berisi spasi, `;`, atau `=`."
+  },
+  "errDomainFormat": {
+    "message": "Domain tampak tidak valid — masukkan nama host, tanpa spasi atau skema."
+  },
+  "errHostPrefix": {
+    "message": "Cookie __Host- harus Secure, gunakan path \"/\", dan bersifat host-only (tanpa domain)."
+  },
+  "errSecurePrefix": {
+    "message": "Cookie __Secure- harus Secure."
+  },
+  "errExpiryInvalid": {
+    "message": "Pilih tanggal kedaluwarsa yang valid."
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "Hapus pencarian"
+  },
+  "moreFields": {
+    "message": "Bidang lainnya…"
+  },
+  "prefLanguage": {
+    "message": "Bahasa"
+  },
+  "langSystem": {
+    "message": "Sistem (peramban)"
+  }
+}

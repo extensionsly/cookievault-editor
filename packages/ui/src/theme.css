@@ -1,0 +1,50 @@
+/**
+ * Shared neutral + semantic theme tokens (light + dark).
+ *
+ * Values come from the verified CookieVault color system (Design System v2 —
+ * "A color system that means privacy", WCAG AA checked). Neutrals carry a
+ * faint indigo cast so surfaces feel related to the brand. Only `--accent`
+ * (editor Signal Blue / guardian Guard Green) plus its `--accent-soft` /
+ * `--accent-on` tints stay local to each app. Import via
+ * `@cookievault/ui/theme.css` alongside `tokens.css`.
+ *
+ * Dark mode follows the system preference (prefers-color-scheme); semantic
+ * colors are mode-independent (they always pair with a label + icon, never
+ * color alone).
+ */
+
+:root {
+  --bg: #ffffff;
+  --bg-subtle: #f6f6fa;
+  --card: #ffffff;
+  --fg: #20212b;
+  --fg-2: #53555e;
+  --muted: #70717a;
+  --border: #e3e4e9;
+  --border-strong: #cfd0d8;
+  --row-hover: #f0f0f5;
+
+  /* Semantic — each always ships with a label + icon (§05). */
+  --success: #3b9555;
+  --warning: #de9c31;
+  --danger: #cf4040;
+  --info: #0077cd;
+}
+
+/*
+ * Dark theme. Applied when the root element carries `data-theme="dark"`, which
+ * `initTheme()` (packages/ui theme.ts) sets before first paint — from the
+ * persisted user choice, or the OS preference when there's no choice yet. A
+ * manual toggle in the popup header overrides the system preference.
+ */
+[data-theme='dark'] {
+  --bg: #101118;
+  --bg-subtle: #181922;
+  --card: #1d1e29;
+  --fg: #f1f1f5;
+  --fg-2: #b6b7be;
+  --muted: #84858d;
+  --border: #31323d;
+  --border-strong: #41424e;
+  --row-hover: #25262f;
+}

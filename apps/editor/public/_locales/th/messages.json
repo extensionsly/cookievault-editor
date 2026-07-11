@@ -1,0 +1,584 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "ตัวจัดการคุกกี้ MV3: แก้ไข ค้นหา นำเข้าและส่งออก — โอเพนซอร์ส"
+  },
+  "filterPlaceholder": {
+    "message": "กรองตามโดเมนหรือชื่อ…"
+  },
+  "filterAriaLabel": {
+    "message": "กรองคุกกี้ตามโดเมนหรือชื่อ"
+  },
+  "buttonAdd": {
+    "message": "เพิ่ม"
+  },
+  "buttonImport": {
+    "message": "นำเข้า"
+  },
+  "buttonExport": {
+    "message": "ส่งออก"
+  },
+  "loadingCookies": {
+    "message": "กำลังโหลดคุกกี้…"
+  },
+  "clearFilter": {
+    "message": "ล้างตัวกรอง"
+  },
+  "errorReadCookies": {
+    "message": "ไม่สามารถอ่านคุกกี้ได้"
+  },
+  "statsFiltered": {
+    "message": "$1 จาก $2 · $3 โดเมน"
+  },
+  "statsAll": {
+    "message": "$1 · $2 โดเมน"
+  },
+  "cookieFlagsAria": {
+    "message": "แฟล็กคุกกี้"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "Partitioned (CHIPS)"
+  },
+  "emptyValue": {
+    "message": "ว่าง"
+  },
+  "editAria": {
+    "message": "แก้ไข $1"
+  },
+  "editTitle": {
+    "message": "แก้ไข"
+  },
+  "deleteAria": {
+    "message": "ลบ $1"
+  },
+  "deleteTitle": {
+    "message": "ลบ"
+  },
+  "noCookiesMatch": {
+    "message": "ไม่มีคุกกี้ที่ตรงกับ “$1”"
+  },
+  "noCookiesYet": {
+    "message": "ยังไม่มีคุกกี้ในหน้านี้"
+  },
+  "optionsButton": {
+    "message": "ตัวเลือก"
+  },
+  "dismiss": {
+    "message": "ปิด"
+  },
+  "deleteCookieTitle": {
+    "message": "ลบคุกกี้ใช่ไหม"
+  },
+  "deleteCookieMessage": {
+    "message": "ลบ “$1” บน $2 ใช่ไหม การกระทำนี้ไม่สามารถย้อนกลับได้"
+  },
+  "buttonDelete": {
+    "message": "ลบ"
+  },
+  "cancel": {
+    "message": "ยกเลิก"
+  },
+  "toastDeleted": {
+    "message": "ลบ $1 แล้ว"
+  },
+  "toastSaved": {
+    "message": "บันทึก $1 แล้ว"
+  },
+  "toastExported": {
+    "message": "ส่งออกคุกกี้ $1 รายการแล้ว"
+  },
+  "toastImported": {
+    "message": "นำเข้าคุกกี้ $1 รายการจาก $2 แล้ว"
+  },
+  "toastImportedPartial": {
+    "message": "นำเข้า $1 จาก $2 ($3 ล้มเหลว)"
+  },
+  "editCookieTitle": {
+    "message": "แก้ไขคุกกี้"
+  },
+  "close": {
+    "message": "ปิด"
+  },
+  "fieldName": {
+    "message": "ชื่อ"
+  },
+  "fieldDomain": {
+    "message": "โดเมน"
+  },
+  "fieldPath": {
+    "message": "พาธ"
+  },
+  "fieldValue": {
+    "message": "ค่า"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "Host-only"
+  },
+  "expiryLegend": {
+    "message": "วันหมดอายุ"
+  },
+  "expirySession": {
+    "message": "เซสชัน"
+  },
+  "expiryUntil": {
+    "message": "จนถึง"
+  },
+  "timezoneHint": {
+    "message": "เวลาแสดงตามเขตเวลาท้องถิ่นของคุณ"
+  },
+  "buttonSave": {
+    "message": "บันทึก"
+  },
+  "saving": {
+    "message": "กำลังบันทึก…"
+  },
+  "profilesLoading": {
+    "message": "โปรไฟล์…"
+  },
+  "setupVault": {
+    "message": "โปรไฟล์ · ตั้งค่าตู้นิรภัย →"
+  },
+  "unlockInOptions": {
+    "message": "โปรไฟล์ถูกล็อก · ปลดล็อกในตัวเลือก →"
+  },
+  "profileScopeAria": {
+    "message": "ขอบเขตโปรไฟล์"
+  },
+  "lockVault": {
+    "message": "ล็อกตู้นิรภัย"
+  },
+  "lockButton": {
+    "message": "ล็อก"
+  },
+  "noProfilesForScope": {
+    "message": "ไม่มีโปรไฟล์สำหรับ $1"
+  },
+  "saveOne": {
+    "message": "บันทึกหนึ่งรายการ →"
+  },
+  "switchButton": {
+    "message": "สลับ"
+  },
+  "switching": {
+    "message": "กำลังสลับ…"
+  },
+  "cookiesInScope": {
+    "message": "คุกกี้ในขอบเขต"
+  },
+  "tabsNeedRefresh": {
+    "message": "$1 แท็บ $2 ต้องรีเฟรช"
+  },
+  "reloadButton": {
+    "message": "โหลดใหม่"
+  },
+  "switchProfileTitle": {
+    "message": "สลับโปรไฟล์ใช่ไหม"
+  },
+  "switchProfileMessage": {
+    "message": "สลับไปยัง “$1” ใช่ไหม คุกกี้ $2 รายการปัจจุบันของคุณจะถูกแทนที่"
+  },
+  "switchConfirm": {
+    "message": "สลับ"
+  },
+  "toastSwitchFailed": {
+    "message": "สลับล้มเหลว — ใช้คุกกี้ได้ 0 จาก $1 รายการ ย้อนกลับแล้ว"
+  },
+  "toastSwitched": {
+    "message": "สลับไปยัง “$1” แล้ว (คุกกี้ $2 รายการ)"
+  },
+  "toastSwitchedPartial": {
+    "message": "สลับแล้ว — $1 สำเร็จ, $2 ล้มเหลว"
+  },
+  "toastReloaded": {
+    "message": "โหลดแท็บ $1 $2 ใหม่แล้ว"
+  },
+  "justNow": {
+    "message": "เมื่อสักครู่"
+  },
+  "minutesAgo": {
+    "message": "$1 นาทีที่แล้ว"
+  },
+  "hoursAgo": {
+    "message": "$1 ชั่วโมงที่แล้ว"
+  },
+  "apAccount": {
+    "message": "บัญชี"
+  },
+  "apSignInLede": {
+    "message": "ลงชื่อเข้าใช้ด้วยอีเมลเพื่อเปิดใช้การซิงค์ข้ามอุปกรณ์แบบเข้ารหัส การซิงค์เข้ารหัสแบบ end-to-end — แม้แต่เราก็ไม่สามารถอ่านข้อมูลที่ซิงค์ของคุณได้"
+  },
+  "apEmail": {
+    "message": "อีเมล"
+  },
+  "apSending": {
+    "message": "กำลังส่ง…"
+  },
+  "apSendMagicLink": {
+    "message": "ส่งลิงก์เข้าสู่ระบบ"
+  },
+  "apMagicSent": {
+    "message": "ส่งลิงก์เข้าสู่ระบบแล้ว — ตรวจสอบอีเมลของคุณ ลิงก์จะหมดอายุใน 3 นาที"
+  },
+  "apSignedInAs": {
+    "message": "ลงชื่อเข้าใช้เป็น"
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "ฟรี"
+  },
+  "apPlanLabel": {
+    "message": "แพ็กเกจ"
+  },
+  "apUpgrade": {
+    "message": "อัปเกรด"
+  },
+  "apSyncing": {
+    "message": "กำลังซิงค์…"
+  },
+  "apSyncNow": {
+    "message": "ซิงค์ตอนนี้"
+  },
+  "apSignOut": {
+    "message": "ออกจากระบบ"
+  },
+  "apLastSynced": {
+    "message": "ซิงค์ล่าสุด $1"
+  },
+  "apNotSynced": {
+    "message": "ยังไม่ได้ซิงค์"
+  },
+  "apReloadBanner": {
+    "message": "ดึงตู้นิรภัยจากระยะไกลแล้ว โหลดหน้านี้ใหม่เพื่อนำไปใช้"
+  },
+  "apReload": {
+    "message": "โหลดใหม่"
+  },
+  "apConflict": {
+    "message": "ความขัดแย้ง — อุปกรณ์อื่นอัปเดตตู้นิรภัยนี้ แก้ไข:"
+  },
+  "apKeepMine": {
+    "message": "ใช้ของฉัน"
+  },
+  "apKeepMineTitle": {
+    "message": "เขียนทับตู้นิรภัยระยะไกลด้วยเวอร์ชันในเครื่องของคุณ การเปลี่ยนแปลงจากอุปกรณ์อื่นจะสูญหาย"
+  },
+  "apTakeTheirs": {
+    "message": "ใช้ของอีกฝ่าย"
+  },
+  "apTakeTheirsTitle": {
+    "message": "แทนที่ตู้นิรภัยในเครื่องของคุณด้วยเวอร์ชันระยะไกล การเปลี่ยนแปลงในเครื่องที่ยังไม่ได้ซิงค์จะสูญหาย"
+  },
+  "apResultSynced": {
+    "message": "เป็นปัจจุบันแล้ว"
+  },
+  "apResultPushed": {
+    "message": "ส่งการเปลี่ยนแปลงในเครื่องไปยังเซิร์ฟเวอร์แล้ว"
+  },
+  "apResultPulled": {
+    "message": "ดึงตู้นิรภัยระยะไกลแล้ว โหลดใหม่เพื่อให้มีผล"
+  },
+  "apResultNoAuth": {
+    "message": "ต้องลงชื่อเข้าใช้"
+  },
+  "apResultConflict": {
+    "message": "ความขัดแย้ง — แก้ไขด้านบน"
+  },
+  "apResultOffline": {
+    "message": "คุณออฟไลน์อยู่ — จะลองซิงค์อีกครั้งเมื่อกลับมาออนไลน์"
+  },
+  "apResultError": {
+    "message": "ข้อผิดพลาดการซิงค์: $1"
+  },
+  "apTelemetry": {
+    "message": "ส่งรายงานข้อผิดพลาดแบบไม่ระบุตัวตน — ไม่มี URL โดเมนคุกกี้ หรือที่อยู่อีเมล ปิดไว้โดยค่าเริ่มต้น"
+  },
+  "apHowThisWorks": {
+    "message": "วิธีการทำงาน"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — ตัวเลือก"
+  },
+  "eoLead": {
+    "message": "จัดการโปรไฟล์คุกกี้ที่เข้ารหัส — บันทึกสถานะการเข้าสู่ระบบและสลับระหว่างบัญชีได้ทุกเมื่อ"
+  },
+  "eoLoadingVault": {
+    "message": "กำลังโหลดตู้นิรภัย…"
+  },
+  "eoStrengthAria": {
+    "message": "ความแข็งแรง: $1"
+  },
+  "eoCracksIn": {
+    "message": "· ถูกเจาะได้ใน $1"
+  },
+  "eoPassphraseWeak": {
+    "message": "ความแข็งแรงของวลีรหัสผ่านอยู่ในระดับ “$1” เลือกอะไรที่แข็งแรงกว่านี้ — ประโยคยาวแบบสุ่มได้ผลดีที่สุด"
+  },
+  "eoPassMismatch": {
+    "message": "วลีรหัสผ่านไม่ตรงกัน"
+  },
+  "eoSetupHeading": {
+    "message": "ตั้งค่าตู้นิรภัยโปรไฟล์"
+  },
+  "eoSetupLede": {
+    "message": "คุกกี้โปรไฟล์ถูกเข้ารหัสขณะจัดเก็บด้วย AES-256-GCM คีย์ถูกสร้างจากวลีรหัสผ่านของคุณผ่าน PBKDF2 (600,000 รอบ) วลีรหัสผ่านจะไม่ถูกจัดเก็บและไม่เคยออกจากอุปกรณ์นี้"
+  },
+  "eoPassphrase": {
+    "message": "วลีรหัสผ่าน"
+  },
+  "eoConfirm": {
+    "message": "ยืนยัน"
+  },
+  "eoCreating": {
+    "message": "กำลังสร้าง…"
+  },
+  "eoCreateVault": {
+    "message": "สร้างตู้นิรภัย"
+  },
+  "eoWarnForget": {
+    "message": "หากคุณลืมวลีรหัสผ่าน โปรไฟล์ของคุณจะกู้คืนไม่ได้ ไม่มีลิงก์รีเซ็ต"
+  },
+  "eoWarnReenter": {
+    "message": "คุณจะต้องป้อนวลีรหัสผ่านอีกครั้งหนึ่งครั้งในแต่ละเซสชันของเบราว์เซอร์"
+  },
+  "eoTooManyAttempts": {
+    "message": "พยายามผิดมากเกินไป รอให้การล็อกหมดเวลา"
+  },
+  "eoLockedOut60": {
+    "message": "วลีรหัสผ่านผิด — ถูกล็อกเป็นเวลา 60 วินาที"
+  },
+  "eoWrongPassAttempts": {
+    "message": "วลีรหัสผ่านผิด เหลืออีก $1 ครั้งก่อนถูกล็อก"
+  },
+  "eoUnlockHeading": {
+    "message": "ปลดล็อกตู้นิรภัยโปรไฟล์"
+  },
+  "eoUnlockLede": {
+    "message": "ป้อนวลีรหัสผ่านของคุณเพื่อเข้าถึงโปรไฟล์ที่บันทึกไว้"
+  },
+  "eoLockedTryAgain": {
+    "message": "ถูกล็อก — ลองอีกครั้งใน $1 วินาที"
+  },
+  "eoUnlocking": {
+    "message": "กำลังปลดล็อก…"
+  },
+  "eoUnlock": {
+    "message": "ปลดล็อก"
+  },
+  "eoResetVault": {
+    "message": "รีเซ็ตตู้นิรภัย"
+  },
+  "eoResetTitle": {
+    "message": "รีเซ็ตตู้นิรภัยใช่ไหม"
+  },
+  "eoResetMessage": {
+    "message": "การกระทำนี้จะทำลายโปรไฟล์ที่บันทึกไว้ทั้งหมดอย่างถาวร ไม่สามารถย้อนกลับและไม่มีลิงก์รีเซ็ต — ไม่สามารถกู้คืนได้"
+  },
+  "eoCouldNotReadLive": {
+    "message": "ไม่สามารถอ่านคุกกี้ที่ใช้งานอยู่ได้: $1"
+  },
+  "eoSavedProfile": {
+    "message": "บันทึก “$1” พร้อมคุกกี้ $2 รายการแล้ว"
+  },
+  "eoSwitchFailedBanner": {
+    "message": "สลับไปยัง “$1” ล้มเหลว — ใช้คุกกี้ได้ 0 จาก $2 รายการ ย้อนกลับไปยังสถานะก่อนหน้าแล้ว"
+  },
+  "eoSwitchedApplied": {
+    "message": "สลับไปยัง “$1” แล้ว (ใช้คุกกี้ $2 รายการ)"
+  },
+  "eoSwitchedPartial": {
+    "message": "สลับไปยัง “$1” แล้ว — $2 สำเร็จ, $3 ล้มเหลว"
+  },
+  "eoDeletedProfile": {
+    "message": "ลบ “$1” แล้ว"
+  },
+  "eoReloadedTabs": {
+    "message": "โหลดแท็บ $1 $2 ใหม่แล้ว"
+  },
+  "eoVaultUnlocked": {
+    "message": "ปลดล็อกตู้นิรภัยแล้ว"
+  },
+  "eoLockVault": {
+    "message": "ล็อกตู้นิรภัย"
+  },
+  "eoScopeHeading": {
+    "message": "ขอบเขต"
+  },
+  "eoScopeLede": {
+    "message": "โปรไฟล์ทำงานกับชุดส่วนต่อท้ายโฮสต์ที่กำหนดไว้ การสลับโปรไฟล์จะแตะเฉพาะคุกกี้ที่ตรงกับขอบเขตนี้ — เว็บไซต์อื่นไม่ถูกแตะต้อง"
+  },
+  "eoSite": {
+    "message": "เว็บไซต์"
+  },
+  "eoCountingLive": {
+    "message": "กำลังนับคุกกี้ที่ใช้งานอยู่…"
+  },
+  "eoLiveCount": {
+    "message": "มีคุกกี้ $2 ที่ใช้งานอยู่ $1 รายการในเบราว์เซอร์นี้ขณะนี้"
+  },
+  "eoSaveHeading": {
+    "message": "บันทึกเซสชันปัจจุบันเป็นโปรไฟล์"
+  },
+  "eoSaveLede": {
+    "message": "บันทึกคุกกี้ทุกรายการที่ตรงกับขอบเขตที่ใช้งานอยู่ ใช้สิ่งนี้ขณะที่เข้าสู่ระบบบัญชี $1 ที่คุณต้องการจดจำ"
+  },
+  "eoProfileName": {
+    "message": "ชื่อโปรไฟล์"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "เช่น “บัญชี QA 3”"
+  },
+  "eoSavingProfile": {
+    "message": "กำลังบันทึก…"
+  },
+  "eoSaveProfile": {
+    "message": "บันทึกโปรไฟล์"
+  },
+  "eoProfilesHeading": {
+    "message": "โปรไฟล์"
+  },
+  "eoNoProfilesYet": {
+    "message": "ยังไม่มีโปรไฟล์ บันทึกเซสชันปัจจุบันของคุณด้านบนเพื่อสร้างหนึ่งรายการ"
+  },
+  "eoProfilesCount": {
+    "message": "มี $1 โปรไฟล์ในตู้นิรภัยนี้"
+  },
+  "eoNoProfilesScope": {
+    "message": "ไม่มีโปรไฟล์ที่ตรงกับขอบเขตที่ใช้งานอยู่"
+  },
+  "eoProfileCookies": {
+    "message": "คุกกี้ $1 รายการ"
+  },
+  "eoProfileSwitching": {
+    "message": "กำลังสลับ…"
+  },
+  "eoProfileSwitch": {
+    "message": "สลับ"
+  },
+  "eoProfileDelete": {
+    "message": "ลบ"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "แท็บที่เปิดอยู่ $1 รายการต้องรีเฟรช"
+  },
+  "eoReloadTabs": {
+    "message": "โหลดแท็บใหม่"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "สลับโปรไฟล์ใช่ไหม"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "สลับไปยัง “$1” ใช่ไหม คุกกี้ $2 รายการปัจจุบันของคุณจะถูกแทนที่ และแท็บ $2 ที่เปิดอยู่ต้องรีเฟรชหลังจากนั้น"
+  },
+  "eoSwitchConfirm": {
+    "message": "สลับ"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "ลบโปรไฟล์ใช่ไหม"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "ลบ “$1” ใช่ไหม การกระทำนี้ไม่สามารถย้อนกลับได้"
+  },
+  "eoDeleteConfirm": {
+    "message": "ลบ"
+  },
+  "eoSafetyHeading": {
+    "message": "หมายเหตุด้านความปลอดภัย"
+  },
+  "eoSafety1": {
+    "message": "ใช้โปรไฟล์เฉพาะกับบัญชีที่คุณเป็นเจ้าของหรือได้รับอนุญาตให้ทดสอบเท่านั้น การนำคุกกี้เซสชันกลับมาใช้กับบัญชีที่คุณไม่ได้ควบคุมเป็นการละเมิดข้อกำหนดในการให้บริการของเว็บไซต์ส่วนใหญ่และอาจผิดกฎหมาย"
+  },
+  "eoSafety2": {
+    "message": "เบราว์เซอร์ต้องรีเฟรชแท็บ $1 ที่เปิดอยู่เพื่อรับคุกกี้ใหม่ คุกกี้ที่แนบกับการเชื่อมต่อ WebSocket / SSE ที่มีอายุยาวอาจคงอยู่จนกว่าหน้าจะโหลดใหม่"
+  },
+  "eoSafety3": {
+    "message": "บางเว็บไซต์ผูกคุกกี้เซสชันเข้ากับสัญญาณอื่น (ลายนิ้วมืออุปกรณ์, IP) การสลับเฉพาะคุกกี้อาจทำให้ต้องเข้าสู่ระบบใหม่หรือมีการตรวจสอบความปลอดภัย — นั่นเป็นการควบคุมความเสี่ยงของเว็บไซต์ ไม่ใช่ข้อบกพร่องใน CookieVault"
+  },
+  "themeToggle": {
+    "message": "สลับธีม"
+  },
+  "apCodeLabel": {
+    "message": "รหัสลงชื่อเข้าใช้"
+  },
+  "apVerifyCode": {
+    "message": "เสร็จสิ้นการลงชื่อเข้าใช้"
+  },
+  "apVerifying": {
+    "message": "กำลังยืนยัน…"
+  },
+  "scopeCurrent": {
+    "message": "ไซต์นี้"
+  },
+  "scopeAll": {
+    "message": "คุกกี้ทั้งหมด"
+  },
+  "copyValue": {
+    "message": "คัดลอกค่า"
+  },
+  "copied": {
+    "message": "คัดลอกแล้ว"
+  },
+  "deleteDomain": {
+    "message": "ลบทั้งหมดในโดเมนนี้"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "ลบคุกกี้เหล่านี้ไหม?"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "ลบคุกกี้ทั้งหมดสำหรับ $1 ไหม?"
+  },
+  "noCookiesThisSite": {
+    "message": "ไม่มีคุกกี้สำหรับไซต์นี้"
+  },
+  "toastCopied": {
+    "message": "คัดลอกค่าแล้ว"
+  },
+  "errNameFormat": {
+    "message": "ชื่อคุกกี้ต้องไม่มีช่องว่าง `;` หรือ `=`"
+  },
+  "errDomainFormat": {
+    "message": "โดเมนดูไม่ถูกต้อง — ป้อนชื่อโฮสต์ โดยไม่มีช่องว่างหรือสคีม"
+  },
+  "errHostPrefix": {
+    "message": "คุกกี้ __Host- ต้องเป็น Secure ใช้พาธ \"/\" และเป็น host-only (ไม่มีโดเมน)"
+  },
+  "errSecurePrefix": {
+    "message": "คุกกี้ __Secure- ต้องเป็น Secure"
+  },
+  "errExpiryInvalid": {
+    "message": "เลือกวันหมดอายุที่ถูกต้อง"
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "ล้างการค้นหา"
+  },
+  "moreFields": {
+    "message": "ฟิลด์เพิ่มเติม…"
+  },
+  "prefLanguage": {
+    "message": "ภาษา"
+  },
+  "langSystem": {
+    "message": "ระบบ (เบราว์เซอร์)"
+  }
+}

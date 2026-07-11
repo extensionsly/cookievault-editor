@@ -1,0 +1,653 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "MV3 cookie manager: edit, search, import & export — open source."
+  },
+  "filterPlaceholder": {
+    "message": "Filter by domain or name…"
+  },
+  "filterAriaLabel": {
+    "message": "Filter cookies by domain or name"
+  },
+  "buttonAdd": {
+    "message": "Add"
+  },
+  "buttonImport": {
+    "message": "Import"
+  },
+  "buttonExport": {
+    "message": "Export"
+  },
+  "loadingCookies": {
+    "message": "Loading cookies…"
+  },
+  "clearFilter": {
+    "message": "Clear filter"
+  },
+  "errorReadCookies": {
+    "message": "Could not read cookies."
+  },
+  "statsFiltered": {
+    "message": "$1 of $2 · $3 domains"
+  },
+  "statsAll": {
+    "message": "$1 · $2 domains"
+  },
+  "cookieFlagsAria": {
+    "message": "cookie flags"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "Partitioned (CHIPS)"
+  },
+  "emptyValue": {
+    "message": "empty"
+  },
+  "editAria": {
+    "message": "Edit $1"
+  },
+  "editTitle": {
+    "message": "Edit"
+  },
+  "deleteAria": {
+    "message": "Delete $1"
+  },
+  "deleteTitle": {
+    "message": "Delete"
+  },
+  "noCookiesMatch": {
+    "message": "No cookies match “$1”."
+  },
+  "noCookiesYet": {
+    "message": "No cookies on this page yet."
+  },
+  "optionsButton": {
+    "message": "Options"
+  },
+  "dismiss": {
+    "message": "Dismiss"
+  },
+  "deleteCookieTitle": {
+    "message": "Delete cookie?"
+  },
+  "deleteCookieMessage": {
+    "message": "Delete “$1” on $2? This cannot be undone."
+  },
+  "buttonDelete": {
+    "message": "Delete"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "toastDeleted": {
+    "message": "Deleted $1"
+  },
+  "toastSaved": {
+    "message": "Saved $1"
+  },
+  "toastExported": {
+    "message": "Exported $1 cookies"
+  },
+  "toastImported": {
+    "message": "Imported $1 cookies from $2"
+  },
+  "toastImportedPartial": {
+    "message": "Imported $1 of $2 ($3 failed)"
+  },
+  "editCookieTitle": {
+    "message": "Edit cookie"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "fieldName": {
+    "message": "Name"
+  },
+  "fieldDomain": {
+    "message": "Domain"
+  },
+  "fieldPath": {
+    "message": "Path"
+  },
+  "fieldValue": {
+    "message": "Value"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "Host-only"
+  },
+  "expiryLegend": {
+    "message": "Expiry"
+  },
+  "expirySession": {
+    "message": "Session"
+  },
+  "expiryUntil": {
+    "message": "Until"
+  },
+  "timezoneHint": {
+    "message": "Times are in your local timezone."
+  },
+  "buttonSave": {
+    "message": "Save"
+  },
+  "saving": {
+    "message": "Saving…"
+  },
+  "profilesLoading": {
+    "message": "Profiles…"
+  },
+  "setupVault": {
+    "message": "Profiles · Set up vault →"
+  },
+  "unlockInOptions": {
+    "message": "Profiles locked · Unlock in Options →"
+  },
+  "profileScopeAria": {
+    "message": "Profile scope"
+  },
+  "lockVault": {
+    "message": "Lock vault"
+  },
+  "lockButton": {
+    "message": "Lock"
+  },
+  "noProfilesForScope": {
+    "message": "No profiles for $1."
+  },
+  "saveOne": {
+    "message": "Save one →"
+  },
+  "switchButton": {
+    "message": "Switch"
+  },
+  "switching": {
+    "message": "Switching…"
+  },
+  "cookiesInScope": {
+    "message": "cookies in scope"
+  },
+  "tabsNeedRefresh": {
+    "message": "$1 $2 tabs need refresh"
+  },
+  "reloadButton": {
+    "message": "Reload"
+  },
+  "switchProfileTitle": {
+    "message": "Switch profile?"
+  },
+  "switchProfileMessage": {
+    "message": "Switch to “$1”? Your current $2 cookies will be replaced."
+  },
+  "switchConfirm": {
+    "message": "Switch"
+  },
+  "toastSwitchFailed": {
+    "message": "Switch failed — 0 of $1 cookies applied. Rolled back."
+  },
+  "toastSwitched": {
+    "message": "Switched to “$1” ($2 cookies)"
+  },
+  "toastSwitchedPartial": {
+    "message": "Switched — $1 applied, $2 failed"
+  },
+  "toastReloaded": {
+    "message": "Reloaded $1 $2 tabs"
+  },
+  "justNow": {
+    "message": "just now"
+  },
+  "minutesAgo": {
+    "message": "$1m ago"
+  },
+  "hoursAgo": {
+    "message": "$1h ago"
+  },
+  "apAccount": {
+    "message": "Account"
+  },
+  "apSignInLede": {
+    "message": "Sign in with email to enable encrypted cross-device sync. Sync is end-to-end encrypted — even we cannot read your synced data."
+  },
+  "apEmail": {
+    "message": "Email"
+  },
+  "apSending": {
+    "message": "Sending…"
+  },
+  "apSendMagicLink": {
+    "message": "Send sign-in code"
+  },
+  "apMagicSent": {
+    "message": "Sign-in code sent — check your email and paste it below. It expires in 3 minutes."
+  },
+  "apSignedInAs": {
+    "message": "Signed in as"
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "Free"
+  },
+  "apPlanLabel": {
+    "message": "plan"
+  },
+  "apUpgrade": {
+    "message": "Upgrade"
+  },
+  "apSyncing": {
+    "message": "Syncing…"
+  },
+  "apSyncNow": {
+    "message": "Sync now"
+  },
+  "apSignOut": {
+    "message": "Sign out"
+  },
+  "apLastSynced": {
+    "message": "Last synced $1"
+  },
+  "apNotSynced": {
+    "message": "Not synced yet"
+  },
+  "apReloadBanner": {
+    "message": "Remote vault pulled. Reload this page to apply it."
+  },
+  "apReload": {
+    "message": "Reload"
+  },
+  "apConflict": {
+    "message": "Conflict — another device updated this vault. Resolve:"
+  },
+  "apKeepMine": {
+    "message": "Keep mine"
+  },
+  "apKeepMineTitle": {
+    "message": "Overwrite the remote vault with your local version. The other device's changes are lost."
+  },
+  "apTakeTheirs": {
+    "message": "Take theirs"
+  },
+  "apTakeTheirsTitle": {
+    "message": "Replace your local vault with the remote version. Your unsynced local changes are lost."
+  },
+  "apResultSynced": {
+    "message": "Up to date."
+  },
+  "apResultPushed": {
+    "message": "Pushed local changes to server."
+  },
+  "apResultPulled": {
+    "message": "Pulled remote vault. Reload to take effect."
+  },
+  "apResultNoAuth": {
+    "message": "Sign-in required."
+  },
+  "apResultConflict": {
+    "message": "Conflict — resolve above."
+  },
+  "apResultOffline": {
+    "message": "You're offline — sync will retry when you're back online."
+  },
+  "apResultError": {
+    "message": "Sync error: $1"
+  },
+  "apTelemetry": {
+    "message": "Send anonymised error reports — no URLs, cookie domains, or email addresses. Off by default."
+  },
+  "apHowThisWorks": {
+    "message": "How this works"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — Options"
+  },
+  "eoLead": {
+    "message": "Manage encrypted cookie profiles — save a login state and switch between accounts any time."
+  },
+  "eoLoadingVault": {
+    "message": "Loading vault…"
+  },
+  "eoStrengthAria": {
+    "message": "Strength: $1"
+  },
+  "eoCracksIn": {
+    "message": "· cracks in $1"
+  },
+  "eoPassphraseWeak": {
+    "message": "Passphrase is “$1”. Pick something stronger — a long random sentence works best."
+  },
+  "eoPassMismatch": {
+    "message": "Passphrases do not match."
+  },
+  "eoSetupHeading": {
+    "message": "Set up profile vault"
+  },
+  "eoSetupLede": {
+    "message": "Profile cookies are encrypted at rest with AES-256-GCM. The key is derived from your passphrase via PBKDF2 (600,000 iterations). The passphrase is never stored and never leaves this device."
+  },
+  "eoPassphrase": {
+    "message": "Passphrase"
+  },
+  "eoConfirm": {
+    "message": "Confirm"
+  },
+  "eoCreating": {
+    "message": "Creating…"
+  },
+  "eoCreateVault": {
+    "message": "Create vault"
+  },
+  "eoWarnForget": {
+    "message": "If you forget the passphrase, your profiles are unrecoverable. There is no reset link."
+  },
+  "eoWarnReenter": {
+    "message": "You will re-enter the passphrase once per browser session."
+  },
+  "eoTooManyAttempts": {
+    "message": "Too many wrong attempts. Wait for the lockout to expire."
+  },
+  "eoLockedOut60": {
+    "message": "Wrong passphrase — locked out for 60 seconds."
+  },
+  "eoWrongPassAttempts": {
+    "message": "Wrong passphrase. $1 attempts left before lockout."
+  },
+  "eoUnlockHeading": {
+    "message": "Unlock profile vault"
+  },
+  "eoUnlockLede": {
+    "message": "Enter your passphrase to access saved profiles."
+  },
+  "eoLockedTryAgain": {
+    "message": "Locked — try again in $1s"
+  },
+  "eoUnlocking": {
+    "message": "Unlocking…"
+  },
+  "eoUnlock": {
+    "message": "Unlock"
+  },
+  "eoResetVault": {
+    "message": "Reset vault"
+  },
+  "eoResetTitle": {
+    "message": "Reset the vault?"
+  },
+  "eoResetMessage": {
+    "message": "This permanently destroys all saved profiles. There is no undo and no reset link — they cannot be recovered."
+  },
+  "eoCouldNotReadLive": {
+    "message": "Could not read live cookies: $1"
+  },
+  "eoSavedProfile": {
+    "message": "Saved “$1” with $2 cookies."
+  },
+  "eoSwitchFailedBanner": {
+    "message": "Switch to “$1” failed — 0 of $2 cookies applied. Rolled back to previous state."
+  },
+  "eoSwitchedApplied": {
+    "message": "Switched to “$1” ($2 cookies applied)."
+  },
+  "eoSwitchedPartial": {
+    "message": "Switched to “$1” — $2 applied, $3 failed."
+  },
+  "eoDeletedProfile": {
+    "message": "Deleted “$1”."
+  },
+  "eoReloadedTabs": {
+    "message": "Reloaded $1 $2 tabs."
+  },
+  "eoVaultUnlocked": {
+    "message": "Vault unlocked"
+  },
+  "eoLockVault": {
+    "message": "Lock vault"
+  },
+  "eoScopeHeading": {
+    "message": "Scope"
+  },
+  "eoScopeLede": {
+    "message": "Profiles operate on a fixed set of host suffixes. Switching a profile only touches cookies that match this scope — other sites stay untouched."
+  },
+  "eoSite": {
+    "message": "Site"
+  },
+  "eoCountingLive": {
+    "message": "Counting live cookies…"
+  },
+  "eoLiveCount": {
+    "message": "$1 live $2 cookies in this browser right now"
+  },
+  "eoSaveHeading": {
+    "message": "Save current session as profile"
+  },
+  "eoSaveLede": {
+    "message": "Captures every cookie that matches the active scope. Use this while logged into the $1 account you want to remember."
+  },
+  "eoProfileName": {
+    "message": "Profile name"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "e.g. “QA account 3”"
+  },
+  "eoSavingProfile": {
+    "message": "Saving…"
+  },
+  "eoSaveProfile": {
+    "message": "Save profile"
+  },
+  "eoProfilesHeading": {
+    "message": "Profiles"
+  },
+  "eoNoProfilesYet": {
+    "message": "No profiles yet. Save your current session above to create one."
+  },
+  "eoProfilesCount": {
+    "message": "$1 profiles in this vault."
+  },
+  "eoNoProfilesScope": {
+    "message": "No profiles match the active scope."
+  },
+  "eoProfileCookies": {
+    "message": "$1 cookies"
+  },
+  "eoProfileSwitching": {
+    "message": "Switching…"
+  },
+  "eoProfileSwitch": {
+    "message": "Switch"
+  },
+  "eoProfileDelete": {
+    "message": "Delete"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "$1 open tabs need refresh."
+  },
+  "eoReloadTabs": {
+    "message": "Reload tabs"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "Switch profile?"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "Switch to “$1”? Your current $2 cookies will be replaced, and open $2 tabs need a refresh after."
+  },
+  "eoSwitchConfirm": {
+    "message": "Switch"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "Delete profile?"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "Delete “$1”? This cannot be undone."
+  },
+  "eoDeleteConfirm": {
+    "message": "Delete"
+  },
+  "eoSafetyHeading": {
+    "message": "Safety notes"
+  },
+  "eoSafety1": {
+    "message": "Only use profiles for accounts you own or are authorised to test. Re-using session cookies on accounts you don't control is a Terms-of-Service violation on most sites and may be illegal."
+  },
+  "eoSafety2": {
+    "message": "The browser must refresh open $1 tabs to pick up the new cookies. Cookies attached to long-lived WebSocket / SSE connections may persist until the page reloads."
+  },
+  "eoSafety3": {
+    "message": "Some sites bind session cookies to other signals (device fingerprint, IP). Switching cookies alone may trigger a re-login or a security challenge — that is the site's risk control, not a bug in CookieVault."
+  },
+  "themeToggle": {
+    "message": "Toggle theme"
+  },
+  "apCodeLabel": {
+    "message": "Sign-in code"
+  },
+  "apVerifyCode": {
+    "message": "Finish sign-in"
+  },
+  "apVerifying": {
+    "message": "Verifying…"
+  },
+  "licSection": {
+    "message": "License & Pro"
+  },
+  "licLede": {
+    "message": "Pro unlocks through either channel: an offline license key (verified locally, zero network) or your extensionsly account."
+  },
+  "licKeyLabel": {
+    "message": "License key"
+  },
+  "licActivate": {
+    "message": "Activate"
+  },
+  "licActive": {
+    "message": "License active on this device"
+  },
+  "licDeactivate": {
+    "message": "Remove license"
+  },
+  "licErrFormat": {
+    "message": "That doesn't look like a license key — paste the complete key from your purchase email."
+  },
+  "licErrSignature": {
+    "message": "Invalid license signature — make sure you pasted the whole key."
+  },
+  "licErrProduct": {
+    "message": "That key belongs to a different extensionsly product."
+  },
+  "licErrExpired": {
+    "message": "That license has expired."
+  },
+  "exAccount": {
+    "message": "extensionsly account"
+  },
+  "exLede": {
+    "message": "Purchases on extensionsly.com attach to your account and unlock Pro on all your devices."
+  },
+  "exSendCode": {
+    "message": "Send code"
+  },
+  "exCodeSent": {
+    "message": "Code sent — check your inbox."
+  },
+  "exSignInFailed": {
+    "message": "Sign-in failed: $1"
+  },
+  "exRefreshEnt": {
+    "message": "Refresh Pro status"
+  },
+  "apResultProRequired": {
+    "message": "Cloud sync is a Pro feature — upgrade to push changes from this device."
+  },
+  "licErrRevoked": {
+    "message": "This license has been revoked. Contact support if you believe this is an error."
+  },
+  "exStartTrial": {
+    "message": "Start 14-day free trial"
+  },
+  "exTrialStarting": {
+    "message": "Starting…"
+  },
+  "exTrialStarted": {
+    "message": "Your 14-day Pro trial is active. Enjoy!"
+  },
+  "exTrialUsed": {
+    "message": "This account already used its free trial."
+  },
+  "exTrialError": {
+    "message": "Couldn't start the trial: $1"
+  },
+  "scopeCurrent": {
+    "message": "This site"
+  },
+  "scopeAll": {
+    "message": "All cookies"
+  },
+  "copyValue": {
+    "message": "Copy value"
+  },
+  "copied": {
+    "message": "Copied"
+  },
+  "deleteDomain": {
+    "message": "Delete all in this domain"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "Delete these cookies?"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "Delete all cookies for $1?"
+  },
+  "noCookiesThisSite": {
+    "message": "No cookies for this site."
+  },
+  "toastCopied": {
+    "message": "Value copied"
+  },
+  "errNameFormat": {
+    "message": "Cookie name can't contain spaces, `;` or `=`."
+  },
+  "errDomainFormat": {
+    "message": "Domain looks invalid — enter a hostname, no spaces or scheme."
+  },
+  "errHostPrefix": {
+    "message": "__Host- cookies must be Secure, use path \"/\", and be host-only (no domain)."
+  },
+  "errSecurePrefix": {
+    "message": "__Secure- cookies must be Secure."
+  },
+  "errExpiryInvalid": {
+    "message": "Pick a valid expiration date."
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "Clear search"
+  },
+  "moreFields": {
+    "message": "More fields…"
+  },
+  "prefLanguage": {
+    "message": "Language"
+  },
+  "langSystem": {
+    "message": "System (browser)"
+  }
+}

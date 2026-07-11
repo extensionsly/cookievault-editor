@@ -1,0 +1,35 @@
+{
+  "name": "cookievault-editor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CookieVault Editor — open-source MV3 browser extension for manual cookie editing (view / add / edit / delete / import / export).",
+  "license": "MIT",
+  "homepage": "https://cookievault.net",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/extensionsly/cookievault-editor.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.5.0",
+  "scripts": {
+    "build": "pnpm --filter editor build",
+    "build:firefox": "pnpm --filter editor build:firefox",
+    "zip": "pnpm --filter editor zip",
+    "zip:firefox": "pnpm --filter editor zip:firefox",
+    "test": "pnpm -r --parallel test",
+    "typecheck": "pnpm -r --parallel typecheck",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "vitest>vite": "^8.0.0"
+    }
+  }
+}

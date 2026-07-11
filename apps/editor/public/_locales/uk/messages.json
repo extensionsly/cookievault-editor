@@ -1,0 +1,584 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "Менеджер cookie на MV3: редагування, пошук, імпорт та експорт — з відкритим кодом."
+  },
+  "filterPlaceholder": {
+    "message": "Фільтр за доменом або назвою…"
+  },
+  "filterAriaLabel": {
+    "message": "Фільтрувати cookie за доменом або назвою"
+  },
+  "buttonAdd": {
+    "message": "Додати"
+  },
+  "buttonImport": {
+    "message": "Імпорт"
+  },
+  "buttonExport": {
+    "message": "Експорт"
+  },
+  "loadingCookies": {
+    "message": "Завантаження cookie…"
+  },
+  "clearFilter": {
+    "message": "Очистити фільтр"
+  },
+  "errorReadCookies": {
+    "message": "Не вдалося прочитати cookie."
+  },
+  "statsFiltered": {
+    "message": "$1 з $2 · $3 доменів"
+  },
+  "statsAll": {
+    "message": "$1 · $2 доменів"
+  },
+  "cookieFlagsAria": {
+    "message": "прапорці cookie"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "Partitioned (CHIPS)"
+  },
+  "emptyValue": {
+    "message": "порожнє"
+  },
+  "editAria": {
+    "message": "Редагувати $1"
+  },
+  "editTitle": {
+    "message": "Редагувати"
+  },
+  "deleteAria": {
+    "message": "Видалити $1"
+  },
+  "deleteTitle": {
+    "message": "Видалити"
+  },
+  "noCookiesMatch": {
+    "message": "Немає cookie, що відповідають «$1»."
+  },
+  "noCookiesYet": {
+    "message": "На цій сторінці ще немає cookie."
+  },
+  "optionsButton": {
+    "message": "Налаштування"
+  },
+  "dismiss": {
+    "message": "Закрити"
+  },
+  "deleteCookieTitle": {
+    "message": "Видалити cookie?"
+  },
+  "deleteCookieMessage": {
+    "message": "Видалити «$1» на $2? Цю дію неможливо скасувати."
+  },
+  "buttonDelete": {
+    "message": "Видалити"
+  },
+  "cancel": {
+    "message": "Скасувати"
+  },
+  "toastDeleted": {
+    "message": "Видалено $1"
+  },
+  "toastSaved": {
+    "message": "Збережено $1"
+  },
+  "toastExported": {
+    "message": "Експортовано $1 cookie"
+  },
+  "toastImported": {
+    "message": "Імпортовано $1 cookie з $2"
+  },
+  "toastImportedPartial": {
+    "message": "Імпортовано $1 з $2 ($3 не вдалося)"
+  },
+  "editCookieTitle": {
+    "message": "Редагувати cookie"
+  },
+  "close": {
+    "message": "Закрити"
+  },
+  "fieldName": {
+    "message": "Назва"
+  },
+  "fieldDomain": {
+    "message": "Домен"
+  },
+  "fieldPath": {
+    "message": "Шлях"
+  },
+  "fieldValue": {
+    "message": "Значення"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "Host-only"
+  },
+  "expiryLegend": {
+    "message": "Термін дії"
+  },
+  "expirySession": {
+    "message": "Сеанс"
+  },
+  "expiryUntil": {
+    "message": "До"
+  },
+  "timezoneHint": {
+    "message": "Час вказано за вашим місцевим часовим поясом."
+  },
+  "buttonSave": {
+    "message": "Зберегти"
+  },
+  "saving": {
+    "message": "Збереження…"
+  },
+  "profilesLoading": {
+    "message": "Профілі…"
+  },
+  "setupVault": {
+    "message": "Профілі · Налаштувати сховище →"
+  },
+  "unlockInOptions": {
+    "message": "Профілі заблоковано · Розблокувати в налаштуваннях →"
+  },
+  "profileScopeAria": {
+    "message": "Область профілю"
+  },
+  "lockVault": {
+    "message": "Заблокувати сховище"
+  },
+  "lockButton": {
+    "message": "Заблокувати"
+  },
+  "noProfilesForScope": {
+    "message": "Немає профілів для $1."
+  },
+  "saveOne": {
+    "message": "Зберегти один →"
+  },
+  "switchButton": {
+    "message": "Перемкнути"
+  },
+  "switching": {
+    "message": "Перемикання…"
+  },
+  "cookiesInScope": {
+    "message": "cookie в області"
+  },
+  "tabsNeedRefresh": {
+    "message": "$1 $2 вкладок потребують оновлення"
+  },
+  "reloadButton": {
+    "message": "Оновити"
+  },
+  "switchProfileTitle": {
+    "message": "Перемкнути профіль?"
+  },
+  "switchProfileMessage": {
+    "message": "Перемкнутися на «$1»? Ваші поточні cookie ($2) буде замінено."
+  },
+  "switchConfirm": {
+    "message": "Перемкнути"
+  },
+  "toastSwitchFailed": {
+    "message": "Перемикання не вдалося — застосовано 0 з $1 cookie. Зміни відкочено."
+  },
+  "toastSwitched": {
+    "message": "Перемкнуто на «$1» ($2 cookie)"
+  },
+  "toastSwitchedPartial": {
+    "message": "Перемкнуто — $1 застосовано, $2 не вдалося"
+  },
+  "toastReloaded": {
+    "message": "Оновлено $1 $2 вкладок"
+  },
+  "justNow": {
+    "message": "щойно"
+  },
+  "minutesAgo": {
+    "message": "$1 хв тому"
+  },
+  "hoursAgo": {
+    "message": "$1 год тому"
+  },
+  "apAccount": {
+    "message": "Обліковий запис"
+  },
+  "apSignInLede": {
+    "message": "Увійдіть за допомогою електронної пошти, щоб увімкнути зашифровану синхронізацію між пристроями. Синхронізація має наскрізне шифрування — навіть ми не можемо прочитати ваші синхронізовані дані."
+  },
+  "apEmail": {
+    "message": "Електронна пошта"
+  },
+  "apSending": {
+    "message": "Надсилання…"
+  },
+  "apSendMagicLink": {
+    "message": "Надіслати magic-посилання"
+  },
+  "apMagicSent": {
+    "message": "Magic-посилання надіслано — перевірте свою пошту. Посилання діє 3 хвилини."
+  },
+  "apSignedInAs": {
+    "message": "Ви увійшли як"
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "Безкоштовний"
+  },
+  "apPlanLabel": {
+    "message": "тариф"
+  },
+  "apUpgrade": {
+    "message": "Підвищити тариф"
+  },
+  "apSyncing": {
+    "message": "Синхронізація…"
+  },
+  "apSyncNow": {
+    "message": "Синхронізувати"
+  },
+  "apSignOut": {
+    "message": "Вийти"
+  },
+  "apLastSynced": {
+    "message": "Остання синхронізація $1"
+  },
+  "apNotSynced": {
+    "message": "Ще не синхронізовано"
+  },
+  "apReloadBanner": {
+    "message": "Віддалене сховище отримано. Перезавантажте цю сторінку, щоб застосувати його."
+  },
+  "apReload": {
+    "message": "Оновити"
+  },
+  "apConflict": {
+    "message": "Конфлікт — інший пристрій оновив це сховище. Розв’яжіть:"
+  },
+  "apKeepMine": {
+    "message": "Залишити мою версію"
+  },
+  "apKeepMineTitle": {
+    "message": "Перезаписати віддалене сховище вашою локальною версією. Зміни з іншого пристрою буде втрачено."
+  },
+  "apTakeTheirs": {
+    "message": "Взяти їхню версію"
+  },
+  "apTakeTheirsTitle": {
+    "message": "Замінити ваше локальне сховище віддаленою версією. Ваші несинхронізовані локальні зміни буде втрачено."
+  },
+  "apResultSynced": {
+    "message": "Усе актуально."
+  },
+  "apResultPushed": {
+    "message": "Локальні зміни надіслано на сервер."
+  },
+  "apResultPulled": {
+    "message": "Віддалене сховище отримано. Перезавантажте, щоб застосувати."
+  },
+  "apResultNoAuth": {
+    "message": "Потрібен вхід."
+  },
+  "apResultConflict": {
+    "message": "Конфлікт — розв’яжіть вище."
+  },
+  "apResultOffline": {
+    "message": "Ви офлайн — синхронізацію буде повторено, коли з’явиться з’єднання."
+  },
+  "apResultError": {
+    "message": "Помилка синхронізації: $1"
+  },
+  "apTelemetry": {
+    "message": "Надсилати анонімні звіти про помилки — без URL, доменів cookie чи адрес електронної пошти. За замовчуванням вимкнено."
+  },
+  "apHowThisWorks": {
+    "message": "Як це працює"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — Налаштування"
+  },
+  "eoLead": {
+    "message": "Керуйте зашифрованими профілями cookie: зберігайте стан входу та перемикайтеся між обліковими записами будь-коли."
+  },
+  "eoLoadingVault": {
+    "message": "Завантаження сховища…"
+  },
+  "eoStrengthAria": {
+    "message": "Надійність: $1"
+  },
+  "eoCracksIn": {
+    "message": "· зламається за $1"
+  },
+  "eoPassphraseWeak": {
+    "message": "Парольна фраза «$1». Виберіть надійнішу — найкраще підходить довге випадкове речення."
+  },
+  "eoPassMismatch": {
+    "message": "Парольні фрази не збігаються."
+  },
+  "eoSetupHeading": {
+    "message": "Налаштувати сховище профілів"
+  },
+  "eoSetupLede": {
+    "message": "Cookie профілів зашифровано в стані спокою за допомогою AES-256-GCM. Ключ виводиться з вашої парольної фрази через PBKDF2 (600 000 ітерацій). Парольна фраза ніколи не зберігається і ніколи не залишає цей пристрій."
+  },
+  "eoPassphrase": {
+    "message": "Парольна фраза"
+  },
+  "eoConfirm": {
+    "message": "Підтвердити"
+  },
+  "eoCreating": {
+    "message": "Створення…"
+  },
+  "eoCreateVault": {
+    "message": "Створити сховище"
+  },
+  "eoWarnForget": {
+    "message": "Якщо ви забудете парольну фразу, ваші профілі неможливо буде відновити. Посилання для скидання не існує."
+  },
+  "eoWarnReenter": {
+    "message": "Вам потрібно буде вводити парольну фразу один раз за сеанс браузера."
+  },
+  "eoTooManyAttempts": {
+    "message": "Забагато невдалих спроб. Зачекайте, доки закінчиться блокування."
+  },
+  "eoLockedOut60": {
+    "message": "Неправильна парольна фраза — заблоковано на 60 секунд."
+  },
+  "eoWrongPassAttempts": {
+    "message": "Неправильна парольна фраза. Залишилося спроб до блокування: $1."
+  },
+  "eoUnlockHeading": {
+    "message": "Розблокувати сховище профілів"
+  },
+  "eoUnlockLede": {
+    "message": "Введіть свою парольну фразу, щоб отримати доступ до збережених профілів."
+  },
+  "eoLockedTryAgain": {
+    "message": "Заблоковано — повторіть через $1 с"
+  },
+  "eoUnlocking": {
+    "message": "Розблокування…"
+  },
+  "eoUnlock": {
+    "message": "Розблокувати"
+  },
+  "eoResetVault": {
+    "message": "Скинути сховище"
+  },
+  "eoResetTitle": {
+    "message": "Скинути сховище?"
+  },
+  "eoResetMessage": {
+    "message": "Це назавжди знищить усі збережені профілі. Скасувати неможливо, посилання для скидання немає — їх не можна відновити."
+  },
+  "eoCouldNotReadLive": {
+    "message": "Не вдалося прочитати активні cookie: $1"
+  },
+  "eoSavedProfile": {
+    "message": "Збережено «$1» з $2 cookie."
+  },
+  "eoSwitchFailedBanner": {
+    "message": "Перемикання на «$1» не вдалося — застосовано 0 з $2 cookie. Відкочено до попереднього стану."
+  },
+  "eoSwitchedApplied": {
+    "message": "Перемкнуто на «$1» (застосовано $2 cookie)."
+  },
+  "eoSwitchedPartial": {
+    "message": "Перемкнуто на «$1» — $2 застосовано, $3 не вдалося."
+  },
+  "eoDeletedProfile": {
+    "message": "Видалено «$1»."
+  },
+  "eoReloadedTabs": {
+    "message": "Оновлено $1 $2 вкладок."
+  },
+  "eoVaultUnlocked": {
+    "message": "Сховище розблоковано"
+  },
+  "eoLockVault": {
+    "message": "Заблокувати сховище"
+  },
+  "eoScopeHeading": {
+    "message": "Область"
+  },
+  "eoScopeLede": {
+    "message": "Профілі працюють з фіксованим набором суфіксів хостів. Перемикання профілю торкається лише cookie, що відповідають цій області — інші сайти лишаються незмінними."
+  },
+  "eoSite": {
+    "message": "Сайт"
+  },
+  "eoCountingLive": {
+    "message": "Підрахунок активних cookie…"
+  },
+  "eoLiveCount": {
+    "message": "$1 активних $2 cookie зараз у цьому браузері"
+  },
+  "eoSaveHeading": {
+    "message": "Зберегти поточний сеанс як профіль"
+  },
+  "eoSaveLede": {
+    "message": "Захоплює кожен cookie, що відповідає активній області. Скористайтеся цим, поки ви увійшли в обліковий запис $1, який хочете запам’ятати."
+  },
+  "eoProfileName": {
+    "message": "Назва профілю"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "напр. «Тестовий запис 3»"
+  },
+  "eoSavingProfile": {
+    "message": "Збереження…"
+  },
+  "eoSaveProfile": {
+    "message": "Зберегти профіль"
+  },
+  "eoProfilesHeading": {
+    "message": "Профілі"
+  },
+  "eoNoProfilesYet": {
+    "message": "Профілів ще немає. Збережіть поточний сеанс вище, щоб створити перший."
+  },
+  "eoProfilesCount": {
+    "message": "$1 профілів у цьому сховищі."
+  },
+  "eoNoProfilesScope": {
+    "message": "Немає профілів, що відповідають активній області."
+  },
+  "eoProfileCookies": {
+    "message": "$1 cookie"
+  },
+  "eoProfileSwitching": {
+    "message": "Перемикання…"
+  },
+  "eoProfileSwitch": {
+    "message": "Перемкнути"
+  },
+  "eoProfileDelete": {
+    "message": "Видалити"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "$1 відкритих вкладок потребують оновлення."
+  },
+  "eoReloadTabs": {
+    "message": "Оновити вкладки"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "Перемкнути профіль?"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "Перемкнутися на «$1»? Ваші поточні cookie ($2) буде замінено, а відкриті вкладки $2 потребуватимуть оновлення після цього."
+  },
+  "eoSwitchConfirm": {
+    "message": "Перемкнути"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "Видалити профіль?"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "Видалити «$1»? Цю дію неможливо скасувати."
+  },
+  "eoDeleteConfirm": {
+    "message": "Видалити"
+  },
+  "eoSafetyHeading": {
+    "message": "Примітки щодо безпеки"
+  },
+  "eoSafety1": {
+    "message": "Використовуйте профілі лише для облікових записів, якими ви володієте або маєте дозвіл тестувати. Повторне використання сеансових cookie на облікових записах, які вам не належать, є порушенням умов надання послуг на більшості сайтів і може бути незаконним."
+  },
+  "eoSafety2": {
+    "message": "Браузер має оновити відкриті вкладки $1, щоб застосувати нові cookie. Cookie, прив’язані до тривалих з’єднань WebSocket / SSE, можуть зберігатися до перезавантаження сторінки."
+  },
+  "eoSafety3": {
+    "message": "Деякі сайти прив’язують сеансові cookie до інших сигналів (відбиток пристрою, IP). Перемикання лише cookie може призвести до повторного входу або перевірки безпеки — це засіб контролю ризиків сайту, а не помилка в CookieVault."
+  },
+  "themeToggle": {
+    "message": "Змінити тему"
+  },
+  "apCodeLabel": {
+    "message": "Код для входу"
+  },
+  "apVerifyCode": {
+    "message": "Завершити вхід"
+  },
+  "apVerifying": {
+    "message": "Перевірка…"
+  },
+  "scopeCurrent": {
+    "message": "Цей сайт"
+  },
+  "scopeAll": {
+    "message": "Усі файли cookie"
+  },
+  "copyValue": {
+    "message": "Копіювати значення"
+  },
+  "copied": {
+    "message": "Скопійовано"
+  },
+  "deleteDomain": {
+    "message": "Видалити всі в цьому домені"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "Видалити ці файли cookie?"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "Видалити всі файли cookie для $1?"
+  },
+  "noCookiesThisSite": {
+    "message": "Немає файлів cookie для цього сайту."
+  },
+  "toastCopied": {
+    "message": "Значення скопійовано"
+  },
+  "errNameFormat": {
+    "message": "Ім'я cookie не може містити пробіли, `;` або `=`."
+  },
+  "errDomainFormat": {
+    "message": "Домен виглядає недійсним — введіть імʼя хоста, без пробілів і схеми."
+  },
+  "errHostPrefix": {
+    "message": "Файли cookie __Host- мають бути Secure, використовувати шлях \"/\" і бути host-only (без домену)."
+  },
+  "errSecurePrefix": {
+    "message": "Файли cookie __Secure- мають бути Secure."
+  },
+  "errExpiryInvalid": {
+    "message": "Виберіть дійсну дату завершення терміну дії."
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "Очистити пошук"
+  },
+  "moreFields": {
+    "message": "Більше полів…"
+  },
+  "prefLanguage": {
+    "message": "Мова"
+  },
+  "langSystem": {
+    "message": "Система (браузер)"
+  }
+}

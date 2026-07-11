@@ -1,0 +1,60 @@
+/**
+ * CookieVault shared design tokens.
+ *
+ * Foundation for converging the two extensions' duplicated CSS. The
+ * brand-neutral primitives (space / radius / type / shadow) are shared;
+ * the accent differs per product (editor blue / guardian green) and is set
+ * by each app. Adoption is incremental — see the TASKS backlog ticket for
+ * the full CSS convergence. Import via `@cookievault/ui/tokens.css`.
+ */
+
+:root {
+  /* Spacing scale (4px base). */
+  --cv-space-1: 4px;
+  --cv-space-2: 8px;
+  --cv-space-3: 12px;
+  --cv-space-4: 16px;
+  --cv-space-5: 24px;
+
+  /* Radii. */
+  --cv-radius-sm: 4px;
+  --cv-radius-md: 6px;
+  --cv-radius-lg: 8px;
+
+  /* Type. */
+  --cv-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --cv-font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --cv-text-xs: 11px;
+  --cv-text-sm: 12px;
+  --cv-text-md: 13px;
+  --cv-text-lg: 14px;
+
+  /* Elevation. */
+  --cv-shadow-sm: 0 1px 2px rgba(40, 40, 70, 0.06);
+  --cv-shadow-card: 0 2px 8px rgba(40, 40, 70, 0.08);
+  --cv-shadow-modal: 0 8px 24px rgba(15, 23, 42, 0.18);
+
+  /*
+   * Brand families (verified color system v2). Editor = Signal Blue,
+   * Guardian = Guard Green, Vault = unifying indigo. `*-soft` is the tinted
+   * fill, `*-on` is the AA-clean text/icon color for that soft fill. Each app
+   * maps the relevant family onto `--accent` / `--accent-soft` / `--accent-on`
+   * in its own stylesheet (and lightens the accent in dark mode).
+   */
+  --cv-editor-accent: #0061b6; /* solid button, white text (AA) */
+  --cv-editor-500: #0077cd; /* brand anchor */
+  --cv-editor-soft: #e3f2ff;
+  --cv-editor-on: #00509d;
+
+  --cv-guardian-accent: #007b48; /* solid button, white text (AA) */
+  --cv-guardian-500: #00a768; /* brand anchor */
+  --cv-guardian-soft: #dbf9e6;
+  --cv-guardian-on: #00582f;
+
+  --cv-vault: #5552bb; /* unifying brand (website / Pro / No-Sale) */
+  --cv-vault-soft: #edeefe;
+  --cv-vault-on: #4845a5;
+
+  /* Semantic primitive (apps prefer the themed --danger from theme.css). */
+  --cv-danger: #cf4040;
+}

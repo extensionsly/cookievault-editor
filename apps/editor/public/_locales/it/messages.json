@@ -1,0 +1,584 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "Gestore di cookie MV3: modifica, cerca, importa ed esporta — open source."
+  },
+  "filterPlaceholder": {
+    "message": "Filtra per dominio o nome…"
+  },
+  "filterAriaLabel": {
+    "message": "Filtra i cookie per dominio o nome"
+  },
+  "buttonAdd": {
+    "message": "Aggiungi"
+  },
+  "buttonImport": {
+    "message": "Importa"
+  },
+  "buttonExport": {
+    "message": "Esporta"
+  },
+  "loadingCookies": {
+    "message": "Caricamento dei cookie…"
+  },
+  "clearFilter": {
+    "message": "Cancella filtro"
+  },
+  "errorReadCookies": {
+    "message": "Impossibile leggere i cookie."
+  },
+  "statsFiltered": {
+    "message": "$1 di $2 · $3 domini"
+  },
+  "statsAll": {
+    "message": "$1 · $2 domini"
+  },
+  "cookieFlagsAria": {
+    "message": "flag del cookie"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "Partitioned (CHIPS)"
+  },
+  "emptyValue": {
+    "message": "vuoto"
+  },
+  "editAria": {
+    "message": "Modifica $1"
+  },
+  "editTitle": {
+    "message": "Modifica"
+  },
+  "deleteAria": {
+    "message": "Elimina $1"
+  },
+  "deleteTitle": {
+    "message": "Elimina"
+  },
+  "noCookiesMatch": {
+    "message": "Nessun cookie corrisponde a “$1”."
+  },
+  "noCookiesYet": {
+    "message": "Ancora nessun cookie su questa pagina."
+  },
+  "optionsButton": {
+    "message": "Opzioni"
+  },
+  "dismiss": {
+    "message": "Ignora"
+  },
+  "deleteCookieTitle": {
+    "message": "Eliminare il cookie?"
+  },
+  "deleteCookieMessage": {
+    "message": "Eliminare “$1” su $2? L'operazione non può essere annullata."
+  },
+  "buttonDelete": {
+    "message": "Elimina"
+  },
+  "cancel": {
+    "message": "Annulla"
+  },
+  "toastDeleted": {
+    "message": "$1 eliminato"
+  },
+  "toastSaved": {
+    "message": "$1 salvato"
+  },
+  "toastExported": {
+    "message": "$1 cookie esportati"
+  },
+  "toastImported": {
+    "message": "$1 cookie importati da $2"
+  },
+  "toastImportedPartial": {
+    "message": "Importati $1 di $2 ($3 non riusciti)"
+  },
+  "editCookieTitle": {
+    "message": "Modifica cookie"
+  },
+  "close": {
+    "message": "Chiudi"
+  },
+  "fieldName": {
+    "message": "Nome"
+  },
+  "fieldDomain": {
+    "message": "Dominio"
+  },
+  "fieldPath": {
+    "message": "Percorso"
+  },
+  "fieldValue": {
+    "message": "Valore"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "Host-only"
+  },
+  "expiryLegend": {
+    "message": "Scadenza"
+  },
+  "expirySession": {
+    "message": "Sessione"
+  },
+  "expiryUntil": {
+    "message": "Fino a"
+  },
+  "timezoneHint": {
+    "message": "Gli orari sono nel tuo fuso orario locale."
+  },
+  "buttonSave": {
+    "message": "Salva"
+  },
+  "saving": {
+    "message": "Salvataggio…"
+  },
+  "profilesLoading": {
+    "message": "Profili…"
+  },
+  "setupVault": {
+    "message": "Profili · Configura il vault →"
+  },
+  "unlockInOptions": {
+    "message": "Profili bloccati · Sblocca nelle Opzioni →"
+  },
+  "profileScopeAria": {
+    "message": "Ambito del profilo"
+  },
+  "lockVault": {
+    "message": "Blocca il vault"
+  },
+  "lockButton": {
+    "message": "Blocca"
+  },
+  "noProfilesForScope": {
+    "message": "Nessun profilo per $1."
+  },
+  "saveOne": {
+    "message": "Salvane uno →"
+  },
+  "switchButton": {
+    "message": "Cambia"
+  },
+  "switching": {
+    "message": "Cambio in corso…"
+  },
+  "cookiesInScope": {
+    "message": "cookie nell'ambito"
+  },
+  "tabsNeedRefresh": {
+    "message": "$1 $2 schede da aggiornare"
+  },
+  "reloadButton": {
+    "message": "Ricarica"
+  },
+  "switchProfileTitle": {
+    "message": "Cambiare profilo?"
+  },
+  "switchProfileMessage": {
+    "message": "Passare a “$1”? I tuoi $2 cookie attuali verranno sostituiti."
+  },
+  "switchConfirm": {
+    "message": "Cambia"
+  },
+  "toastSwitchFailed": {
+    "message": "Cambio non riuscito — 0 di $1 cookie applicati. Ripristinato."
+  },
+  "toastSwitched": {
+    "message": "Passato a “$1” ($2 cookie)"
+  },
+  "toastSwitchedPartial": {
+    "message": "Cambiato — $1 applicati, $2 non riusciti"
+  },
+  "toastReloaded": {
+    "message": "Ricaricate $1 $2 schede"
+  },
+  "justNow": {
+    "message": "proprio ora"
+  },
+  "minutesAgo": {
+    "message": "$1 min fa"
+  },
+  "hoursAgo": {
+    "message": "$1 h fa"
+  },
+  "apAccount": {
+    "message": "Account"
+  },
+  "apSignInLede": {
+    "message": "Accedi con l'email per attivare la sincronizzazione crittografata tra dispositivi. La sincronizzazione è crittografata end-to-end — nemmeno noi possiamo leggere i tuoi dati sincronizzati."
+  },
+  "apEmail": {
+    "message": "Email"
+  },
+  "apSending": {
+    "message": "Invio…"
+  },
+  "apSendMagicLink": {
+    "message": "Invia magic link"
+  },
+  "apMagicSent": {
+    "message": "Magic link inviato — controlla la tua email. Il link scade tra 3 minuti."
+  },
+  "apSignedInAs": {
+    "message": "Connesso come"
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "Free"
+  },
+  "apPlanLabel": {
+    "message": "piano"
+  },
+  "apUpgrade": {
+    "message": "Passa a Pro"
+  },
+  "apSyncing": {
+    "message": "Sincronizzazione…"
+  },
+  "apSyncNow": {
+    "message": "Sincronizza ora"
+  },
+  "apSignOut": {
+    "message": "Esci"
+  },
+  "apLastSynced": {
+    "message": "Ultima sincronizzazione $1"
+  },
+  "apNotSynced": {
+    "message": "Non ancora sincronizzato"
+  },
+  "apReloadBanner": {
+    "message": "Vault remoto recuperato. Ricarica questa pagina per applicarlo."
+  },
+  "apReload": {
+    "message": "Ricarica"
+  },
+  "apConflict": {
+    "message": "Conflitto — un altro dispositivo ha aggiornato questo vault. Risolvi:"
+  },
+  "apKeepMine": {
+    "message": "Mantieni il mio"
+  },
+  "apKeepMineTitle": {
+    "message": "Sovrascrivi il vault remoto con la tua versione locale. Le modifiche dell'altro dispositivo andranno perse."
+  },
+  "apTakeTheirs": {
+    "message": "Usa quello remoto"
+  },
+  "apTakeTheirsTitle": {
+    "message": "Sostituisci il tuo vault locale con la versione remota. Le tue modifiche locali non sincronizzate andranno perse."
+  },
+  "apResultSynced": {
+    "message": "Aggiornato."
+  },
+  "apResultPushed": {
+    "message": "Modifiche locali inviate al server."
+  },
+  "apResultPulled": {
+    "message": "Vault remoto recuperato. Ricarica per applicare."
+  },
+  "apResultNoAuth": {
+    "message": "Accesso richiesto."
+  },
+  "apResultConflict": {
+    "message": "Conflitto — risolvi sopra."
+  },
+  "apResultOffline": {
+    "message": "Sei offline — la sincronizzazione riproverà quando tornerai online."
+  },
+  "apResultError": {
+    "message": "Errore di sincronizzazione: $1"
+  },
+  "apTelemetry": {
+    "message": "Invia report di errore anonimizzati — nessun URL, dominio di cookie o indirizzo email. Disattivato per impostazione predefinita."
+  },
+  "apHowThisWorks": {
+    "message": "Come funziona"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — Opzioni"
+  },
+  "eoLead": {
+    "message": "Gestisci profili di cookie crittografati: salva uno stato di accesso e passa da un account all’altro in qualsiasi momento."
+  },
+  "eoLoadingVault": {
+    "message": "Caricamento del vault…"
+  },
+  "eoStrengthAria": {
+    "message": "Robustezza: $1"
+  },
+  "eoCracksIn": {
+    "message": "· violabile in $1"
+  },
+  "eoPassphraseWeak": {
+    "message": "La passphrase è “$1”. Scegline una più robusta — una lunga frase casuale è la scelta migliore."
+  },
+  "eoPassMismatch": {
+    "message": "Le passphrase non corrispondono."
+  },
+  "eoSetupHeading": {
+    "message": "Configura il vault dei profili"
+  },
+  "eoSetupLede": {
+    "message": "I cookie dei profili sono crittografati a riposo con AES-256-GCM. La chiave è derivata dalla tua passphrase tramite PBKDF2 (600.000 iterazioni). La passphrase non viene mai memorizzata e non lascia mai questo dispositivo."
+  },
+  "eoPassphrase": {
+    "message": "Passphrase"
+  },
+  "eoConfirm": {
+    "message": "Conferma"
+  },
+  "eoCreating": {
+    "message": "Creazione…"
+  },
+  "eoCreateVault": {
+    "message": "Crea vault"
+  },
+  "eoWarnForget": {
+    "message": "Se dimentichi la passphrase, i tuoi profili saranno irrecuperabili. Non esiste un link di reimpostazione."
+  },
+  "eoWarnReenter": {
+    "message": "Dovrai inserire di nuovo la passphrase una volta per sessione del browser."
+  },
+  "eoTooManyAttempts": {
+    "message": "Troppi tentativi errati. Attendi la scadenza del blocco."
+  },
+  "eoLockedOut60": {
+    "message": "Passphrase errata — bloccato per 60 secondi."
+  },
+  "eoWrongPassAttempts": {
+    "message": "Passphrase errata. $1 tentativi rimasti prima del blocco."
+  },
+  "eoUnlockHeading": {
+    "message": "Sblocca il vault dei profili"
+  },
+  "eoUnlockLede": {
+    "message": "Inserisci la passphrase per accedere ai profili salvati."
+  },
+  "eoLockedTryAgain": {
+    "message": "Bloccato — riprova tra $1 s"
+  },
+  "eoUnlocking": {
+    "message": "Sblocco…"
+  },
+  "eoUnlock": {
+    "message": "Sblocca"
+  },
+  "eoResetVault": {
+    "message": "Reimposta il vault"
+  },
+  "eoResetTitle": {
+    "message": "Reimpostare il vault?"
+  },
+  "eoResetMessage": {
+    "message": "Questa operazione distrugge in modo permanente tutti i profili salvati. Non è possibile annullarla e non esiste un link di reimpostazione — non potranno essere recuperati."
+  },
+  "eoCouldNotReadLive": {
+    "message": "Impossibile leggere i cookie attivi: $1"
+  },
+  "eoSavedProfile": {
+    "message": "Salvato “$1” con $2 cookie."
+  },
+  "eoSwitchFailedBanner": {
+    "message": "Passaggio a “$1” non riuscito — 0 di $2 cookie applicati. Ripristinato lo stato precedente."
+  },
+  "eoSwitchedApplied": {
+    "message": "Passato a “$1” ($2 cookie applicati)."
+  },
+  "eoSwitchedPartial": {
+    "message": "Passato a “$1” — $2 applicati, $3 non riusciti."
+  },
+  "eoDeletedProfile": {
+    "message": "Eliminato “$1”."
+  },
+  "eoReloadedTabs": {
+    "message": "Ricaricate $1 $2 schede."
+  },
+  "eoVaultUnlocked": {
+    "message": "Vault sbloccato"
+  },
+  "eoLockVault": {
+    "message": "Blocca il vault"
+  },
+  "eoScopeHeading": {
+    "message": "Ambito"
+  },
+  "eoScopeLede": {
+    "message": "I profili operano su un insieme fisso di suffissi host. Cambiare un profilo agisce solo sui cookie che corrispondono a questo ambito — gli altri siti restano intatti."
+  },
+  "eoSite": {
+    "message": "Sito"
+  },
+  "eoCountingLive": {
+    "message": "Conteggio dei cookie attivi…"
+  },
+  "eoLiveCount": {
+    "message": "$1 cookie $2 attivi in questo browser in questo momento"
+  },
+  "eoSaveHeading": {
+    "message": "Salva la sessione corrente come profilo"
+  },
+  "eoSaveLede": {
+    "message": "Cattura ogni cookie che corrisponde all'ambito attivo. Usalo mentre sei connesso all'account $1 che vuoi ricordare."
+  },
+  "eoProfileName": {
+    "message": "Nome del profilo"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "es. “Account QA 3”"
+  },
+  "eoSavingProfile": {
+    "message": "Salvataggio…"
+  },
+  "eoSaveProfile": {
+    "message": "Salva profilo"
+  },
+  "eoProfilesHeading": {
+    "message": "Profili"
+  },
+  "eoNoProfilesYet": {
+    "message": "Ancora nessun profilo. Salva la tua sessione corrente qui sopra per crearne uno."
+  },
+  "eoProfilesCount": {
+    "message": "$1 profili in questo vault."
+  },
+  "eoNoProfilesScope": {
+    "message": "Nessun profilo corrisponde all'ambito attivo."
+  },
+  "eoProfileCookies": {
+    "message": "$1 cookie"
+  },
+  "eoProfileSwitching": {
+    "message": "Cambio in corso…"
+  },
+  "eoProfileSwitch": {
+    "message": "Cambia"
+  },
+  "eoProfileDelete": {
+    "message": "Elimina"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "$1 schede aperte da aggiornare."
+  },
+  "eoReloadTabs": {
+    "message": "Ricarica le schede"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "Cambiare profilo?"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "Passare a “$1”? I tuoi $2 cookie attuali verranno sostituiti e le schede $2 aperte dovranno essere aggiornate dopo."
+  },
+  "eoSwitchConfirm": {
+    "message": "Cambia"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "Eliminare il profilo?"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "Eliminare “$1”? L'operazione non può essere annullata."
+  },
+  "eoDeleteConfirm": {
+    "message": "Elimina"
+  },
+  "eoSafetyHeading": {
+    "message": "Note sulla sicurezza"
+  },
+  "eoSafety1": {
+    "message": "Usa i profili solo per account di tua proprietà o che sei autorizzato a testare. Riutilizzare i cookie di sessione su account che non controlli viola i Termini di servizio della maggior parte dei siti e potrebbe essere illegale."
+  },
+  "eoSafety2": {
+    "message": "Il browser deve aggiornare le schede $1 aperte per acquisire i nuovi cookie. I cookie associati a connessioni WebSocket / SSE a lunga durata possono persistere finché la pagina non viene ricaricata."
+  },
+  "eoSafety3": {
+    "message": "Alcuni siti associano i cookie di sessione ad altri segnali (impronta del dispositivo, IP). Cambiare solo i cookie può attivare un nuovo accesso o una verifica di sicurezza — è il controllo dei rischi del sito, non un bug di CookieVault."
+  },
+  "themeToggle": {
+    "message": "Cambia tema"
+  },
+  "apCodeLabel": {
+    "message": "Codice di accesso"
+  },
+  "apVerifyCode": {
+    "message": "Completa l'accesso"
+  },
+  "apVerifying": {
+    "message": "Verifica in corso…"
+  },
+  "scopeCurrent": {
+    "message": "Questo sito"
+  },
+  "scopeAll": {
+    "message": "Tutti i cookie"
+  },
+  "copyValue": {
+    "message": "Copia valore"
+  },
+  "copied": {
+    "message": "Copiato"
+  },
+  "deleteDomain": {
+    "message": "Elimina tutti in questo dominio"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "Eliminare questi cookie?"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "Eliminare tutti i cookie di $1?"
+  },
+  "noCookiesThisSite": {
+    "message": "Nessun cookie per questo sito."
+  },
+  "toastCopied": {
+    "message": "Valore copiato"
+  },
+  "errNameFormat": {
+    "message": "Il nome del cookie non può contenere spazi, `;` o `=`."
+  },
+  "errDomainFormat": {
+    "message": "Il dominio non sembra valido — inserisci un nome host, senza spazi o schema."
+  },
+  "errHostPrefix": {
+    "message": "I cookie __Host- devono essere Secure, usare il percorso \"/\" ed essere host-only (nessun dominio)."
+  },
+  "errSecurePrefix": {
+    "message": "I cookie __Secure- devono essere Secure."
+  },
+  "errExpiryInvalid": {
+    "message": "Scegli una data di scadenza valida."
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "Cancella ricerca"
+  },
+  "moreFields": {
+    "message": "Altri campi…"
+  },
+  "prefLanguage": {
+    "message": "Lingua"
+  },
+  "langSystem": {
+    "message": "Sistema (browser)"
+  }
+}

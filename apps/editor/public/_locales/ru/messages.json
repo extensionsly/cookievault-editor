@@ -1,0 +1,584 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "MV3-менеджер cookie: редактирование, поиск, импорт и экспорт — с открытым кодом."
+  },
+  "filterPlaceholder": {
+    "message": "Фильтр по домену или имени…"
+  },
+  "filterAriaLabel": {
+    "message": "Фильтровать cookie по домену или имени"
+  },
+  "buttonAdd": {
+    "message": "Добавить"
+  },
+  "buttonImport": {
+    "message": "Импорт"
+  },
+  "buttonExport": {
+    "message": "Экспорт"
+  },
+  "loadingCookies": {
+    "message": "Загрузка cookie…"
+  },
+  "clearFilter": {
+    "message": "Очистить фильтр"
+  },
+  "errorReadCookies": {
+    "message": "Не удалось прочитать cookie."
+  },
+  "statsFiltered": {
+    "message": "$1 из $2 · доменов: $3"
+  },
+  "statsAll": {
+    "message": "$1 · доменов: $2"
+  },
+  "cookieFlagsAria": {
+    "message": "флаги cookie"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "Partitioned (CHIPS)"
+  },
+  "emptyValue": {
+    "message": "пусто"
+  },
+  "editAria": {
+    "message": "Изменить $1"
+  },
+  "editTitle": {
+    "message": "Изменить"
+  },
+  "deleteAria": {
+    "message": "Удалить $1"
+  },
+  "deleteTitle": {
+    "message": "Удалить"
+  },
+  "noCookiesMatch": {
+    "message": "Нет cookie по запросу «$1»."
+  },
+  "noCookiesYet": {
+    "message": "На этой странице пока нет cookie."
+  },
+  "optionsButton": {
+    "message": "Настройки"
+  },
+  "dismiss": {
+    "message": "Закрыть"
+  },
+  "deleteCookieTitle": {
+    "message": "Удалить cookie?"
+  },
+  "deleteCookieMessage": {
+    "message": "Удалить «$1» на $2? Это действие необратимо."
+  },
+  "buttonDelete": {
+    "message": "Удалить"
+  },
+  "cancel": {
+    "message": "Отмена"
+  },
+  "toastDeleted": {
+    "message": "Удалено: $1"
+  },
+  "toastSaved": {
+    "message": "Сохранено: $1"
+  },
+  "toastExported": {
+    "message": "Экспортировано cookie: $1"
+  },
+  "toastImported": {
+    "message": "Импортировано cookie: $1 из $2"
+  },
+  "toastImportedPartial": {
+    "message": "Импортировано $1 из $2 (ошибок: $3)"
+  },
+  "editCookieTitle": {
+    "message": "Изменить cookie"
+  },
+  "close": {
+    "message": "Закрыть"
+  },
+  "fieldName": {
+    "message": "Имя"
+  },
+  "fieldDomain": {
+    "message": "Домен"
+  },
+  "fieldPath": {
+    "message": "Путь"
+  },
+  "fieldValue": {
+    "message": "Значение"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "Host-only"
+  },
+  "expiryLegend": {
+    "message": "Срок действия"
+  },
+  "expirySession": {
+    "message": "Сеанс"
+  },
+  "expiryUntil": {
+    "message": "До"
+  },
+  "timezoneHint": {
+    "message": "Время указано в вашем местном часовом поясе."
+  },
+  "buttonSave": {
+    "message": "Сохранить"
+  },
+  "saving": {
+    "message": "Сохранение…"
+  },
+  "profilesLoading": {
+    "message": "Профили…"
+  },
+  "setupVault": {
+    "message": "Профили · Настроить хранилище →"
+  },
+  "unlockInOptions": {
+    "message": "Профили заблокированы · Разблокировать в настройках →"
+  },
+  "profileScopeAria": {
+    "message": "Область профиля"
+  },
+  "lockVault": {
+    "message": "Заблокировать хранилище"
+  },
+  "lockButton": {
+    "message": "Заблокировать"
+  },
+  "noProfilesForScope": {
+    "message": "Нет профилей для $1."
+  },
+  "saveOne": {
+    "message": "Сохранить →"
+  },
+  "switchButton": {
+    "message": "Переключить"
+  },
+  "switching": {
+    "message": "Переключение…"
+  },
+  "cookiesInScope": {
+    "message": "cookie в области"
+  },
+  "tabsNeedRefresh": {
+    "message": "$1 $2 вкладок нужно обновить"
+  },
+  "reloadButton": {
+    "message": "Перезагрузить"
+  },
+  "switchProfileTitle": {
+    "message": "Переключить профиль?"
+  },
+  "switchProfileMessage": {
+    "message": "Переключиться на «$1»? Ваши текущие cookie ($2) будут заменены."
+  },
+  "switchConfirm": {
+    "message": "Переключить"
+  },
+  "toastSwitchFailed": {
+    "message": "Не удалось переключить — применено 0 из $1 cookie. Изменения отменены."
+  },
+  "toastSwitched": {
+    "message": "Переключено на «$1» (cookie: $2)"
+  },
+  "toastSwitchedPartial": {
+    "message": "Переключено — применено $1, ошибок $2"
+  },
+  "toastReloaded": {
+    "message": "Перезагружено $1 $2 вкладок"
+  },
+  "justNow": {
+    "message": "только что"
+  },
+  "minutesAgo": {
+    "message": "$1 мин назад"
+  },
+  "hoursAgo": {
+    "message": "$1 ч назад"
+  },
+  "apAccount": {
+    "message": "Аккаунт"
+  },
+  "apSignInLede": {
+    "message": "Войдите по электронной почте, чтобы включить зашифрованную синхронизацию между устройствами. Синхронизация защищена сквозным шифрованием — даже мы не можем прочитать ваши данные."
+  },
+  "apEmail": {
+    "message": "Эл. почта"
+  },
+  "apSending": {
+    "message": "Отправка…"
+  },
+  "apSendMagicLink": {
+    "message": "Отправить ссылку для входа"
+  },
+  "apMagicSent": {
+    "message": "Ссылка для входа отправлена — проверьте почту. Срок действия ссылки — 3 минуты."
+  },
+  "apSignedInAs": {
+    "message": "Вы вошли как"
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "Free"
+  },
+  "apPlanLabel": {
+    "message": "тариф"
+  },
+  "apUpgrade": {
+    "message": "Повысить"
+  },
+  "apSyncing": {
+    "message": "Синхронизация…"
+  },
+  "apSyncNow": {
+    "message": "Синхронизировать"
+  },
+  "apSignOut": {
+    "message": "Выйти"
+  },
+  "apLastSynced": {
+    "message": "Последняя синхронизация: $1"
+  },
+  "apNotSynced": {
+    "message": "Ещё не синхронизировано"
+  },
+  "apReloadBanner": {
+    "message": "Удалённое хранилище загружено. Перезагрузите эту страницу, чтобы применить изменения."
+  },
+  "apReload": {
+    "message": "Перезагрузить"
+  },
+  "apConflict": {
+    "message": "Конфликт — другое устройство обновило это хранилище. Разрешите:"
+  },
+  "apKeepMine": {
+    "message": "Оставить мои"
+  },
+  "apKeepMineTitle": {
+    "message": "Перезаписать удалённое хранилище вашей локальной версией. Изменения с другого устройства будут потеряны."
+  },
+  "apTakeTheirs": {
+    "message": "Взять чужие"
+  },
+  "apTakeTheirsTitle": {
+    "message": "Заменить локальное хранилище удалённой версией. Ваши несинхронизированные локальные изменения будут потеряны."
+  },
+  "apResultSynced": {
+    "message": "Актуально."
+  },
+  "apResultPushed": {
+    "message": "Локальные изменения отправлены на сервер."
+  },
+  "apResultPulled": {
+    "message": "Удалённое хранилище загружено. Перезагрузите для применения."
+  },
+  "apResultNoAuth": {
+    "message": "Требуется вход."
+  },
+  "apResultConflict": {
+    "message": "Конфликт — разрешите выше."
+  },
+  "apResultOffline": {
+    "message": "Вы офлайн — синхронизация повторится, когда соединение восстановится."
+  },
+  "apResultError": {
+    "message": "Ошибка синхронизации: $1"
+  },
+  "apTelemetry": {
+    "message": "Отправлять анонимные отчёты об ошибках — без URL, доменов cookie и адресов эл. почты. По умолчанию отключено."
+  },
+  "apHowThisWorks": {
+    "message": "Как это работает"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — Настройки"
+  },
+  "eoLead": {
+    "message": "Управляйте зашифрованными профилями cookie: сохраняйте состояние входа и переключайтесь между аккаунтами в любое время."
+  },
+  "eoLoadingVault": {
+    "message": "Загрузка хранилища…"
+  },
+  "eoStrengthAria": {
+    "message": "Надёжность: $1"
+  },
+  "eoCracksIn": {
+    "message": "· взлом за $1"
+  },
+  "eoPassphraseWeak": {
+    "message": "Парольная фраза «$1». Выберите более надёжную — лучше всего длинная случайная фраза."
+  },
+  "eoPassMismatch": {
+    "message": "Парольные фразы не совпадают."
+  },
+  "eoSetupHeading": {
+    "message": "Настроить хранилище профилей"
+  },
+  "eoSetupLede": {
+    "message": "Cookie профилей шифруются при хранении с помощью AES-256-GCM. Ключ выводится из вашей парольной фразы через PBKDF2 (600 000 итераций). Парольная фраза нигде не хранится и не покидает это устройство."
+  },
+  "eoPassphrase": {
+    "message": "Парольная фраза"
+  },
+  "eoConfirm": {
+    "message": "Подтвердите"
+  },
+  "eoCreating": {
+    "message": "Создание…"
+  },
+  "eoCreateVault": {
+    "message": "Создать хранилище"
+  },
+  "eoWarnForget": {
+    "message": "Если вы забудете парольную фразу, ваши профили невозможно будет восстановить. Ссылки для сброса нет."
+  },
+  "eoWarnReenter": {
+    "message": "Вам нужно будет вводить парольную фразу один раз за сеанс браузера."
+  },
+  "eoTooManyAttempts": {
+    "message": "Слишком много неверных попыток. Дождитесь окончания блокировки."
+  },
+  "eoLockedOut60": {
+    "message": "Неверная парольная фраза — блокировка на 60 секунд."
+  },
+  "eoWrongPassAttempts": {
+    "message": "Неверная парольная фраза. Осталось попыток до блокировки: $1."
+  },
+  "eoUnlockHeading": {
+    "message": "Разблокировать хранилище профилей"
+  },
+  "eoUnlockLede": {
+    "message": "Введите парольную фразу для доступа к сохранённым профилям."
+  },
+  "eoLockedTryAgain": {
+    "message": "Заблокировано — повторите через $1 с"
+  },
+  "eoUnlocking": {
+    "message": "Разблокировка…"
+  },
+  "eoUnlock": {
+    "message": "Разблокировать"
+  },
+  "eoResetVault": {
+    "message": "Сбросить хранилище"
+  },
+  "eoResetTitle": {
+    "message": "Сбросить хранилище?"
+  },
+  "eoResetMessage": {
+    "message": "Это безвозвратно уничтожит все сохранённые профили. Отмены и ссылки для сброса нет — восстановить их невозможно."
+  },
+  "eoCouldNotReadLive": {
+    "message": "Не удалось прочитать активные cookie: $1"
+  },
+  "eoSavedProfile": {
+    "message": "Профиль «$1» сохранён ($2 cookie)."
+  },
+  "eoSwitchFailedBanner": {
+    "message": "Не удалось переключиться на «$1» — применено 0 из $2 cookie. Возврат к предыдущему состоянию."
+  },
+  "eoSwitchedApplied": {
+    "message": "Переключено на «$1» (применено cookie: $2)."
+  },
+  "eoSwitchedPartial": {
+    "message": "Переключено на «$1» — применено $2, ошибок $3."
+  },
+  "eoDeletedProfile": {
+    "message": "Профиль «$1» удалён."
+  },
+  "eoReloadedTabs": {
+    "message": "Перезагружено $1 $2 вкладок."
+  },
+  "eoVaultUnlocked": {
+    "message": "Хранилище разблокировано"
+  },
+  "eoLockVault": {
+    "message": "Заблокировать хранилище"
+  },
+  "eoScopeHeading": {
+    "message": "Область"
+  },
+  "eoScopeLede": {
+    "message": "Профили работают с фиксированным набором суффиксов хостов. Переключение профиля затрагивает только cookie, соответствующие этой области — другие сайты остаются нетронутыми."
+  },
+  "eoSite": {
+    "message": "Сайт"
+  },
+  "eoCountingLive": {
+    "message": "Подсчёт активных cookie…"
+  },
+  "eoLiveCount": {
+    "message": "$1 активных $2 cookie в этом браузере прямо сейчас"
+  },
+  "eoSaveHeading": {
+    "message": "Сохранить текущий сеанс как профиль"
+  },
+  "eoSaveLede": {
+    "message": "Захватывает все cookie, соответствующие активной области. Используйте это, пока вы вошли в аккаунт $1, который хотите запомнить."
+  },
+  "eoProfileName": {
+    "message": "Имя профиля"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "напр. «Тест-аккаунт 3»"
+  },
+  "eoSavingProfile": {
+    "message": "Сохранение…"
+  },
+  "eoSaveProfile": {
+    "message": "Сохранить профиль"
+  },
+  "eoProfilesHeading": {
+    "message": "Профили"
+  },
+  "eoNoProfilesYet": {
+    "message": "Профилей пока нет. Сохраните текущий сеанс выше, чтобы создать профиль."
+  },
+  "eoProfilesCount": {
+    "message": "Профилей в этом хранилище: $1."
+  },
+  "eoNoProfilesScope": {
+    "message": "Нет профилей, соответствующих активной области."
+  },
+  "eoProfileCookies": {
+    "message": "cookie: $1"
+  },
+  "eoProfileSwitching": {
+    "message": "Переключение…"
+  },
+  "eoProfileSwitch": {
+    "message": "Переключить"
+  },
+  "eoProfileDelete": {
+    "message": "Удалить"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "$1 открытых вкладок нужно обновить."
+  },
+  "eoReloadTabs": {
+    "message": "Перезагрузить вкладки"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "Переключить профиль?"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "Переключиться на «$1»? Ваши текущие cookie ($2) будут заменены, а открытые вкладки $2 нужно будет обновить."
+  },
+  "eoSwitchConfirm": {
+    "message": "Переключить"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "Удалить профиль?"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "Удалить «$1»? Это действие необратимо."
+  },
+  "eoDeleteConfirm": {
+    "message": "Удалить"
+  },
+  "eoSafetyHeading": {
+    "message": "Заметки по безопасности"
+  },
+  "eoSafety1": {
+    "message": "Используйте профили только для аккаунтов, которыми вы владеете или которые вам разрешено тестировать. Повторное использование сеансовых cookie на чужих аккаунтах нарушает условия использования большинства сайтов и может быть незаконным."
+  },
+  "eoSafety2": {
+    "message": "Браузер должен обновить открытые вкладки $1, чтобы подхватить новые cookie. Cookie, привязанные к долгоживущим соединениям WebSocket / SSE, могут сохраняться до перезагрузки страницы."
+  },
+  "eoSafety3": {
+    "message": "Некоторые сайты привязывают сеансовые cookie к другим сигналам (отпечаток устройства, IP). Переключение одних только cookie может вызвать повторный вход или проверку безопасности — это контроль рисков сайта, а не ошибка CookieVault."
+  },
+  "themeToggle": {
+    "message": "Сменить тему"
+  },
+  "apCodeLabel": {
+    "message": "Код для входа"
+  },
+  "apVerifyCode": {
+    "message": "Завершить вход"
+  },
+  "apVerifying": {
+    "message": "Проверка…"
+  },
+  "scopeCurrent": {
+    "message": "Этот сайт"
+  },
+  "scopeAll": {
+    "message": "Все файлы cookie"
+  },
+  "copyValue": {
+    "message": "Копировать значение"
+  },
+  "copied": {
+    "message": "Скопировано"
+  },
+  "deleteDomain": {
+    "message": "Удалить все в этом домене"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "Удалить эти файлы cookie?"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "Удалить все файлы cookie для $1?"
+  },
+  "noCookiesThisSite": {
+    "message": "Нет файлов cookie для этого сайта."
+  },
+  "toastCopied": {
+    "message": "Значение скопировано"
+  },
+  "errNameFormat": {
+    "message": "Имя cookie не может содержать пробелы, `;` или `=`."
+  },
+  "errDomainFormat": {
+    "message": "Домен выглядит недопустимым — введите имя хоста, без пробелов и схемы."
+  },
+  "errHostPrefix": {
+    "message": "Файлы cookie __Host- должны быть Secure, использовать путь \"/\" и быть host-only (без домена)."
+  },
+  "errSecurePrefix": {
+    "message": "Файлы cookie __Secure- должны быть Secure."
+  },
+  "errExpiryInvalid": {
+    "message": "Выберите допустимую дату истечения срока."
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "Очистить поиск"
+  },
+  "moreFields": {
+    "message": "Больше полей…"
+  },
+  "prefLanguage": {
+    "message": "Язык"
+  },
+  "langSystem": {
+    "message": "Система (браузер)"
+  }
+}

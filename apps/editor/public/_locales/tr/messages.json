@@ -1,0 +1,584 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "MV3 çerez yöneticisi: düzenle, ara, içe & dışa aktar — açık kaynak."
+  },
+  "filterPlaceholder": {
+    "message": "Etki alanı veya ada göre filtrele…"
+  },
+  "filterAriaLabel": {
+    "message": "Çerezleri etki alanı veya ada göre filtrele"
+  },
+  "buttonAdd": {
+    "message": "Ekle"
+  },
+  "buttonImport": {
+    "message": "İçe aktar"
+  },
+  "buttonExport": {
+    "message": "Dışa aktar"
+  },
+  "loadingCookies": {
+    "message": "Çerezler yükleniyor…"
+  },
+  "clearFilter": {
+    "message": "Filtreyi temizle"
+  },
+  "errorReadCookies": {
+    "message": "Çerezler okunamadı."
+  },
+  "statsFiltered": {
+    "message": "$2 içinden $1 · $3 etki alanı"
+  },
+  "statsAll": {
+    "message": "$1 · $2 etki alanı"
+  },
+  "cookieFlagsAria": {
+    "message": "çerez bayrakları"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "Partitioned (CHIPS)"
+  },
+  "emptyValue": {
+    "message": "boş"
+  },
+  "editAria": {
+    "message": "$1 öğesini düzenle"
+  },
+  "editTitle": {
+    "message": "Düzenle"
+  },
+  "deleteAria": {
+    "message": "$1 öğesini sil"
+  },
+  "deleteTitle": {
+    "message": "Sil"
+  },
+  "noCookiesMatch": {
+    "message": "“$1” ile eşleşen çerez yok."
+  },
+  "noCookiesYet": {
+    "message": "Bu sayfada henüz çerez yok."
+  },
+  "optionsButton": {
+    "message": "Seçenekler"
+  },
+  "dismiss": {
+    "message": "Kapat"
+  },
+  "deleteCookieTitle": {
+    "message": "Çerez silinsin mi?"
+  },
+  "deleteCookieMessage": {
+    "message": "$2 üzerindeki “$1” silinsin mi? Bu işlem geri alınamaz."
+  },
+  "buttonDelete": {
+    "message": "Sil"
+  },
+  "cancel": {
+    "message": "İptal"
+  },
+  "toastDeleted": {
+    "message": "$1 silindi"
+  },
+  "toastSaved": {
+    "message": "$1 kaydedildi"
+  },
+  "toastExported": {
+    "message": "$1 çerez dışa aktarıldı"
+  },
+  "toastImported": {
+    "message": "$2 kaynağından $1 çerez içe aktarıldı"
+  },
+  "toastImportedPartial": {
+    "message": "$2 içinden $1 içe aktarıldı ($3 başarısız)"
+  },
+  "editCookieTitle": {
+    "message": "Çerezi düzenle"
+  },
+  "close": {
+    "message": "Kapat"
+  },
+  "fieldName": {
+    "message": "Ad"
+  },
+  "fieldDomain": {
+    "message": "Etki alanı"
+  },
+  "fieldPath": {
+    "message": "Yol"
+  },
+  "fieldValue": {
+    "message": "Değer"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "Host-only"
+  },
+  "expiryLegend": {
+    "message": "Son kullanma"
+  },
+  "expirySession": {
+    "message": "Oturum"
+  },
+  "expiryUntil": {
+    "message": "Şu tarihe kadar"
+  },
+  "timezoneHint": {
+    "message": "Saatler yerel saat diliminizle gösterilir."
+  },
+  "buttonSave": {
+    "message": "Kaydet"
+  },
+  "saving": {
+    "message": "Kaydediliyor…"
+  },
+  "profilesLoading": {
+    "message": "Profiller…"
+  },
+  "setupVault": {
+    "message": "Profiller · Kasayı kur →"
+  },
+  "unlockInOptions": {
+    "message": "Profiller kilitli · Seçenekler'de kilidi aç →"
+  },
+  "profileScopeAria": {
+    "message": "Profil kapsamı"
+  },
+  "lockVault": {
+    "message": "Kasayı kilitle"
+  },
+  "lockButton": {
+    "message": "Kilitle"
+  },
+  "noProfilesForScope": {
+    "message": "$1 için profil yok."
+  },
+  "saveOne": {
+    "message": "Bir tane kaydet →"
+  },
+  "switchButton": {
+    "message": "Geç"
+  },
+  "switching": {
+    "message": "Geçiliyor…"
+  },
+  "cookiesInScope": {
+    "message": "kapsamdaki çerez"
+  },
+  "tabsNeedRefresh": {
+    "message": "$1 $2 sekmenin yenilenmesi gerekiyor"
+  },
+  "reloadButton": {
+    "message": "Yeniden yükle"
+  },
+  "switchProfileTitle": {
+    "message": "Profil değiştirilsin mi?"
+  },
+  "switchProfileMessage": {
+    "message": "“$1” profiline geçilsin mi? Mevcut $2 çerezleriniz değiştirilecek."
+  },
+  "switchConfirm": {
+    "message": "Geç"
+  },
+  "toastSwitchFailed": {
+    "message": "Geçiş başarısız — $1 çerezden 0'ı uygulandı. Geri alındı."
+  },
+  "toastSwitched": {
+    "message": "“$1” profiline geçildi ($2 çerez)"
+  },
+  "toastSwitchedPartial": {
+    "message": "Geçildi — $1 uygulandı, $2 başarısız"
+  },
+  "toastReloaded": {
+    "message": "$1 $2 sekme yeniden yüklendi"
+  },
+  "justNow": {
+    "message": "az önce"
+  },
+  "minutesAgo": {
+    "message": "$1 dk önce"
+  },
+  "hoursAgo": {
+    "message": "$1 sa önce"
+  },
+  "apAccount": {
+    "message": "Hesap"
+  },
+  "apSignInLede": {
+    "message": "Şifreli cihazlar arası senkronizasyonu etkinleştirmek için e-postayla giriş yapın. Senkronizasyon uçtan uca şifrelidir — senkronize edilen verilerinizi biz bile okuyamayız."
+  },
+  "apEmail": {
+    "message": "E-posta"
+  },
+  "apSending": {
+    "message": "Gönderiliyor…"
+  },
+  "apSendMagicLink": {
+    "message": "Sihirli bağlantı gönder"
+  },
+  "apMagicSent": {
+    "message": "Sihirli bağlantı gönderildi — e-postanızı kontrol edin. Bağlantı 3 dakika içinde sona erer."
+  },
+  "apSignedInAs": {
+    "message": "Giriş yapılan hesap"
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "Ücretsiz"
+  },
+  "apPlanLabel": {
+    "message": "plan"
+  },
+  "apUpgrade": {
+    "message": "Yükselt"
+  },
+  "apSyncing": {
+    "message": "Senkronize ediliyor…"
+  },
+  "apSyncNow": {
+    "message": "Şimdi senkronize et"
+  },
+  "apSignOut": {
+    "message": "Çıkış yap"
+  },
+  "apLastSynced": {
+    "message": "Son senkronizasyon $1"
+  },
+  "apNotSynced": {
+    "message": "Henüz senkronize edilmedi"
+  },
+  "apReloadBanner": {
+    "message": "Uzak kasa çekildi. Uygulamak için bu sayfayı yeniden yükleyin."
+  },
+  "apReload": {
+    "message": "Yeniden yükle"
+  },
+  "apConflict": {
+    "message": "Çakışma — başka bir cihaz bu kasayı güncelledi. Çözün:"
+  },
+  "apKeepMine": {
+    "message": "Benimkini tut"
+  },
+  "apKeepMineTitle": {
+    "message": "Uzak kasanın üzerine yerel sürümünüzü yazın. Diğer cihazın değişiklikleri kaybolur."
+  },
+  "apTakeTheirs": {
+    "message": "Onlarınkini al"
+  },
+  "apTakeTheirsTitle": {
+    "message": "Yerel kasanızı uzak sürümle değiştirin. Senkronize edilmemiş yerel değişiklikleriniz kaybolur."
+  },
+  "apResultSynced": {
+    "message": "Güncel."
+  },
+  "apResultPushed": {
+    "message": "Yerel değişiklikler sunucuya gönderildi."
+  },
+  "apResultPulled": {
+    "message": "Uzak kasa çekildi. Etkili olması için yeniden yükleyin."
+  },
+  "apResultNoAuth": {
+    "message": "Giriş gerekli."
+  },
+  "apResultConflict": {
+    "message": "Çakışma — yukarıdan çözün."
+  },
+  "apResultOffline": {
+    "message": "Çevrimdışısınız — çevrimiçi olunca senkronizasyon yeniden denenecek."
+  },
+  "apResultError": {
+    "message": "Senkronizasyon hatası: $1"
+  },
+  "apTelemetry": {
+    "message": "Anonimleştirilmiş hata raporları gönder — URL, çerez etki alanı veya e-posta adresi içermez. Varsayılan olarak kapalı."
+  },
+  "apHowThisWorks": {
+    "message": "Bu nasıl çalışır"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — Seçenekler"
+  },
+  "eoLead": {
+    "message": "Şifreli çerez profillerini yönetin — bir oturum durumunu kaydedin ve istediğiniz zaman hesaplar arasında geçiş yapın."
+  },
+  "eoLoadingVault": {
+    "message": "Kasa yükleniyor…"
+  },
+  "eoStrengthAria": {
+    "message": "Güç: $1"
+  },
+  "eoCracksIn": {
+    "message": "· kırılma süresi $1"
+  },
+  "eoPassphraseWeak": {
+    "message": "Parola “$1”. Daha güçlü bir şey seçin — uzun ve rastgele bir cümle en iyisidir."
+  },
+  "eoPassMismatch": {
+    "message": "Parolalar eşleşmiyor."
+  },
+  "eoSetupHeading": {
+    "message": "Profil kasasını kur"
+  },
+  "eoSetupLede": {
+    "message": "Profil çerezleri durağan halde AES-256-GCM ile şifrelenir. Anahtar, parolanızdan PBKDF2 (600.000 yineleme) ile türetilir. Parola hiçbir zaman saklanmaz ve bu cihazdan asla ayrılmaz."
+  },
+  "eoPassphrase": {
+    "message": "Parola"
+  },
+  "eoConfirm": {
+    "message": "Onayla"
+  },
+  "eoCreating": {
+    "message": "Oluşturuluyor…"
+  },
+  "eoCreateVault": {
+    "message": "Kasa oluştur"
+  },
+  "eoWarnForget": {
+    "message": "Parolayı unutursanız profilleriniz kurtarılamaz. Sıfırlama bağlantısı yoktur."
+  },
+  "eoWarnReenter": {
+    "message": "Parolayı her tarayıcı oturumunda bir kez yeniden gireceksiniz."
+  },
+  "eoTooManyAttempts": {
+    "message": "Çok fazla yanlış deneme. Kilidin açılmasını bekleyin."
+  },
+  "eoLockedOut60": {
+    "message": "Yanlış parola — 60 saniye boyunca kilitlendi."
+  },
+  "eoWrongPassAttempts": {
+    "message": "Yanlış parola. Kilitlenmeden önce $1 deneme kaldı."
+  },
+  "eoUnlockHeading": {
+    "message": "Profil kasasının kilidini aç"
+  },
+  "eoUnlockLede": {
+    "message": "Kayıtlı profillere erişmek için parolanızı girin."
+  },
+  "eoLockedTryAgain": {
+    "message": "Kilitli — $1 sn sonra tekrar deneyin"
+  },
+  "eoUnlocking": {
+    "message": "Kilit açılıyor…"
+  },
+  "eoUnlock": {
+    "message": "Kilidi aç"
+  },
+  "eoResetVault": {
+    "message": "Kasayı sıfırla"
+  },
+  "eoResetTitle": {
+    "message": "Kasa sıfırlansın mı?"
+  },
+  "eoResetMessage": {
+    "message": "Bu, kayıtlı tüm profilleri kalıcı olarak yok eder. Geri alma ve sıfırlama bağlantısı yoktur — kurtarılamazlar."
+  },
+  "eoCouldNotReadLive": {
+    "message": "Canlı çerezler okunamadı: $1"
+  },
+  "eoSavedProfile": {
+    "message": "“$1” $2 çerezle kaydedildi."
+  },
+  "eoSwitchFailedBanner": {
+    "message": "“$1” profiline geçiş başarısız — $2 çerezden 0'ı uygulandı. Önceki duruma geri alındı."
+  },
+  "eoSwitchedApplied": {
+    "message": "“$1” profiline geçildi ($2 çerez uygulandı)."
+  },
+  "eoSwitchedPartial": {
+    "message": "“$1” profiline geçildi — $2 uygulandı, $3 başarısız."
+  },
+  "eoDeletedProfile": {
+    "message": "“$1” silindi."
+  },
+  "eoReloadedTabs": {
+    "message": "$1 $2 sekme yeniden yüklendi."
+  },
+  "eoVaultUnlocked": {
+    "message": "Kasanın kilidi açıldı"
+  },
+  "eoLockVault": {
+    "message": "Kasayı kilitle"
+  },
+  "eoScopeHeading": {
+    "message": "Kapsam"
+  },
+  "eoScopeLede": {
+    "message": "Profiller sabit bir ana bilgisayar son eki kümesi üzerinde çalışır. Bir profili değiştirmek yalnızca bu kapsamla eşleşen çerezlere dokunur — diğer siteler değişmeden kalır."
+  },
+  "eoSite": {
+    "message": "Site"
+  },
+  "eoCountingLive": {
+    "message": "Canlı çerezler sayılıyor…"
+  },
+  "eoLiveCount": {
+    "message": "Şu anda bu tarayıcıda $1 canlı $2 çerez"
+  },
+  "eoSaveHeading": {
+    "message": "Mevcut oturumu profil olarak kaydet"
+  },
+  "eoSaveLede": {
+    "message": "Etkin kapsamla eşleşen her çerezi yakalar. Bunu hatırlamak istediğiniz $1 hesabında oturum açıkken kullanın."
+  },
+  "eoProfileName": {
+    "message": "Profil adı"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "örn. “QA hesabı 3”"
+  },
+  "eoSavingProfile": {
+    "message": "Kaydediliyor…"
+  },
+  "eoSaveProfile": {
+    "message": "Profili kaydet"
+  },
+  "eoProfilesHeading": {
+    "message": "Profiller"
+  },
+  "eoNoProfilesYet": {
+    "message": "Henüz profil yok. Bir tane oluşturmak için mevcut oturumunuzu yukarıda kaydedin."
+  },
+  "eoProfilesCount": {
+    "message": "Bu kasada $1 profil var."
+  },
+  "eoNoProfilesScope": {
+    "message": "Etkin kapsamla eşleşen profil yok."
+  },
+  "eoProfileCookies": {
+    "message": "$1 çerez"
+  },
+  "eoProfileSwitching": {
+    "message": "Geçiliyor…"
+  },
+  "eoProfileSwitch": {
+    "message": "Geç"
+  },
+  "eoProfileDelete": {
+    "message": "Sil"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "$1 açık sekmenin yenilenmesi gerekiyor."
+  },
+  "eoReloadTabs": {
+    "message": "Sekmeleri yeniden yükle"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "Profil değiştirilsin mi?"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "“$1” profiline geçilsin mi? Mevcut $2 çerezleriniz değiştirilecek ve sonrasında açık $2 sekmelerin yenilenmesi gerekecek."
+  },
+  "eoSwitchConfirm": {
+    "message": "Geç"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "Profil silinsin mi?"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "“$1” silinsin mi? Bu işlem geri alınamaz."
+  },
+  "eoDeleteConfirm": {
+    "message": "Sil"
+  },
+  "eoSafetyHeading": {
+    "message": "Güvenlik notları"
+  },
+  "eoSafety1": {
+    "message": "Profilleri yalnızca sahip olduğunuz veya test etmeye yetkili olduğunuz hesaplar için kullanın. Kontrol etmediğiniz hesaplarda oturum çerezlerini yeniden kullanmak çoğu sitede Hizmet Şartları ihlalidir ve yasa dışı olabilir."
+  },
+  "eoSafety2": {
+    "message": "Yeni çerezleri almak için tarayıcının açık $1 sekmeleri yenilemesi gerekir. Uzun ömürlü WebSocket / SSE bağlantılarına bağlı çerezler, sayfa yeniden yüklenene kadar kalabilir."
+  },
+  "eoSafety3": {
+    "message": "Bazı siteler oturum çerezlerini başka sinyallere (cihaz parmak izi, IP) bağlar. Yalnızca çerezleri değiştirmek yeniden oturum açmayı veya bir güvenlik doğrulamasını tetikleyebilir — bu sitenin risk kontrolüdür, CookieVault'ta bir hata değildir."
+  },
+  "themeToggle": {
+    "message": "Temayı değiştir"
+  },
+  "apCodeLabel": {
+    "message": "Oturum açma kodu"
+  },
+  "apVerifyCode": {
+    "message": "Oturum açmayı tamamla"
+  },
+  "apVerifying": {
+    "message": "Doğrulanıyor…"
+  },
+  "scopeCurrent": {
+    "message": "Bu site"
+  },
+  "scopeAll": {
+    "message": "Tüm çerezler"
+  },
+  "copyValue": {
+    "message": "Değeri kopyala"
+  },
+  "copied": {
+    "message": "Kopyalandı"
+  },
+  "deleteDomain": {
+    "message": "Bu alan adındakilerin tümünü sil"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "Bu çerezler silinsin mi?"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "$1 için tüm çerezler silinsin mi?"
+  },
+  "noCookiesThisSite": {
+    "message": "Bu site için çerez yok."
+  },
+  "toastCopied": {
+    "message": "Değer kopyalandı"
+  },
+  "errNameFormat": {
+    "message": "Çerez adı boşluk, `;` veya `=` içeremez."
+  },
+  "errDomainFormat": {
+    "message": "Alan adı geçersiz görünüyor — boşluk veya şema olmadan bir ana bilgisayar adı girin."
+  },
+  "errHostPrefix": {
+    "message": "__Host- çerezleri Secure olmalı, \"/\" yolunu kullanmalı ve host-only olmalıdır (alan adı yok)."
+  },
+  "errSecurePrefix": {
+    "message": "__Secure- çerezleri Secure olmalıdır."
+  },
+  "errExpiryInvalid": {
+    "message": "Geçerli bir son kullanma tarihi seçin."
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "Aramayı temizle"
+  },
+  "moreFields": {
+    "message": "Daha fazla alan…"
+  },
+  "prefLanguage": {
+    "message": "Dil"
+  },
+  "langSystem": {
+    "message": "Sistem (tarayıcı)"
+  }
+}

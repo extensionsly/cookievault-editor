@@ -1,0 +1,584 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "MV3 cookiebeheer: bewerken, zoeken, importeren & exporteren — open source."
+  },
+  "filterPlaceholder": {
+    "message": "Filter op domein of naam…"
+  },
+  "filterAriaLabel": {
+    "message": "Cookies filteren op domein of naam"
+  },
+  "buttonAdd": {
+    "message": "Toevoegen"
+  },
+  "buttonImport": {
+    "message": "Importeren"
+  },
+  "buttonExport": {
+    "message": "Exporteren"
+  },
+  "loadingCookies": {
+    "message": "Cookies laden…"
+  },
+  "clearFilter": {
+    "message": "Filter wissen"
+  },
+  "errorReadCookies": {
+    "message": "Kan cookies niet lezen."
+  },
+  "statsFiltered": {
+    "message": "$1 van $2 · $3 domeinen"
+  },
+  "statsAll": {
+    "message": "$1 · $2 domeinen"
+  },
+  "cookieFlagsAria": {
+    "message": "cookievlaggen"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "Partitioned (CHIPS)"
+  },
+  "emptyValue": {
+    "message": "leeg"
+  },
+  "editAria": {
+    "message": "$1 bewerken"
+  },
+  "editTitle": {
+    "message": "Bewerken"
+  },
+  "deleteAria": {
+    "message": "$1 verwijderen"
+  },
+  "deleteTitle": {
+    "message": "Verwijderen"
+  },
+  "noCookiesMatch": {
+    "message": "Geen cookies gevonden voor “$1”."
+  },
+  "noCookiesYet": {
+    "message": "Nog geen cookies op deze pagina."
+  },
+  "optionsButton": {
+    "message": "Opties"
+  },
+  "dismiss": {
+    "message": "Sluiten"
+  },
+  "deleteCookieTitle": {
+    "message": "Cookie verwijderen?"
+  },
+  "deleteCookieMessage": {
+    "message": "“$1” op $2 verwijderen? Dit kan niet ongedaan worden gemaakt."
+  },
+  "buttonDelete": {
+    "message": "Verwijderen"
+  },
+  "cancel": {
+    "message": "Annuleren"
+  },
+  "toastDeleted": {
+    "message": "$1 verwijderd"
+  },
+  "toastSaved": {
+    "message": "$1 opgeslagen"
+  },
+  "toastExported": {
+    "message": "$1 cookies geëxporteerd"
+  },
+  "toastImported": {
+    "message": "$1 cookies geïmporteerd uit $2"
+  },
+  "toastImportedPartial": {
+    "message": "$1 van $2 geïmporteerd ($3 mislukt)"
+  },
+  "editCookieTitle": {
+    "message": "Cookie bewerken"
+  },
+  "close": {
+    "message": "Sluiten"
+  },
+  "fieldName": {
+    "message": "Naam"
+  },
+  "fieldDomain": {
+    "message": "Domein"
+  },
+  "fieldPath": {
+    "message": "Pad"
+  },
+  "fieldValue": {
+    "message": "Waarde"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "Host-only"
+  },
+  "expiryLegend": {
+    "message": "Vervaldatum"
+  },
+  "expirySession": {
+    "message": "Sessie"
+  },
+  "expiryUntil": {
+    "message": "Tot"
+  },
+  "timezoneHint": {
+    "message": "Tijden staan in je lokale tijdzone."
+  },
+  "buttonSave": {
+    "message": "Opslaan"
+  },
+  "saving": {
+    "message": "Opslaan…"
+  },
+  "profilesLoading": {
+    "message": "Profielen…"
+  },
+  "setupVault": {
+    "message": "Profielen · Kluis instellen →"
+  },
+  "unlockInOptions": {
+    "message": "Profielen vergrendeld · Ontgrendelen in Opties →"
+  },
+  "profileScopeAria": {
+    "message": "Profielbereik"
+  },
+  "lockVault": {
+    "message": "Kluis vergrendelen"
+  },
+  "lockButton": {
+    "message": "Vergrendelen"
+  },
+  "noProfilesForScope": {
+    "message": "Geen profielen voor $1."
+  },
+  "saveOne": {
+    "message": "Er een opslaan →"
+  },
+  "switchButton": {
+    "message": "Wisselen"
+  },
+  "switching": {
+    "message": "Wisselen…"
+  },
+  "cookiesInScope": {
+    "message": "cookies in bereik"
+  },
+  "tabsNeedRefresh": {
+    "message": "$1 $2-tabbladen moeten vernieuwd worden"
+  },
+  "reloadButton": {
+    "message": "Vernieuwen"
+  },
+  "switchProfileTitle": {
+    "message": "Profiel wisselen?"
+  },
+  "switchProfileMessage": {
+    "message": "Wisselen naar “$1”? Je huidige $2-cookies worden vervangen."
+  },
+  "switchConfirm": {
+    "message": "Wisselen"
+  },
+  "toastSwitchFailed": {
+    "message": "Wisselen mislukt — 0 van $1 cookies toegepast. Teruggedraaid."
+  },
+  "toastSwitched": {
+    "message": "Gewisseld naar “$1” ($2 cookies)"
+  },
+  "toastSwitchedPartial": {
+    "message": "Gewisseld — $1 toegepast, $2 mislukt"
+  },
+  "toastReloaded": {
+    "message": "$1 $2-tabbladen vernieuwd"
+  },
+  "justNow": {
+    "message": "zojuist"
+  },
+  "minutesAgo": {
+    "message": "$1 min geleden"
+  },
+  "hoursAgo": {
+    "message": "$1 u geleden"
+  },
+  "apAccount": {
+    "message": "Account"
+  },
+  "apSignInLede": {
+    "message": "Meld je aan met e-mail om versleutelde synchronisatie tussen apparaten in te schakelen. Synchronisatie is end-to-end versleuteld — zelfs wij kunnen je gesynchroniseerde gegevens niet lezen."
+  },
+  "apEmail": {
+    "message": "E-mail"
+  },
+  "apSending": {
+    "message": "Verzenden…"
+  },
+  "apSendMagicLink": {
+    "message": "Magische link verzenden"
+  },
+  "apMagicSent": {
+    "message": "Magische link verzonden — controleer je e-mail. De link verloopt over 3 minuten."
+  },
+  "apSignedInAs": {
+    "message": "Aangemeld als"
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "Gratis"
+  },
+  "apPlanLabel": {
+    "message": "abonnement"
+  },
+  "apUpgrade": {
+    "message": "Upgraden"
+  },
+  "apSyncing": {
+    "message": "Synchroniseren…"
+  },
+  "apSyncNow": {
+    "message": "Nu synchroniseren"
+  },
+  "apSignOut": {
+    "message": "Afmelden"
+  },
+  "apLastSynced": {
+    "message": "Laatst gesynchroniseerd $1"
+  },
+  "apNotSynced": {
+    "message": "Nog niet gesynchroniseerd"
+  },
+  "apReloadBanner": {
+    "message": "Externe kluis opgehaald. Vernieuw deze pagina om deze toe te passen."
+  },
+  "apReload": {
+    "message": "Vernieuwen"
+  },
+  "apConflict": {
+    "message": "Conflict — een ander apparaat heeft deze kluis bijgewerkt. Oplossen:"
+  },
+  "apKeepMine": {
+    "message": "De mijne behouden"
+  },
+  "apKeepMineTitle": {
+    "message": "Overschrijf de externe kluis met je lokale versie. De wijzigingen van het andere apparaat gaan verloren."
+  },
+  "apTakeTheirs": {
+    "message": "De andere nemen"
+  },
+  "apTakeTheirsTitle": {
+    "message": "Vervang je lokale kluis door de externe versie. Je niet-gesynchroniseerde lokale wijzigingen gaan verloren."
+  },
+  "apResultSynced": {
+    "message": "Up-to-date."
+  },
+  "apResultPushed": {
+    "message": "Lokale wijzigingen naar de server gestuurd."
+  },
+  "apResultPulled": {
+    "message": "Externe kluis opgehaald. Vernieuw om toe te passen."
+  },
+  "apResultNoAuth": {
+    "message": "Aanmelden vereist."
+  },
+  "apResultConflict": {
+    "message": "Conflict — los het hierboven op."
+  },
+  "apResultOffline": {
+    "message": "Je bent offline — synchronisatie wordt opnieuw geprobeerd zodra je weer online bent."
+  },
+  "apResultError": {
+    "message": "Synchronisatiefout: $1"
+  },
+  "apTelemetry": {
+    "message": "Anonieme foutrapporten verzenden — geen URL's, cookiedomeinen of e-mailadressen. Standaard uitgeschakeld."
+  },
+  "apHowThisWorks": {
+    "message": "Hoe dit werkt"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — Opties"
+  },
+  "eoLead": {
+    "message": "Beheer versleutelde cookieprofielen: sla een aanmeldstatus op en wissel op elk moment tussen accounts."
+  },
+  "eoLoadingVault": {
+    "message": "Kluis laden…"
+  },
+  "eoStrengthAria": {
+    "message": "Sterkte: $1"
+  },
+  "eoCracksIn": {
+    "message": "· gekraakt in $1"
+  },
+  "eoPassphraseWeak": {
+    "message": "Wachtwoordzin is “$1”. Kies iets sterkers — een lange willekeurige zin werkt het best."
+  },
+  "eoPassMismatch": {
+    "message": "Wachtwoordzinnen komen niet overeen."
+  },
+  "eoSetupHeading": {
+    "message": "Profielkluis instellen"
+  },
+  "eoSetupLede": {
+    "message": "Profielcookies worden in rust versleuteld met AES-256-GCM. De sleutel wordt afgeleid van je wachtwoordzin via PBKDF2 (600.000 iteraties). De wachtwoordzin wordt nooit opgeslagen en verlaat dit apparaat nooit."
+  },
+  "eoPassphrase": {
+    "message": "Wachtwoordzin"
+  },
+  "eoConfirm": {
+    "message": "Bevestigen"
+  },
+  "eoCreating": {
+    "message": "Aanmaken…"
+  },
+  "eoCreateVault": {
+    "message": "Kluis aanmaken"
+  },
+  "eoWarnForget": {
+    "message": "Als je de wachtwoordzin vergeet, zijn je profielen onherstelbaar. Er is geen resetlink."
+  },
+  "eoWarnReenter": {
+    "message": "Je voert de wachtwoordzin eenmaal per browsersessie opnieuw in."
+  },
+  "eoTooManyAttempts": {
+    "message": "Te veel verkeerde pogingen. Wacht tot de vergrendeling verloopt."
+  },
+  "eoLockedOut60": {
+    "message": "Verkeerde wachtwoordzin — 60 seconden vergrendeld."
+  },
+  "eoWrongPassAttempts": {
+    "message": "Verkeerde wachtwoordzin. Nog $1 pogingen voor vergrendeling."
+  },
+  "eoUnlockHeading": {
+    "message": "Profielkluis ontgrendelen"
+  },
+  "eoUnlockLede": {
+    "message": "Voer je wachtwoordzin in om toegang te krijgen tot opgeslagen profielen."
+  },
+  "eoLockedTryAgain": {
+    "message": "Vergrendeld — probeer over $1 s opnieuw"
+  },
+  "eoUnlocking": {
+    "message": "Ontgrendelen…"
+  },
+  "eoUnlock": {
+    "message": "Ontgrendelen"
+  },
+  "eoResetVault": {
+    "message": "Kluis resetten"
+  },
+  "eoResetTitle": {
+    "message": "Kluis resetten?"
+  },
+  "eoResetMessage": {
+    "message": "Dit vernietigt permanent alle opgeslagen profielen. Er is geen ongedaan maken en geen resetlink — ze kunnen niet worden hersteld."
+  },
+  "eoCouldNotReadLive": {
+    "message": "Kan actieve cookies niet lezen: $1"
+  },
+  "eoSavedProfile": {
+    "message": "“$1” opgeslagen met $2 cookies."
+  },
+  "eoSwitchFailedBanner": {
+    "message": "Wisselen naar “$1” mislukt — 0 van $2 cookies toegepast. Teruggedraaid naar vorige status."
+  },
+  "eoSwitchedApplied": {
+    "message": "Gewisseld naar “$1” ($2 cookies toegepast)."
+  },
+  "eoSwitchedPartial": {
+    "message": "Gewisseld naar “$1” — $2 toegepast, $3 mislukt."
+  },
+  "eoDeletedProfile": {
+    "message": "“$1” verwijderd."
+  },
+  "eoReloadedTabs": {
+    "message": "$1 $2-tabbladen vernieuwd."
+  },
+  "eoVaultUnlocked": {
+    "message": "Kluis ontgrendeld"
+  },
+  "eoLockVault": {
+    "message": "Kluis vergrendelen"
+  },
+  "eoScopeHeading": {
+    "message": "Bereik"
+  },
+  "eoScopeLede": {
+    "message": "Profielen werken op een vaste set hostsuffixen. Bij het wisselen van een profiel worden alleen cookies aangeraakt die binnen dit bereik vallen — andere sites blijven onaangeroerd."
+  },
+  "eoSite": {
+    "message": "Site"
+  },
+  "eoCountingLive": {
+    "message": "Actieve cookies tellen…"
+  },
+  "eoLiveCount": {
+    "message": "$1 actieve $2-cookies in deze browser op dit moment"
+  },
+  "eoSaveHeading": {
+    "message": "Huidige sessie opslaan als profiel"
+  },
+  "eoSaveLede": {
+    "message": "Legt elke cookie vast die binnen het actieve bereik valt. Gebruik dit terwijl je bent aangemeld bij het $1-account dat je wilt onthouden."
+  },
+  "eoProfileName": {
+    "message": "Profielnaam"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "bijv. “QA-account 3”"
+  },
+  "eoSavingProfile": {
+    "message": "Opslaan…"
+  },
+  "eoSaveProfile": {
+    "message": "Profiel opslaan"
+  },
+  "eoProfilesHeading": {
+    "message": "Profielen"
+  },
+  "eoNoProfilesYet": {
+    "message": "Nog geen profielen. Sla hierboven je huidige sessie op om er een aan te maken."
+  },
+  "eoProfilesCount": {
+    "message": "$1 profielen in deze kluis."
+  },
+  "eoNoProfilesScope": {
+    "message": "Er zijn geen profielen voor het actieve bereik."
+  },
+  "eoProfileCookies": {
+    "message": "$1 cookies"
+  },
+  "eoProfileSwitching": {
+    "message": "Wisselen…"
+  },
+  "eoProfileSwitch": {
+    "message": "Wisselen"
+  },
+  "eoProfileDelete": {
+    "message": "Verwijderen"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "$1 open tabbladen moeten vernieuwd worden."
+  },
+  "eoReloadTabs": {
+    "message": "Tabbladen vernieuwen"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "Profiel wisselen?"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "Wisselen naar “$1”? Je huidige $2-cookies worden vervangen en open $2-tabbladen moeten daarna vernieuwd worden."
+  },
+  "eoSwitchConfirm": {
+    "message": "Wisselen"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "Profiel verwijderen?"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "“$1” verwijderen? Dit kan niet ongedaan worden gemaakt."
+  },
+  "eoDeleteConfirm": {
+    "message": "Verwijderen"
+  },
+  "eoSafetyHeading": {
+    "message": "Veiligheidsopmerkingen"
+  },
+  "eoSafety1": {
+    "message": "Gebruik profielen alleen voor accounts die je bezit of die je gemachtigd bent te testen. Het hergebruiken van sessiecookies op accounts die je niet beheert is op de meeste sites een schending van de gebruiksvoorwaarden en kan illegaal zijn."
+  },
+  "eoSafety2": {
+    "message": "De browser moet open $1-tabbladen vernieuwen om de nieuwe cookies op te pikken. Cookies die zijn gekoppeld aan langdurige WebSocket-/SSE-verbindingen kunnen blijven bestaan tot de pagina opnieuw wordt geladen."
+  },
+  "eoSafety3": {
+    "message": "Sommige sites koppelen sessiecookies aan andere signalen (apparaatvingerafdruk, IP). Alleen het wisselen van cookies kan een herinlog of een beveiligingscontrole activeren — dat is de risicobeheersing van de site, geen fout in CookieVault."
+  },
+  "themeToggle": {
+    "message": "Thema wisselen"
+  },
+  "apCodeLabel": {
+    "message": "Aanmeldcode"
+  },
+  "apVerifyCode": {
+    "message": "Aanmelding voltooien"
+  },
+  "apVerifying": {
+    "message": "Verifiëren…"
+  },
+  "scopeCurrent": {
+    "message": "Deze site"
+  },
+  "scopeAll": {
+    "message": "Alle cookies"
+  },
+  "copyValue": {
+    "message": "Waarde kopiëren"
+  },
+  "copied": {
+    "message": "Gekopieerd"
+  },
+  "deleteDomain": {
+    "message": "Alles in dit domein verwijderen"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "Deze cookies verwijderen?"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "Alle cookies voor $1 verwijderen?"
+  },
+  "noCookiesThisSite": {
+    "message": "Geen cookies voor deze site."
+  },
+  "toastCopied": {
+    "message": "Waarde gekopieerd"
+  },
+  "errNameFormat": {
+    "message": "Cookienaam mag geen spaties, `;` of `=` bevatten."
+  },
+  "errDomainFormat": {
+    "message": "Domein lijkt ongeldig — voer een hostnaam in, zonder spaties of schema."
+  },
+  "errHostPrefix": {
+    "message": "__Host- cookies moeten Secure zijn, pad \"/\" gebruiken en host-only zijn (geen domein)."
+  },
+  "errSecurePrefix": {
+    "message": "__Secure- cookies moeten Secure zijn."
+  },
+  "errExpiryInvalid": {
+    "message": "Kies een geldige vervaldatum."
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "Zoekopdracht wissen"
+  },
+  "moreFields": {
+    "message": "Meer velden…"
+  },
+  "prefLanguage": {
+    "message": "Taal"
+  },
+  "langSystem": {
+    "message": "Systeem (browser)"
+  }
+}

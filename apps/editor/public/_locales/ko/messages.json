@@ -1,0 +1,584 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "MV3 쿠키 관리자: 편집, 검색, 가져오기 및 내보내기 — 오픈 소스."
+  },
+  "filterPlaceholder": {
+    "message": "도메인 또는 이름으로 필터…"
+  },
+  "filterAriaLabel": {
+    "message": "도메인 또는 이름으로 쿠키 필터링"
+  },
+  "buttonAdd": {
+    "message": "추가"
+  },
+  "buttonImport": {
+    "message": "가져오기"
+  },
+  "buttonExport": {
+    "message": "내보내기"
+  },
+  "loadingCookies": {
+    "message": "쿠키 불러오는 중…"
+  },
+  "clearFilter": {
+    "message": "필터 지우기"
+  },
+  "errorReadCookies": {
+    "message": "쿠키를 읽을 수 없습니다."
+  },
+  "statsFiltered": {
+    "message": "$2개 중 $1개 · $3개 도메인"
+  },
+  "statsAll": {
+    "message": "$1개 · $2개 도메인"
+  },
+  "cookieFlagsAria": {
+    "message": "쿠키 플래그"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "Partitioned (CHIPS)"
+  },
+  "emptyValue": {
+    "message": "비어 있음"
+  },
+  "editAria": {
+    "message": "$1 편집"
+  },
+  "editTitle": {
+    "message": "편집"
+  },
+  "deleteAria": {
+    "message": "$1 삭제"
+  },
+  "deleteTitle": {
+    "message": "삭제"
+  },
+  "noCookiesMatch": {
+    "message": "“$1”과(와) 일치하는 쿠키가 없습니다."
+  },
+  "noCookiesYet": {
+    "message": "이 페이지에 아직 쿠키가 없습니다."
+  },
+  "optionsButton": {
+    "message": "옵션"
+  },
+  "dismiss": {
+    "message": "닫기"
+  },
+  "deleteCookieTitle": {
+    "message": "쿠키를 삭제할까요?"
+  },
+  "deleteCookieMessage": {
+    "message": "$2의 “$1”을(를) 삭제할까요? 이 작업은 되돌릴 수 없습니다."
+  },
+  "buttonDelete": {
+    "message": "삭제"
+  },
+  "cancel": {
+    "message": "취소"
+  },
+  "toastDeleted": {
+    "message": "$1 삭제됨"
+  },
+  "toastSaved": {
+    "message": "$1 저장됨"
+  },
+  "toastExported": {
+    "message": "쿠키 $1개 내보냄"
+  },
+  "toastImported": {
+    "message": "$2에서 쿠키 $1개 가져옴"
+  },
+  "toastImportedPartial": {
+    "message": "$2개 중 $1개 가져옴 ($3개 실패)"
+  },
+  "editCookieTitle": {
+    "message": "쿠키 편집"
+  },
+  "close": {
+    "message": "닫기"
+  },
+  "fieldName": {
+    "message": "이름"
+  },
+  "fieldDomain": {
+    "message": "도메인"
+  },
+  "fieldPath": {
+    "message": "경로"
+  },
+  "fieldValue": {
+    "message": "값"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "Host-only"
+  },
+  "expiryLegend": {
+    "message": "만료"
+  },
+  "expirySession": {
+    "message": "세션"
+  },
+  "expiryUntil": {
+    "message": "만료 시점"
+  },
+  "timezoneHint": {
+    "message": "시간은 현지 시간대로 표시됩니다."
+  },
+  "buttonSave": {
+    "message": "저장"
+  },
+  "saving": {
+    "message": "저장 중…"
+  },
+  "profilesLoading": {
+    "message": "프로필…"
+  },
+  "setupVault": {
+    "message": "프로필 · 보관함 설정 →"
+  },
+  "unlockInOptions": {
+    "message": "프로필 잠김 · 옵션에서 잠금 해제 →"
+  },
+  "profileScopeAria": {
+    "message": "프로필 범위"
+  },
+  "lockVault": {
+    "message": "보관함 잠금"
+  },
+  "lockButton": {
+    "message": "잠금"
+  },
+  "noProfilesForScope": {
+    "message": "$1에 대한 프로필이 없습니다."
+  },
+  "saveOne": {
+    "message": "하나 저장 →"
+  },
+  "switchButton": {
+    "message": "전환"
+  },
+  "switching": {
+    "message": "전환 중…"
+  },
+  "cookiesInScope": {
+    "message": "범위 내 쿠키"
+  },
+  "tabsNeedRefresh": {
+    "message": "$1개의 $2 탭을 새로고침해야 합니다"
+  },
+  "reloadButton": {
+    "message": "새로고침"
+  },
+  "switchProfileTitle": {
+    "message": "프로필을 전환할까요?"
+  },
+  "switchProfileMessage": {
+    "message": "“$1”(으)로 전환할까요? 현재 $2 쿠키가 대체됩니다."
+  },
+  "switchConfirm": {
+    "message": "전환"
+  },
+  "toastSwitchFailed": {
+    "message": "전환 실패 — $1개 중 0개 쿠키가 적용됨. 되돌렸습니다."
+  },
+  "toastSwitched": {
+    "message": "“$1”(으)로 전환됨 (쿠키 $2개)"
+  },
+  "toastSwitchedPartial": {
+    "message": "전환됨 — $1개 적용, $2개 실패"
+  },
+  "toastReloaded": {
+    "message": "$1개의 $2 탭 새로고침함"
+  },
+  "justNow": {
+    "message": "방금 전"
+  },
+  "minutesAgo": {
+    "message": "$1분 전"
+  },
+  "hoursAgo": {
+    "message": "$1시간 전"
+  },
+  "apAccount": {
+    "message": "계정"
+  },
+  "apSignInLede": {
+    "message": "이메일로 로그인하여 암호화된 기기 간 동기화를 활성화하세요. 동기화는 종단 간 암호화되며, 저희도 동기화된 데이터를 읽을 수 없습니다."
+  },
+  "apEmail": {
+    "message": "이메일"
+  },
+  "apSending": {
+    "message": "보내는 중…"
+  },
+  "apSendMagicLink": {
+    "message": "매직 링크 보내기"
+  },
+  "apMagicSent": {
+    "message": "매직 링크를 보냈습니다 — 이메일을 확인하세요. 링크는 3분 후 만료됩니다."
+  },
+  "apSignedInAs": {
+    "message": "로그인 계정"
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "Free"
+  },
+  "apPlanLabel": {
+    "message": "요금제"
+  },
+  "apUpgrade": {
+    "message": "업그레이드"
+  },
+  "apSyncing": {
+    "message": "동기화 중…"
+  },
+  "apSyncNow": {
+    "message": "지금 동기화"
+  },
+  "apSignOut": {
+    "message": "로그아웃"
+  },
+  "apLastSynced": {
+    "message": "마지막 동기화 $1"
+  },
+  "apNotSynced": {
+    "message": "아직 동기화되지 않음"
+  },
+  "apReloadBanner": {
+    "message": "원격 보관함을 가져왔습니다. 적용하려면 이 페이지를 새로고침하세요."
+  },
+  "apReload": {
+    "message": "새로고침"
+  },
+  "apConflict": {
+    "message": "충돌 — 다른 기기에서 이 보관함을 업데이트했습니다. 해결:"
+  },
+  "apKeepMine": {
+    "message": "내 버전 유지"
+  },
+  "apKeepMineTitle": {
+    "message": "원격 보관함을 로컬 버전으로 덮어씁니다. 다른 기기의 변경 사항은 사라집니다."
+  },
+  "apTakeTheirs": {
+    "message": "상대 버전 적용"
+  },
+  "apTakeTheirsTitle": {
+    "message": "로컬 보관함을 원격 버전으로 대체합니다. 동기화되지 않은 로컬 변경 사항은 사라집니다."
+  },
+  "apResultSynced": {
+    "message": "최신 상태입니다."
+  },
+  "apResultPushed": {
+    "message": "로컬 변경 사항을 서버로 전송했습니다."
+  },
+  "apResultPulled": {
+    "message": "원격 보관함을 가져왔습니다. 적용하려면 새로고침하세요."
+  },
+  "apResultNoAuth": {
+    "message": "로그인이 필요합니다."
+  },
+  "apResultConflict": {
+    "message": "충돌 — 위에서 해결하세요."
+  },
+  "apResultOffline": {
+    "message": "오프라인 상태입니다 — 온라인으로 돌아오면 동기화를 다시 시도합니다."
+  },
+  "apResultError": {
+    "message": "동기화 오류: $1"
+  },
+  "apTelemetry": {
+    "message": "익명화된 오류 보고서 보내기 — URL, 쿠키 도메인, 이메일 주소는 포함되지 않습니다. 기본값은 꺼짐입니다."
+  },
+  "apHowThisWorks": {
+    "message": "작동 방식"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — 옵션"
+  },
+  "eoLead": {
+    "message": "암호화된 쿠키 프로필을 관리하세요. 로그인 상태를 저장하고 언제든지 계정을 전환할 수 있습니다."
+  },
+  "eoLoadingVault": {
+    "message": "보관함 불러오는 중…"
+  },
+  "eoStrengthAria": {
+    "message": "강도: $1"
+  },
+  "eoCracksIn": {
+    "message": "· $1 만에 뚫림"
+  },
+  "eoPassphraseWeak": {
+    "message": "암호 강도가 “$1”입니다. 더 강한 것을 선택하세요 — 길고 무작위한 문장이 가장 좋습니다."
+  },
+  "eoPassMismatch": {
+    "message": "암호가 일치하지 않습니다."
+  },
+  "eoSetupHeading": {
+    "message": "프로필 보관함 설정"
+  },
+  "eoSetupLede": {
+    "message": "프로필 쿠키는 AES-256-GCM으로 저장 시 암호화됩니다. 키는 PBKDF2(600,000회 반복)를 통해 암호에서 파생됩니다. 암호는 저장되지 않으며 이 기기를 절대 벗어나지 않습니다."
+  },
+  "eoPassphrase": {
+    "message": "암호"
+  },
+  "eoConfirm": {
+    "message": "확인"
+  },
+  "eoCreating": {
+    "message": "생성 중…"
+  },
+  "eoCreateVault": {
+    "message": "보관함 생성"
+  },
+  "eoWarnForget": {
+    "message": "암호를 잊으면 프로필을 복구할 수 없습니다. 재설정 링크는 없습니다."
+  },
+  "eoWarnReenter": {
+    "message": "브라우저 세션당 한 번 암호를 다시 입력하게 됩니다."
+  },
+  "eoTooManyAttempts": {
+    "message": "잘못된 시도가 너무 많습니다. 잠금이 해제될 때까지 기다리세요."
+  },
+  "eoLockedOut60": {
+    "message": "잘못된 암호 — 60초 동안 잠겼습니다."
+  },
+  "eoWrongPassAttempts": {
+    "message": "잘못된 암호입니다. 잠기기 전까지 시도 $1번 남았습니다."
+  },
+  "eoUnlockHeading": {
+    "message": "프로필 보관함 잠금 해제"
+  },
+  "eoUnlockLede": {
+    "message": "저장된 프로필에 접근하려면 암호를 입력하세요."
+  },
+  "eoLockedTryAgain": {
+    "message": "잠김 — $1초 후 다시 시도하세요"
+  },
+  "eoUnlocking": {
+    "message": "잠금 해제 중…"
+  },
+  "eoUnlock": {
+    "message": "잠금 해제"
+  },
+  "eoResetVault": {
+    "message": "보관함 재설정"
+  },
+  "eoResetTitle": {
+    "message": "보관함을 재설정할까요?"
+  },
+  "eoResetMessage": {
+    "message": "저장된 모든 프로필이 영구적으로 삭제됩니다. 실행 취소나 재설정 링크는 없으며 복구할 수 없습니다."
+  },
+  "eoCouldNotReadLive": {
+    "message": "현재 쿠키를 읽을 수 없습니다: $1"
+  },
+  "eoSavedProfile": {
+    "message": "“$1”을(를) 쿠키 $2개와 함께 저장했습니다."
+  },
+  "eoSwitchFailedBanner": {
+    "message": "“$1”(으)로 전환 실패 — $2개 중 0개 쿠키가 적용됨. 이전 상태로 되돌렸습니다."
+  },
+  "eoSwitchedApplied": {
+    "message": "“$1”(으)로 전환됨 (쿠키 $2개 적용됨)."
+  },
+  "eoSwitchedPartial": {
+    "message": "“$1”(으)로 전환됨 — $2개 적용, $3개 실패."
+  },
+  "eoDeletedProfile": {
+    "message": "“$1”을(를) 삭제했습니다."
+  },
+  "eoReloadedTabs": {
+    "message": "$1개의 $2 탭을 새로고침했습니다."
+  },
+  "eoVaultUnlocked": {
+    "message": "보관함 잠금 해제됨"
+  },
+  "eoLockVault": {
+    "message": "보관함 잠금"
+  },
+  "eoScopeHeading": {
+    "message": "범위"
+  },
+  "eoScopeLede": {
+    "message": "프로필은 고정된 호스트 접미사 집합에서 작동합니다. 프로필을 전환하면 이 범위와 일치하는 쿠키만 변경되며, 다른 사이트는 그대로 유지됩니다."
+  },
+  "eoSite": {
+    "message": "사이트"
+  },
+  "eoCountingLive": {
+    "message": "현재 쿠키 세는 중…"
+  },
+  "eoLiveCount": {
+    "message": "현재 이 브라우저에 있는 $2 쿠키 $1개"
+  },
+  "eoSaveHeading": {
+    "message": "현재 세션을 프로필로 저장"
+  },
+  "eoSaveLede": {
+    "message": "활성 범위와 일치하는 모든 쿠키를 캡처합니다. 기억하려는 $1 계정에 로그인한 상태에서 사용하세요."
+  },
+  "eoProfileName": {
+    "message": "프로필 이름"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "예: “QA 계정 3”"
+  },
+  "eoSavingProfile": {
+    "message": "저장 중…"
+  },
+  "eoSaveProfile": {
+    "message": "프로필 저장"
+  },
+  "eoProfilesHeading": {
+    "message": "프로필"
+  },
+  "eoNoProfilesYet": {
+    "message": "아직 프로필이 없습니다. 위에서 현재 세션을 저장하여 하나 만드세요."
+  },
+  "eoProfilesCount": {
+    "message": "이 보관함에 프로필 $1개."
+  },
+  "eoNoProfilesScope": {
+    "message": "활성 범위와 일치하는 프로필이 없습니다."
+  },
+  "eoProfileCookies": {
+    "message": "쿠키 $1개"
+  },
+  "eoProfileSwitching": {
+    "message": "전환 중…"
+  },
+  "eoProfileSwitch": {
+    "message": "전환"
+  },
+  "eoProfileDelete": {
+    "message": "삭제"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "열린 탭 $1개를 새로고침해야 합니다."
+  },
+  "eoReloadTabs": {
+    "message": "탭 새로고침"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "프로필을 전환할까요?"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "“$1”(으)로 전환할까요? 현재 $2 쿠키가 대체되며, 열린 $2 탭은 이후 새로고침이 필요합니다."
+  },
+  "eoSwitchConfirm": {
+    "message": "전환"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "프로필을 삭제할까요?"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "“$1”을(를) 삭제할까요? 이 작업은 되돌릴 수 없습니다."
+  },
+  "eoDeleteConfirm": {
+    "message": "삭제"
+  },
+  "eoSafetyHeading": {
+    "message": "안전 참고 사항"
+  },
+  "eoSafety1": {
+    "message": "본인이 소유하거나 테스트 권한이 있는 계정에만 프로필을 사용하세요. 통제하지 않는 계정의 세션 쿠키를 재사용하는 것은 대부분의 사이트에서 서비스 약관 위반이며 불법일 수 있습니다."
+  },
+  "eoSafety2": {
+    "message": "새 쿠키를 적용하려면 브라우저가 열린 $1 탭을 새로고침해야 합니다. 오래 유지되는 WebSocket / SSE 연결에 첨부된 쿠키는 페이지가 다시 로드될 때까지 남아 있을 수 있습니다."
+  },
+  "eoSafety3": {
+    "message": "일부 사이트는 세션 쿠키를 다른 신호(기기 지문, IP)에 묶습니다. 쿠키만 전환하면 재로그인이나 보안 확인이 발생할 수 있는데, 이는 사이트의 위험 관리 기능이지 CookieVault의 버그가 아닙니다."
+  },
+  "themeToggle": {
+    "message": "테마 전환"
+  },
+  "apCodeLabel": {
+    "message": "로그인 코드"
+  },
+  "apVerifyCode": {
+    "message": "로그인 완료"
+  },
+  "apVerifying": {
+    "message": "확인 중…"
+  },
+  "scopeCurrent": {
+    "message": "이 사이트"
+  },
+  "scopeAll": {
+    "message": "모든 쿠키"
+  },
+  "copyValue": {
+    "message": "값 복사"
+  },
+  "copied": {
+    "message": "복사됨"
+  },
+  "deleteDomain": {
+    "message": "이 도메인의 모두 삭제"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "이 쿠키를 삭제하시겠습니까?"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "$1의 모든 쿠키를 삭제하시겠습니까?"
+  },
+  "noCookiesThisSite": {
+    "message": "이 사이트에 쿠키가 없습니다."
+  },
+  "toastCopied": {
+    "message": "값이 복사되었습니다"
+  },
+  "errNameFormat": {
+    "message": "쿠키 이름에는 공백, `;`, `=`를 사용할 수 없습니다."
+  },
+  "errDomainFormat": {
+    "message": "도메인이 잘못된 것 같습니다 — 공백이나 스킴 없이 호스트 이름을 입력하세요."
+  },
+  "errHostPrefix": {
+    "message": "__Host- 쿠키는 Secure여야 하고, 경로 \"/\"를 사용하며, host-only(도메인 없음)여야 합니다."
+  },
+  "errSecurePrefix": {
+    "message": "__Secure- 쿠키는 Secure여야 합니다."
+  },
+  "errExpiryInvalid": {
+    "message": "유효한 만료 날짜를 선택하세요."
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "검색 지우기"
+  },
+  "moreFields": {
+    "message": "추가 필드…"
+  },
+  "prefLanguage": {
+    "message": "언어"
+  },
+  "langSystem": {
+    "message": "시스템(브라우저)"
+  }
+}

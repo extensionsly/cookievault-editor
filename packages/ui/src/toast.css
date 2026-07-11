@@ -1,0 +1,33 @@
+/**
+ * Styling for the shared <Toast>. Colours come from the host app's theme
+ * tokens (--accent / --success / --danger). Import via
+ * `@cookievault/ui/toast.css`.
+ */
+
+.toast {
+  position: fixed;
+  bottom: 44px;
+  left: 14px;
+  right: 14px;
+  padding: 8px 12px;
+  border-radius: var(--cv-radius-md, 6px);
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.toast.success {
+  background: var(--success);
+  color: #ffffff;
+}
+
+.toast.error {
+  background: var(--danger);
+  color: #ffffff;
+}
+
+.toast.info {
+  background: var(--accent);
+  color: #ffffff;
+}

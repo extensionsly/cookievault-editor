@@ -1,0 +1,43 @@
+# ----- Secrets (never commit) -----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.secret
+secrets/
+.secrets/
+.keys/
+
+# ----- Node -----
+node_modules/
+.pnpm-store/
+npm-debug.log*
+pnpm-debug.log*
+
+# ----- Build outputs -----
+dist/
+build/
+.output/
+.wxt/
+*.tsbuildinfo
+
+# ----- Extension packaging -----
+*.zip
+*.crx
+*.xpi
+web-ext-artifacts/
+
+# ----- Test / coverage -----
+coverage/
+.nyc_output/
+*.lcov
+
+# ----- IDE / OS -----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*~

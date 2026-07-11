@@ -1,0 +1,584 @@
+{
+  "appName": {
+    "message": "CookieVault Editor"
+  },
+  "appExtDescription": {
+    "message": "MV3 cookie 管理器：編輯、搜尋、匯入與匯出，開放原始碼。"
+  },
+  "filterPlaceholder": {
+    "message": "依網域或名稱篩選…"
+  },
+  "filterAriaLabel": {
+    "message": "依網域或名稱篩選 cookie"
+  },
+  "buttonAdd": {
+    "message": "新增"
+  },
+  "buttonImport": {
+    "message": "匯入"
+  },
+  "buttonExport": {
+    "message": "匯出"
+  },
+  "loadingCookies": {
+    "message": "正在載入 cookie…"
+  },
+  "clearFilter": {
+    "message": "清除篩選"
+  },
+  "errorReadCookies": {
+    "message": "無法讀取 cookie。"
+  },
+  "statsFiltered": {
+    "message": "$1／共 $2 · $3 個網域"
+  },
+  "statsAll": {
+    "message": "$1 · $2 個網域"
+  },
+  "cookieFlagsAria": {
+    "message": "cookie 旗標"
+  },
+  "flagSecure": {
+    "message": "Secure"
+  },
+  "flagHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "flagPartitioned": {
+    "message": "已分區（CHIPS）"
+  },
+  "emptyValue": {
+    "message": "空"
+  },
+  "editAria": {
+    "message": "編輯 $1"
+  },
+  "editTitle": {
+    "message": "編輯"
+  },
+  "deleteAria": {
+    "message": "刪除 $1"
+  },
+  "deleteTitle": {
+    "message": "刪除"
+  },
+  "noCookiesMatch": {
+    "message": "沒有符合「$1」的 cookie。"
+  },
+  "noCookiesYet": {
+    "message": "此頁面尚無 cookie。"
+  },
+  "optionsButton": {
+    "message": "選項"
+  },
+  "dismiss": {
+    "message": "關閉"
+  },
+  "deleteCookieTitle": {
+    "message": "刪除 cookie？"
+  },
+  "deleteCookieMessage": {
+    "message": "刪除 $2 上的「$1」？此操作無法復原。"
+  },
+  "buttonDelete": {
+    "message": "刪除"
+  },
+  "cancel": {
+    "message": "取消"
+  },
+  "toastDeleted": {
+    "message": "已刪除 $1"
+  },
+  "toastSaved": {
+    "message": "已儲存 $1"
+  },
+  "toastExported": {
+    "message": "已匯出 $1 個 cookie"
+  },
+  "toastImported": {
+    "message": "已從 $2 匯入 $1 個 cookie"
+  },
+  "toastImportedPartial": {
+    "message": "已匯入 $1／共 $2（$3 個失敗）"
+  },
+  "editCookieTitle": {
+    "message": "編輯 cookie"
+  },
+  "close": {
+    "message": "關閉"
+  },
+  "fieldName": {
+    "message": "名稱"
+  },
+  "fieldDomain": {
+    "message": "網域"
+  },
+  "fieldPath": {
+    "message": "路徑"
+  },
+  "fieldValue": {
+    "message": "值"
+  },
+  "fieldSameSite": {
+    "message": "SameSite"
+  },
+  "checkSecure": {
+    "message": "Secure"
+  },
+  "checkHttpOnly": {
+    "message": "HttpOnly"
+  },
+  "checkHostOnly": {
+    "message": "Host-only"
+  },
+  "expiryLegend": {
+    "message": "到期"
+  },
+  "expirySession": {
+    "message": "工作階段"
+  },
+  "expiryUntil": {
+    "message": "直到"
+  },
+  "timezoneHint": {
+    "message": "時間以您的本地時區為準。"
+  },
+  "buttonSave": {
+    "message": "儲存"
+  },
+  "saving": {
+    "message": "儲存中…"
+  },
+  "profilesLoading": {
+    "message": "設定檔…"
+  },
+  "setupVault": {
+    "message": "設定檔 · 設定保險庫 →"
+  },
+  "unlockInOptions": {
+    "message": "設定檔已鎖定 · 在選項中解鎖 →"
+  },
+  "profileScopeAria": {
+    "message": "設定檔範圍"
+  },
+  "lockVault": {
+    "message": "鎖定保險庫"
+  },
+  "lockButton": {
+    "message": "鎖定"
+  },
+  "noProfilesForScope": {
+    "message": "$1 尚無設定檔。"
+  },
+  "saveOne": {
+    "message": "儲存一個 →"
+  },
+  "switchButton": {
+    "message": "切換"
+  },
+  "switching": {
+    "message": "切換中…"
+  },
+  "cookiesInScope": {
+    "message": "範圍內的 cookie"
+  },
+  "tabsNeedRefresh": {
+    "message": "$1 個 $2 分頁需要重新整理"
+  },
+  "reloadButton": {
+    "message": "重新載入"
+  },
+  "switchProfileTitle": {
+    "message": "切換設定檔？"
+  },
+  "switchProfileMessage": {
+    "message": "切換到「$1」？目前 $2 的 cookie 將被取代。"
+  },
+  "switchConfirm": {
+    "message": "切換"
+  },
+  "toastSwitchFailed": {
+    "message": "切換失敗，$1 個 cookie 中 0 個套用成功。已還原。"
+  },
+  "toastSwitched": {
+    "message": "已切換到「$1」（$2 個 cookie）"
+  },
+  "toastSwitchedPartial": {
+    "message": "已切換，$1 個套用、$2 個失敗"
+  },
+  "toastReloaded": {
+    "message": "已重新載入 $1 個 $2 分頁"
+  },
+  "justNow": {
+    "message": "剛剛"
+  },
+  "minutesAgo": {
+    "message": "$1 分鐘前"
+  },
+  "hoursAgo": {
+    "message": "$1 小時前"
+  },
+  "apAccount": {
+    "message": "帳號"
+  },
+  "apSignInLede": {
+    "message": "使用電子郵件登入即可啟用加密的跨裝置同步。同步採端對端加密，連我們也無法讀取您同步的資料。"
+  },
+  "apEmail": {
+    "message": "電子郵件"
+  },
+  "apSending": {
+    "message": "傳送中…"
+  },
+  "apSendMagicLink": {
+    "message": "傳送登入連結"
+  },
+  "apMagicSent": {
+    "message": "登入連結已傳送，請查收電子郵件。連結將於 3 分鐘後失效。"
+  },
+  "apSignedInAs": {
+    "message": "登入帳號："
+  },
+  "apPlanPro": {
+    "message": "Pro"
+  },
+  "apPlanFree": {
+    "message": "免費"
+  },
+  "apPlanLabel": {
+    "message": "方案"
+  },
+  "apUpgrade": {
+    "message": "升級"
+  },
+  "apSyncing": {
+    "message": "同步中…"
+  },
+  "apSyncNow": {
+    "message": "立即同步"
+  },
+  "apSignOut": {
+    "message": "登出"
+  },
+  "apLastSynced": {
+    "message": "上次同步 $1"
+  },
+  "apNotSynced": {
+    "message": "尚未同步"
+  },
+  "apReloadBanner": {
+    "message": "已從遠端拉取保險庫。重新載入此頁面以套用。"
+  },
+  "apReload": {
+    "message": "重新載入"
+  },
+  "apConflict": {
+    "message": "衝突，另一台裝置已更新此保險庫。請解決："
+  },
+  "apKeepMine": {
+    "message": "保留我的"
+  },
+  "apKeepMineTitle": {
+    "message": "以您的本機版本覆寫遠端保險庫。另一台裝置的變更將遺失。"
+  },
+  "apTakeTheirs": {
+    "message": "採用對方的"
+  },
+  "apTakeTheirsTitle": {
+    "message": "以遠端版本取代您的本機保險庫。您未同步的本機變更將遺失。"
+  },
+  "apResultSynced": {
+    "message": "已是最新狀態。"
+  },
+  "apResultPushed": {
+    "message": "已將本機變更推送至伺服器。"
+  },
+  "apResultPulled": {
+    "message": "已拉取遠端保險庫。重新載入後生效。"
+  },
+  "apResultNoAuth": {
+    "message": "需要登入。"
+  },
+  "apResultConflict": {
+    "message": "衝突，請在上方解決。"
+  },
+  "apResultOffline": {
+    "message": "您已離線，恢復連線後將自動重試同步。"
+  },
+  "apResultError": {
+    "message": "同步錯誤：$1"
+  },
+  "apTelemetry": {
+    "message": "傳送匿名錯誤報告，不含 URL、cookie 網域或電子郵件地址。預設關閉。"
+  },
+  "apHowThisWorks": {
+    "message": "運作原理"
+  },
+  "eoTitle": {
+    "message": "CookieVault Editor — 選項"
+  },
+  "eoLead": {
+    "message": "管理加密的 Cookie 設定檔——儲存登入狀態，隨時在多個帳號之間切換。"
+  },
+  "eoLoadingVault": {
+    "message": "正在載入保險庫…"
+  },
+  "eoStrengthAria": {
+    "message": "強度：$1"
+  },
+  "eoCracksIn": {
+    "message": "· 破解約需 $1"
+  },
+  "eoPassphraseWeak": {
+    "message": "通關密語為「$1」。請改用更強的，一段長的隨機句子最為理想。"
+  },
+  "eoPassMismatch": {
+    "message": "兩次通關密語不一致。"
+  },
+  "eoSetupHeading": {
+    "message": "建立設定檔保險庫"
+  },
+  "eoSetupLede": {
+    "message": "設定檔 cookie 以 AES-256-GCM 靜態加密。金鑰透過 PBKDF2（600,000 次迭代）從您的通關密語派生。通關密語絕不儲存、絕不離開本裝置。"
+  },
+  "eoPassphrase": {
+    "message": "通關密語"
+  },
+  "eoConfirm": {
+    "message": "確認"
+  },
+  "eoCreating": {
+    "message": "建立中…"
+  },
+  "eoCreateVault": {
+    "message": "建立保險庫"
+  },
+  "eoWarnForget": {
+    "message": "若忘記通關密語，您的設定檔將無法復原。沒有重設連結。"
+  },
+  "eoWarnReenter": {
+    "message": "每個瀏覽器工作階段需重新輸入一次通關密語。"
+  },
+  "eoTooManyAttempts": {
+    "message": "錯誤次數過多。請等待鎖定結束。"
+  },
+  "eoLockedOut60": {
+    "message": "通關密語錯誤，已鎖定 60 秒。"
+  },
+  "eoWrongPassAttempts": {
+    "message": "通關密語錯誤。鎖定前還剩 $1 次嘗試。"
+  },
+  "eoUnlockHeading": {
+    "message": "解鎖設定檔保險庫"
+  },
+  "eoUnlockLede": {
+    "message": "輸入通關密語以存取已儲存的設定檔。"
+  },
+  "eoLockedTryAgain": {
+    "message": "已鎖定，請在 $1 秒後重試"
+  },
+  "eoUnlocking": {
+    "message": "解鎖中…"
+  },
+  "eoUnlock": {
+    "message": "解鎖"
+  },
+  "eoResetVault": {
+    "message": "重設保險庫"
+  },
+  "eoResetTitle": {
+    "message": "重設保險庫？"
+  },
+  "eoResetMessage": {
+    "message": "這將永久銷毀所有已儲存的設定檔。無法復原，也沒有重設連結，它們將無法救回。"
+  },
+  "eoCouldNotReadLive": {
+    "message": "無法讀取即時 cookie：$1"
+  },
+  "eoSavedProfile": {
+    "message": "已儲存「$1」，含 $2 個 cookie。"
+  },
+  "eoSwitchFailedBanner": {
+    "message": "切換到「$1」失敗，$2 個 cookie 中 0 個套用成功。已還原至先前狀態。"
+  },
+  "eoSwitchedApplied": {
+    "message": "已切換到「$1」（套用 $2 個 cookie）。"
+  },
+  "eoSwitchedPartial": {
+    "message": "已切換到「$1」，$2 個套用、$3 個失敗。"
+  },
+  "eoDeletedProfile": {
+    "message": "已刪除「$1」。"
+  },
+  "eoReloadedTabs": {
+    "message": "已重新載入 $1 個 $2 分頁。"
+  },
+  "eoVaultUnlocked": {
+    "message": "保險庫已解鎖"
+  },
+  "eoLockVault": {
+    "message": "鎖定保險庫"
+  },
+  "eoScopeHeading": {
+    "message": "範圍"
+  },
+  "eoScopeLede": {
+    "message": "設定檔作用於一組固定的主機後綴。切換設定檔只會影響符合此範圍的 cookie，其他網站維持不變。"
+  },
+  "eoSite": {
+    "message": "網站"
+  },
+  "eoCountingLive": {
+    "message": "正在統計即時 cookie…"
+  },
+  "eoLiveCount": {
+    "message": "此瀏覽器目前有 $1 個即時 $2 cookie"
+  },
+  "eoSaveHeading": {
+    "message": "將目前工作階段儲存為設定檔"
+  },
+  "eoSaveLede": {
+    "message": "擷取所有符合目前範圍的 cookie。請在您想記住的 $1 帳號已登入時使用。"
+  },
+  "eoProfileName": {
+    "message": "設定檔名稱"
+  },
+  "eoProfileNamePlaceholder": {
+    "message": "例如「QA 帳號 3」"
+  },
+  "eoSavingProfile": {
+    "message": "儲存中…"
+  },
+  "eoSaveProfile": {
+    "message": "儲存設定檔"
+  },
+  "eoProfilesHeading": {
+    "message": "設定檔"
+  },
+  "eoNoProfilesYet": {
+    "message": "尚無設定檔。在上方儲存目前工作階段即可建立一個。"
+  },
+  "eoProfilesCount": {
+    "message": "此保險庫中有 $1 個設定檔。"
+  },
+  "eoNoProfilesScope": {
+    "message": "沒有符合目前範圍的設定檔。"
+  },
+  "eoProfileCookies": {
+    "message": "$1 個 cookie"
+  },
+  "eoProfileSwitching": {
+    "message": "切換中…"
+  },
+  "eoProfileSwitch": {
+    "message": "切換"
+  },
+  "eoProfileDelete": {
+    "message": "刪除"
+  },
+  "eoTabsNeedRefresh": {
+    "message": "$1 個開啟的分頁需要重新整理。"
+  },
+  "eoReloadTabs": {
+    "message": "重新載入分頁"
+  },
+  "eoSwitchProfileTitle": {
+    "message": "切換設定檔？"
+  },
+  "eoSwitchProfileMessage": {
+    "message": "切換到「$1」？目前 $2 的 cookie 將被取代，之後開啟的 $2 分頁需要重新整理。"
+  },
+  "eoSwitchConfirm": {
+    "message": "切換"
+  },
+  "eoDeleteProfileTitle": {
+    "message": "刪除設定檔？"
+  },
+  "eoDeleteProfileMessage": {
+    "message": "刪除「$1」？此操作無法復原。"
+  },
+  "eoDeleteConfirm": {
+    "message": "刪除"
+  },
+  "eoSafetyHeading": {
+    "message": "安全須知"
+  },
+  "eoSafety1": {
+    "message": "請僅對您擁有或獲授權測試的帳號使用設定檔。在您無權控制的帳號上重複使用工作階段 cookie，在多數網站都違反服務條款，並可能違法。"
+  },
+  "eoSafety2": {
+    "message": "瀏覽器必須重新整理開啟的 $1 分頁才能採用新 cookie。綁定於長連線 WebSocket／SSE 的 cookie 可能在頁面重新載入前持續存在。"
+  },
+  "eoSafety3": {
+    "message": "某些網站會將工作階段 cookie 與其他訊號（裝置指紋、IP）綁定。僅切換 cookie 可能觸發重新登入或安全驗證，那是網站的風險控管，並非 CookieVault 的 bug。"
+  },
+  "themeToggle": {
+    "message": "切換主題"
+  },
+  "apCodeLabel": {
+    "message": "登入碼"
+  },
+  "apVerifyCode": {
+    "message": "完成登入"
+  },
+  "apVerifying": {
+    "message": "正在驗證…"
+  },
+  "scopeCurrent": {
+    "message": "此網站"
+  },
+  "scopeAll": {
+    "message": "所有 Cookie"
+  },
+  "copyValue": {
+    "message": "複製值"
+  },
+  "copied": {
+    "message": "已複製"
+  },
+  "deleteDomain": {
+    "message": "刪除此網域下的全部"
+  },
+  "confirmDeleteDomainTitle": {
+    "message": "刪除這些 Cookie？"
+  },
+  "confirmDeleteDomainMessage": {
+    "message": "刪除 $1 的所有 Cookie？"
+  },
+  "noCookiesThisSite": {
+    "message": "此網站沒有 Cookie。"
+  },
+  "toastCopied": {
+    "message": "已複製值"
+  },
+  "errNameFormat": {
+    "message": "Cookie 名稱不能包含空格、`;` 或 `=`。"
+  },
+  "errDomainFormat": {
+    "message": "網域似乎無效——請輸入主機名稱，不含空格或協定。"
+  },
+  "errHostPrefix": {
+    "message": "__Host- Cookie 必須為 Secure、使用路徑 \"/\" 且為 host-only（無網域）。"
+  },
+  "errSecurePrefix": {
+    "message": "__Secure- Cookie 必須為 Secure。"
+  },
+  "errExpiryInvalid": {
+    "message": "請選擇有效的到期日期。"
+  },
+  "appShortName": {
+    "message": "Editor"
+  },
+  "clearSearch": {
+    "message": "清除搜尋"
+  },
+  "moreFields": {
+    "message": "更多欄位…"
+  },
+  "prefLanguage": {
+    "message": "語言"
+  },
+  "langSystem": {
+    "message": "跟隨系統（瀏覽器）"
+  }
+}
