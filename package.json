@@ -20,6 +20,7 @@
     "zip:firefox": "pnpm --filter editor zip:firefox",
     "test": "pnpm -r --parallel test",
     "typecheck": "pnpm -r --parallel typecheck",
+    "build:hashes": "node scripts/build-hashes.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

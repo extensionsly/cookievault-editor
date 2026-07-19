@@ -61,6 +61,26 @@ Install the reviewed, official build from the browser stores via
 **[cookievault.net](https://cookievault.net)**. Please install the official
 listing — check the publisher name to avoid look-alike clones.
 
+We do not publish installable builds here: browsers block installs from outside
+the stores anyway, and a second download source would only help clones
+impersonate us. What we publish instead is **verifiability** — see below.
+
+## Verify what you installed
+
+You do not have to trust that the store build matches this source. Check out the
+matching tag, rebuild, and compare SHA-256 manifests:
+
+```bash
+pnpm install --frozen-lockfile && pnpm build && pnpm build:hashes
+```
+
+Full recipe in **[VERIFYING.md](./VERIFYING.md)**.
+
+## Our promises
+
+We commit publicly to never selling this project out from under its users, and
+to never adding spyware. See **[NO_SALE_PROMISE.md](./NO_SALE_PROMISE.md)**.
+
 ## Contributing
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md). TL;DR: MIT only (no GPL code), always

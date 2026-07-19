@@ -12,7 +12,12 @@ import { defineConfig } from 'wxt';
  */
 function resolveWorkerUrl(): string {
   const url = process.env.COOKIEVAULT_WORKER_URL;
-  if (!url) return 'http://localhost:8787';
+  if (!url) {
+    if (process.env.COOKIEVAULT_RELEASE_BUILD === 'true') {
+      throw new Error('COOKIEVAULT_WORKER_URL is required when COOKIEVAULT_RELEASE_BUILD=true');
+    }
+    return 'http://localhost:8787';
+  }
   if (!url.startsWith('https://') || url.includes('localhost')) {
     throw new Error(
       `COOKIEVAULT_WORKER_URL must be an https:// non-localhost URL for release builds, got: ${url}`,

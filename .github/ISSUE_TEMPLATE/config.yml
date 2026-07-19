@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/extensionsly/cookievault-editor/security/advisories/new
+    about: >
+      Please report vulnerabilities privately, never as a public issue. See
+      SECURITY.md for our disclosure policy.
+  - name: CookieVault website and official store listings
+    url: https://cookievault.net
+    about: >
+      Install the official reviewed build, and check the publisher name to avoid
+      look-alike clones.
+  - name: The other CookieVault extension
+    url: https://github.com/extensionsly/cookievault-guardian
+    about: >
+      Editor handles manual cookie editing; Guardian handles automatic
+      allowlist-based cleanup. Make sure you are filing against the right one.
