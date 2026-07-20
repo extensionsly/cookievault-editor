@@ -46,7 +46,7 @@ body:
     id: versions
     attributes:
       label: Browser and extension version
-      placeholder: "Chrome 141.0.7390.55 / CookieVault 0.1.0"
+      placeholder: 'Chrome 141.0.7390.55 / CookieVault 0.1.0'
     validations:
       required: true
 

@@ -76,8 +76,6 @@ describe('AccountPanel', () => {
     });
     fireEvent.click(screen.getByRole('button', { name: 'Finish sign-in' }));
 
-    await waitFor(() =>
-      expect(signIn).toHaveBeenCalledWith('qa@example.com', 'the-pasted-code'),
-    );
+    await waitFor(() => expect(signIn).toHaveBeenCalledWith('qa@example.com', 'the-pasted-code'));
   });
 });

@@ -36,12 +36,12 @@ the built files themselves are byte-stable given identical inputs.
 
 Reproducibility only holds if your build inputs match ours:
 
-| Input        | Pinned by                                        |
-| ------------ | ------------------------------------------------ |
-| Node.js      | `.nvmrc`                                         |
-| pnpm         | `packageManager` field in `package.json`         |
-| Dependencies | `pnpm-lock.yaml` (use `--frozen-lockfile`)       |
-| Source       | the git tag you checked out                      |
+| Input        | Pinned by                                  |
+| ------------ | ------------------------------------------ |
+| Node.js      | `.nvmrc`                                   |
+| pnpm         | `packageManager` field in `package.json`   |
+| Dependencies | `pnpm-lock.yaml` (use `--frozen-lockfile`) |
+| Source       | the git tag you checked out                |
 
 Use `nvm use` (or any tool that reads `.nvmrc`) and `corepack enable` so the
 pinned pnpm version is the one that runs.

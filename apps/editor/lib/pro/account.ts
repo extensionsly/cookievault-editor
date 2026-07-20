@@ -207,9 +207,10 @@ export async function verifyEntToken(
   const parts = token.split('.');
   if (parts.length !== 3) return null;
   try {
-    const header = JSON.parse(
-      new TextDecoder().decode(b64urlToBytes(parts[0] ?? '')),
-    ) as { alg?: unknown; typ?: unknown };
+    const header = JSON.parse(new TextDecoder().decode(b64urlToBytes(parts[0] ?? ''))) as {
+      alg?: unknown;
+      typ?: unknown;
+    };
     if (header.alg !== 'ES256' || header.typ !== 'JWT') return null;
     const sig = b64urlToBytes(parts[2] ?? '');
     const data = new TextEncoder().encode(`${parts[0]}.${parts[1]}`);
@@ -224,11 +225,16 @@ export async function verifyEntToken(
       new TextDecoder().decode(b64urlToBytes(parts[1] ?? '')),
     ) as EntTokenPayload;
     const nowSec = Date.now() / 1000;
-    if (payload.typ !== 'entitlement' || payload.iss !== 'exly'
-        || payload.aud !== 'extensionsly-entitlement-production'
-        || payload.env !== 'production'
-        || typeof payload.sub !== 'string' || payload.sub.length < 1
-        || !Array.isArray(payload.entitlements)) return null;
+    if (
+      payload.typ !== 'entitlement' ||
+      payload.iss !== 'exly' ||
+      payload.aud !== 'extensionsly-entitlement-production' ||
+      payload.env !== 'production' ||
+      typeof payload.sub !== 'string' ||
+      payload.sub.length < 1 ||
+      !Array.isArray(payload.entitlements)
+    )
+      return null;
     if (typeof payload.exp !== 'number' || nowSec >= payload.exp) return null;
     if (typeof payload.iat !== 'number' || payload.iat > nowSec + 300) return null;
     return payload;
