@@ -57,9 +57,11 @@ from `apps/editor/.output/chrome-mv3`.
 
 ## Install (end users)
 
-Install the reviewed, official build from the browser stores via
-**[cookievault.net](https://cookievault.net)**. Please install the official
-listing — check the publisher name to avoid look-alike clones.
+Use the official **[CookieVault product page on Extensionsly](https://extensionsly.com/extensions/cookievault/)**
+for the current browser-store routes, verified manual-install package, release
+details, and optional Pro checkout. The product home remains
+**[cookievault.net](https://cookievault.net)**. Check the publisher name before
+installing to avoid look-alike clones.
 
 We do not publish installable builds here: browsers block installs from outside
 the stores anyway, and a second download source would only help clones
