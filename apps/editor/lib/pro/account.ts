@@ -14,10 +14,10 @@
  * online first; if refresh fails the still-unexpired credential keeps
  * working (that IS the grace). Everything else is fail-closed.
  *
- * This account is the extensionsly billing identity and is deliberately
- * separate from the CookieVault sync account (`lib/auth.ts`), which exists
- * to address the E2E-encrypted vault. Tokens are device-level credentials:
- * storage.local only, never storage.sync.
+ * This Extensionsly identity is also used by the CookieVault sync service.
+ * The sync Worker verifies the signed entitlement credential directly, so
+ * users never have to maintain a second CookieVault-only login. Tokens are
+ * device-level credentials: storage.local only, never storage.sync.
  */
 
 import { browser } from 'wxt/browser';
@@ -35,8 +35,8 @@ const PRODUCT_SLUGS = ['cookievault', 'ALL'];
 const ENT_PUBLIC_JWK: JsonWebKey = {
   kty: 'EC',
   crv: 'P-256',
-  x: 'ERGx6igiERRKaUUpQpAv-uj7y3F1HlyrIalG6Y0Bgi8',
-  y: 'z_vJwcmzt_Ju3O3tpmj0AEu5tPdqjipobb5ZK4pH3fI',
+  x: 'y5BtlqtGjj5f1g0ERdldz6uSZzxqbnmKbmG6uW5DvJc',
+  y: 'qHkiZmpyJsN7sX3sTxH5OYXgHPUQ9FcEOxvzi-OvMzA',
 };
 
 /** Storage keys are standard invariants (licensing.md §5.2b) — keep verbatim. */
@@ -62,6 +62,8 @@ export interface EntitlementRow {
 export interface EntTokenPayload {
   typ: string;
   iss: string;
+  aud: string;
+  env: string;
   sub: string;
   entitlements: EntitlementRow[];
   iat: number;
@@ -205,6 +207,10 @@ export async function verifyEntToken(
   const parts = token.split('.');
   if (parts.length !== 3) return null;
   try {
+    const header = JSON.parse(
+      new TextDecoder().decode(b64urlToBytes(parts[0] ?? '')),
+    ) as { alg?: unknown; typ?: unknown };
+    if (header.alg !== 'ES256' || header.typ !== 'JWT') return null;
     const sig = b64urlToBytes(parts[2] ?? '');
     const data = new TextEncoder().encode(`${parts[0]}.${parts[1]}`);
     const ok = await crypto.subtle.verify(
@@ -218,8 +224,12 @@ export async function verifyEntToken(
       new TextDecoder().decode(b64urlToBytes(parts[1] ?? '')),
     ) as EntTokenPayload;
     const nowSec = Date.now() / 1000;
-    if (payload.typ !== 'entitlement' || payload.iss !== 'exly') return null;
-    if (typeof payload.exp !== 'number' || nowSec > payload.exp) return null;
+    if (payload.typ !== 'entitlement' || payload.iss !== 'exly'
+        || payload.aud !== 'extensionsly-entitlement-production'
+        || payload.env !== 'production'
+        || typeof payload.sub !== 'string' || payload.sub.length < 1
+        || !Array.isArray(payload.entitlements)) return null;
+    if (typeof payload.exp !== 'number' || nowSec >= payload.exp) return null;
     if (typeof payload.iat !== 'number' || payload.iat > nowSec + 300) return null;
     return payload;
   } catch {
@@ -227,12 +237,12 @@ export async function verifyEntToken(
   }
 }
 
-/** Does one entitlement row unlock this product right now? Unknown statuses
- * never entitle; `canceled` keeps Pro until its period end (standard §3.3). */
+/** Does one entitlement row unlock this product right now? Only an active row
+ * entitles; canceled, expired and unknown states fail closed. */
 export function rowEntitles(row: EntitlementRow, nowSec: number = Date.now() / 1000): boolean {
   if (!PRODUCT_SLUGS.includes(row.product)) return false;
   if (row.expires_at && nowSec > row.expires_at) return false;
-  return row.status === 'active' || (row.status === 'canceled' && !!row.expires_at);
+  return row.status === 'active';
 }
 
 function decide(payload: EntTokenPayload): boolean {

@@ -575,6 +575,12 @@
   "apResultProRequired": {
     "message": "云同步是 Pro 功能——升级后才能从此设备推送更改。"
   },
+  "proProfileLimit": {
+    "message": "免费版可保存一个本地配置。升级 Pro 后可保存更多配置。"
+  },
+  "proSwitchRequired": {
+    "message": "一键切换配置是 Pro 功能。请升级 Pro 后继续。"
+  },
   "licErrRevoked": {
     "message": "该许可证已被吊销。若你认为这是误判，请联系支持。"
   },

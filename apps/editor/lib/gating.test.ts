@@ -11,18 +11,17 @@ import * as entitlement from './pro/entitlement.js';
 afterEach(() => vi.restoreAllMocks());
 
 describe('gating policy', () => {
-  it('ships with enforcement off (boundary not yet locked — W6-13 / ADR-0013)', () => {
-    expect(GATING_ENFORCED).toBe(false);
+  it('ships with the production boundary enforced', () => {
+    expect(GATING_ENFORCED).toBe(true);
   });
 
-  it('allows every Pro feature while enforcement is off, without consulting the plan', async () => {
-    const proSpy = vi.spyOn(entitlement, 'getProStatus');
+  it('allows every declared Pro feature for an entitled user', async () => {
+    const proSpy = vi.spyOn(entitlement, 'getProStatus').mockResolvedValue(true);
     for (const { feature } of PRO_FEATURES) {
       const r = await requireFeature(feature);
-      expect(r).toEqual({ allowed: true, feature, reason: 'enforced-off' });
+      expect(r).toEqual({ allowed: true, feature, reason: 'pro' });
     }
-    // Enforcement off must not even query entitlement — it's a pure short-circuit.
-    expect(proSpy).not.toHaveBeenCalled();
+    expect(proSpy).toHaveBeenCalledTimes(PRO_FEATURES.length);
   });
 
   it('exposes a stable, de-duplicated feature list', () => {
@@ -30,6 +29,18 @@ describe('gating policy', () => {
     expect(new Set(ids).size).toBe(ids.length);
     expect(ids).toContain<ProFeature>('cloud-sync');
     expect(ids).toContain<ProFeature>('multi-profile');
+    expect(ids).toEqual(['multi-profile', 'profile-switching', 'cloud-sync']);
+  });
+
+  it('blocks every declared Pro feature for a free user', async () => {
+    vi.spyOn(entitlement, 'getProStatus').mockResolvedValue(false);
+    for (const { feature } of PRO_FEATURES) {
+      await expect(requireFeature(feature)).resolves.toEqual({
+        allowed: false,
+        feature,
+        reason: 'free-blocked',
+      });
+    }
   });
 });
 

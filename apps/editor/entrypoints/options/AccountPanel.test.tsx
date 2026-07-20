@@ -1,25 +1,24 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { render, screen, fireEvent, waitFor, cleanup } from '@testing-library/react';
 
-const { requestMagicLink, verifyMagicToken } = vi.hoisted(() => ({
-  requestMagicLink: vi.fn(async () => {}),
-  verifyMagicToken: vi.fn(async () => ({
-    accessToken: 'a',
-    accessExpiresAt: 0,
-    refreshToken: 'r',
-    refreshExpiresAt: 0,
-    userId: 'u1',
+type TestSession = { access: string; refresh: string; email: string };
+
+const { requestCode, signIn, getSession } = vi.hoisted(() => ({
+  requestCode: vi.fn(async () => ({ ok: true })),
+  signIn: vi.fn(async () => ({ ok: true })),
+  getSession: vi.fn<() => Promise<TestSession | null>>(async () => ({
+    access: 'a',
+    refresh: 'r',
     email: 'qa@example.com',
-    kdfSalt: 's',
   })),
 }));
 
-vi.mock('../../lib/auth.js', () => ({
-  loadPersistedAuth: vi.fn(async () => null),
-  requestMagicLink,
-  verifyMagicToken,
+vi.mock('../../lib/pro/account.js', () => ({
+  ACCOUNT_SESSION_KEY: 'account.session',
+  getSession,
+  requestCode,
+  signIn,
   signOut: vi.fn(async () => {}),
-  clearPersistedAuth: vi.fn(async () => {}),
 }));
 vi.mock('../../lib/sync-state.js', () => ({
   loadSyncState: vi.fn(async () => ({
@@ -42,8 +41,10 @@ vi.mock('../../lib/telemetry.js', () => ({
 import { AccountPanel } from './AccountPanel.js';
 
 beforeEach(() => {
-  requestMagicLink.mockClear();
-  verifyMagicToken.mockClear();
+  requestCode.mockClear();
+  signIn.mockClear();
+  getSession.mockClear();
+  getSession.mockResolvedValue(null);
 });
 afterEach(cleanup);
 
@@ -55,11 +56,11 @@ describe('AccountPanel', () => {
     fireEvent.change(email, { target: { value: 'qa@example.com' } });
     fireEvent.click(screen.getByRole('button', { name: 'Send sign-in code' }));
 
-    await waitFor(() => expect(requestMagicLink).toHaveBeenCalledWith('qa@example.com'));
+    await waitFor(() => expect(requestCode).toHaveBeenCalledWith('qa@example.com'));
     await screen.findByText(/Sign-in code sent/);
   });
 
-  it('exchanges a pasted code via verifyMagicToken (POST, not a link)', async () => {
+  it('exchanges a pasted code through the Extensionsly account API', async () => {
     render(<AccountPanel />);
 
     const email = await screen.findByLabelText('Email');
@@ -68,10 +69,15 @@ describe('AccountPanel', () => {
 
     const code = await screen.findByLabelText('Sign-in code');
     fireEvent.change(code, { target: { value: 'the-pasted-code' } });
+    getSession.mockResolvedValue({
+      access: 'a',
+      refresh: 'r',
+      email: 'qa@example.com',
+    });
     fireEvent.click(screen.getByRole('button', { name: 'Finish sign-in' }));
 
     await waitFor(() =>
-      expect(verifyMagicToken).toHaveBeenCalledWith('the-pasted-code', 'qa@example.com'),
+      expect(signIn).toHaveBeenCalledWith('qa@example.com', 'the-pasted-code'),
     );
   });
 });

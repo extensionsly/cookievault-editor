@@ -1,8 +1,10 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 vi.mock('./auth.js', () => ({
-  getAccessToken: vi.fn(),
   WORKER_BASE_URL: 'http://localhost:8787',
+}));
+vi.mock('./pro/account.js', () => ({
+  getStoredEntToken: vi.fn(),
 }));
 vi.mock('./profile-store.js', () => ({ loadVault: vi.fn() }));
 // Keep the real error classes + etagToHeader; only stub the transport calls.
@@ -13,11 +15,11 @@ vi.mock('./sync.js', async (orig) => {
 
 import { fromBase64Url, sha256OfString, toBase64Url } from '@cookievault/shared';
 import { keepMine, syncNow, takeTheirs, vaultToWire, wireToVault } from './sync-state.js';
-import { getAccessToken } from './auth.js';
+import { getStoredEntToken } from './pro/account.js';
 import { loadVault } from './profile-store.js';
 import { pullVault, pushVault, UnauthorizedError } from './sync.js';
 
-const mockAuth = vi.mocked(getAccessToken);
+const mockEntitlement = vi.mocked(getStoredEntToken);
 const mockLoadVault = vi.mocked(loadVault);
 const mockPull = vi.mocked(pullVault);
 const mockPush = vi.mocked(pushVault);
@@ -60,13 +62,13 @@ function remoteFrom(vault: ReturnType<typeof makeVault>, etag = 'W/"1"') {
 
 beforeEach(() => {
   vi.clearAllMocks();
-  mockAuth.mockResolvedValue('access-tok');
+  mockEntitlement.mockResolvedValue('entitlement-tok');
   mockLoadVault.mockResolvedValue(null);
 });
 
 describe('syncNow — auth + transport classification', () => {
   it('returns no-auth when there is no usable access token', async () => {
-    mockAuth.mockRejectedValue(new Error('Not signed in'));
+    mockEntitlement.mockResolvedValue(null);
     expect(await syncNow()).toEqual({ kind: 'no-auth' });
     expect(mockPull).not.toHaveBeenCalled();
   });

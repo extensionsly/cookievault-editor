@@ -27,6 +27,11 @@ function resolveWorkerUrl(): string {
 }
 
 const WORKER_BASE_URL = resolveWorkerUrl();
+// Stable Chrome identity for manually distributed production builds. Chrome
+// derives gfcfjioflcblcbbfpbeihgilkcfmffdp from this public SPKI value. The
+// matching private PEM is release infrastructure and never enters the repo.
+const CHROME_EXTENSION_KEY =
+  'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqB1fQTn1sa6Wr9ri6VrOTh4j8GVulcUENmZcxz8T0S0rUtpNAJ53/nFQrviU5fRD0CGrr5Pwb4ohtzQZJ1cHFF4lXfQVA6cWgvXk7vgMH5Y1J2oadRmDQ3W1/ONkTIz0ygn7fS/vxgvu/tytw9DHTRhmZJD9WVnuUKQJYnoRd1JhGnyv50/AWI6ex+S1XYO0ECagMZOjISkJYHaAWXf8jDkFf93VWP2W9rMwWYN6fkVWBifyef7M42Ui+vabeZs+o1XD/yamWV0FBUzmfA6tFXyO39Zj8Y8nn5IZDXMQlaYBK06tcEt2nS6P23gzxMJrJsv9nq6DS9COZDika6nymwIDAQAB';
 
 // WXT auto-derives manifest fields from package.json + present entrypoints.
 // We only override what we *must* control explicitly.
@@ -54,6 +59,7 @@ export default defineConfig({
     action: {
       default_title: 'CookieVault Editor',
     },
+    ...(browser === 'chrome' && { key: CHROME_EXTENSION_KEY }),
     // AMO needs a stable add-on id for signing, an API floor
     // (storage.session → Firefox 115), and a data-collection declaration
     // (mandatory for new AMO submissions). Baseline: nothing collected by

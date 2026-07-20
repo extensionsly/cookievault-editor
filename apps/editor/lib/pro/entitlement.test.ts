@@ -70,6 +70,8 @@ function proPayload(overrides: Record<string, unknown> = {}) {
   return {
     typ: 'entitlement',
     iss: 'exly',
+    aud: 'extensionsly-entitlement-production',
+    env: 'production',
     sub: 'user-1',
     entitlements: [{ product: 'cookievault', tier: 'pro', status: 'active', expires_at: null }],
     iat: NOW_S(),
@@ -93,11 +95,13 @@ describe('verifyEntToken (injected key)', () => {
     expect(await verifyEntToken(token, kp.publicKey)).toBeNull();
   });
 
-  it('rejects wrong typ / iss, expiry, and future iat', async () => {
+  it('rejects wrong protocol/environment claims, expiry, and future iat', async () => {
     const kp = await makePair();
     for (const bad of [
       proPayload({ typ: 'access' }),
       proPayload({ iss: 'someone-else' }),
+      proPayload({ aud: 'extensionsly-entitlement-sandbox-staging' }),
+      proPayload({ env: 'staging' }),
       proPayload({ exp: NOW_S() - 10 }),
       proPayload({ iat: NOW_S() + 3600 }),
     ]) {
@@ -128,13 +132,13 @@ describe('rowEntitles (product + status semantics, standard §3.3)', () => {
     ).toBe(false);
   });
 
-  it('canceled keeps Pro until period end; unknown/expired never entitle', () => {
+  it('only active rows entitle; canceled/unknown/expired never entitle', () => {
     expect(
       rowEntitles(
         { product: 'cookievault', tier: 'pro', status: 'canceled', expires_at: t0 + 100 },
         t0,
       ),
-    ).toBe(true);
+    ).toBe(false);
     expect(
       rowEntitles(
         { product: 'cookievault', tier: 'pro', status: 'canceled', expires_at: null },

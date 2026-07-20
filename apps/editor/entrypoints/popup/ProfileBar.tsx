@@ -13,6 +13,7 @@ import {
 import { getSessionKey, loadVault, lock, readProfiles } from '../../lib/profile-store.js';
 import { reloadScopeTabs, switchProfile } from '../../lib/profile.js';
 import { ConfirmDialog } from '@cookievault/ui';
+import { requireFeature } from '../../lib/gating.js';
 
 /**
  * Toast contract — popup-local, duplicated from App.tsx so this
@@ -167,6 +168,11 @@ export function ProfileBar({ onToast }: Props) {
       setBusy(p.id);
       setPending(null);
       try {
+        const gate = await requireFeature('profile-switching');
+        if (!gate.allowed) {
+          onToast({ kind: 'error', message: t('proSwitchRequired') });
+          return;
+        }
         const out = await switchProfile(p, scope);
         if (out.rolledBack) {
           onToast({

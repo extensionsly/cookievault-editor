@@ -575,6 +575,12 @@
   "apResultProRequired": {
     "message": "Cloud sync is a Pro feature — upgrade to push changes from this device."
   },
+  "proProfileLimit": {
+    "message": "The Free plan includes one local profile. Upgrade to Pro to save more profiles."
+  },
+  "proSwitchRequired": {
+    "message": "One-click profile switching is a Pro feature. Upgrade to Pro to continue."
+  },
   "licErrRevoked": {
     "message": "This license has been revoked. Contact support if you believe this is an error."
   },

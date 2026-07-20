@@ -2,12 +2,13 @@ import { browser, type Browser } from 'wxt/browser';
 import { useCallback, useEffect, useState } from 'react';
 import { t } from '../../lib/i18n.js';
 import {
-  loadPersistedAuth,
-  requestMagicLink,
+  ACCOUNT_SESSION_KEY,
+  getSession,
+  requestCode,
   signOut,
-  verifyMagicToken,
-  type PersistedAuth,
-} from '../../lib/auth.js';
+  signIn as signInExtensionsly,
+  type Session,
+} from '../../lib/pro/account.js';
 import {
   keepMine,
   loadSyncState,
@@ -38,7 +39,7 @@ type SignInState =
       verifying: boolean;
       error?: string;
     }
-  | { kind: 'signed-in'; auth: PersistedAuth };
+  | { kind: 'signed-in'; auth: Session };
 
 const SIGNED_OUT: SignInState = {
   kind: 'signed-out',
@@ -62,7 +63,7 @@ export function AccountPanel() {
     let alive = true;
     void (async () => {
       const [auth, state, optIn] = await Promise.all([
-        loadPersistedAuth(),
+        getSession(),
         loadSyncState(),
         getTelemetryOptIn(),
       ]);
@@ -76,8 +77,8 @@ export function AccountPanel() {
       area: Browser.storage.AreaName,
     ) => {
       if (area !== 'local') return;
-      if (changes['cookievault.auth.v1']) {
-        void loadPersistedAuth().then((auth) => {
+      if (changes[ACCOUNT_SESSION_KEY]) {
+        void getSession().then((auth) => {
           if (!alive) return;
           setSignIn(auth ? { kind: 'signed-in', auth } : SIGNED_OUT);
         });
@@ -102,7 +103,8 @@ export function AccountPanel() {
       if (signIn.kind !== 'signed-out') return;
       setSignIn({ ...signIn, status: 'sending', error: undefined });
       try {
-        await requestMagicLink(signIn.email);
+        const result = await requestCode(signIn.email);
+        if (!result.ok) throw new Error(result.error || 'request_failed');
         setSignIn({ ...signIn, status: 'sent', code: '', verifying: false });
       } catch (err) {
         setSignIn({
@@ -121,17 +123,11 @@ export function AccountPanel() {
       if (signIn.kind !== 'signed-out' || !signIn.code.trim()) return;
       setSignIn({ ...signIn, verifying: true, error: undefined });
       try {
-        const result = await verifyMagicToken(signIn.code.trim(), signIn.email);
-        setSignIn({
-          kind: 'signed-in',
-          auth: {
-            userId: result.userId,
-            email: result.email,
-            refreshToken: result.refreshToken,
-            refreshExpiresAt: result.refreshExpiresAt,
-            kdfSalt: result.kdfSalt,
-          },
-        });
+        const result = await signInExtensionsly(signIn.email, signIn.code.trim());
+        if (!result.ok) throw new Error(result.error || 'verify_failed');
+        const auth = await getSession();
+        if (!auth) throw new Error('session_unavailable');
+        setSignIn({ kind: 'signed-in', auth });
       } catch (err) {
         setSignIn({
           ...signIn,
@@ -343,7 +339,6 @@ export function AccountPanel() {
                   {t('apResultProRequired')}{' '}
                   <a
                     href={buildUpgradeUrl({
-                      userId: signIn.kind === 'signed-in' ? signIn.auth.userId : undefined,
                       feature: 'cloud-sync',
                       source: 'editor-sync',
                     })}

@@ -17,7 +17,7 @@ import {
   sha256OfString,
   toBase64Url,
 } from '@cookievault/shared';
-import { getAccessToken, WORKER_BASE_URL } from './auth.js';
+import { WORKER_BASE_URL } from './auth.js';
 import { isNetworkError } from './http.js';
 import { loadVault } from './profile-store.js';
 import { getStoredEntToken } from './pro/account.js';
@@ -151,15 +151,9 @@ export function wireToVault(
  * page) decides whether to surface a toast, open the conflict modal, etc.
  */
 export async function syncNow(): Promise<SyncResult> {
-  let accessToken: string;
-  try {
-    accessToken = await getAccessToken();
-  } catch {
-    return { kind: 'no-auth' };
-  }
-  // Attach the extensionsly entitlement credential (if any) so the worker's
-  // Pro gate can verify it server-side (ADR-0015). Never blocks a sync.
   const entitlementToken = await getStoredEntToken().catch(() => null);
+  if (!entitlementToken) return { kind: 'no-auth' };
+  const accessToken = entitlementToken;
   const cfg = { baseUrl: WORKER_BASE_URL, accessToken, entitlementToken };
   const localVault = await loadVault();
   const state = await loadSyncState();
@@ -251,8 +245,13 @@ export async function syncNow(): Promise<SyncResult> {
  * decoded `EncryptedVault` for the caller to install locally.
  */
 export async function takeTheirs(): Promise<EncryptedVault> {
-  const accessToken = await getAccessToken();
-  const remote = await pullVault({ baseUrl: WORKER_BASE_URL, accessToken });
+  const entitlementToken = await getStoredEntToken();
+  if (!entitlementToken) throw new UnauthorizedError();
+  const remote = await pullVault({
+    baseUrl: WORKER_BASE_URL,
+    accessToken: entitlementToken,
+    entitlementToken,
+  });
   if (!remote) throw new Error('No remote vault to take');
   const vault = wireToVault(remote, 'cookievault.vault/v1' as EncryptedVault['format']);
   await saveSyncState({
@@ -269,9 +268,13 @@ export async function takeTheirs(): Promise<EncryptedVault> {
  * the local vault under that etag.
  */
 export async function keepMine(localVault: EncryptedVault): Promise<void> {
-  const accessToken = await getAccessToken();
   const entitlementToken = await getStoredEntToken().catch(() => null);
-  const cfg = { baseUrl: WORKER_BASE_URL, accessToken, entitlementToken };
+  if (!entitlementToken) throw new UnauthorizedError();
+  const cfg = {
+    baseUrl: WORKER_BASE_URL,
+    accessToken: entitlementToken,
+    entitlementToken,
+  };
   const remote = await pullVault(cfg);
   const wire = vaultToWire(localVault);
   const sha = await sha256OfString(wire.serialised);

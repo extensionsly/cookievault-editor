@@ -2,14 +2,9 @@
  * Pro feature policy — the single source of truth for which features are Pro,
  * and the gating-ready check that call sites use.
  *
- * The Free/Pro boundary is NOT enforced yet: `GATING_ENFORCED` is `false`
- * until the boundary is validated and locked (W6-13 — 15 interviews + lifetime
- * smoke test, ADR-0013). While it is off, `requireFeature()` always allows, so
- * shipping today changes no user-visible behaviour. But the policy list, the
- * deep-link plumbing (`lib/checkout.ts`) and the tests already route through
- * this module — so locking the boundary becomes a one-line flip of
- * `GATING_ENFORCED` plus wiring `await requireFeature(...)` at the handful of
- * call sites, rather than a scavenger hunt across the codebase.
+ * The Free/Pro boundary is enforced in production. Free users can keep one
+ * local profile; paid/trial users unlock additional profiles, one-click
+ * switching, and encrypted cloud sync.
  *
  * Trials are server-side and account-bound (extensionsly `/v1/trial/start`,
  * ADR-0015 §3.4): a trial simply issues a signed entitlement credential, so a
@@ -24,9 +19,7 @@ import { getProStatus } from './pro/entitlement.js';
 export type ProFeature =
   | 'multi-profile' // Free is capped at 1 saved profile; Pro = unlimited
   | 'profile-switching'
-  | 'cloud-sync' // E2E encrypted cross-device sync
-  | 'cookie-history'
-  | 'data-export';
+  | 'cloud-sync'; // E2E encrypted cross-device sync
 
 export interface ProFeatureMeta {
   readonly feature: ProFeature;
@@ -38,20 +31,14 @@ export const PRO_FEATURES: readonly ProFeatureMeta[] = [
   { feature: 'multi-profile', label: 'Unlimited cookie profiles' },
   { feature: 'profile-switching', label: 'One-click profile switching' },
   { feature: 'cloud-sync', label: 'End-to-end encrypted cloud sync' },
-  { feature: 'cookie-history', label: 'Cookie change history' },
-  { feature: 'data-export', label: 'CSV / HAR export' },
 ];
 
-/**
- * Master switch. Stays `false` until the Free/Pro boundary is locked
- * (W6-13, ADR-0013). Flip to `true` in the same change that locks the
- * boundary — every gate below it then enforces at once.
- */
-export const GATING_ENFORCED = false as boolean;
+/** Master switch for the production Free/Pro boundary. */
+export const GATING_ENFORCED = true as boolean;
 
 /**
  * Why a gate resolved the way it did.
- * `enforced-off` — gating not yet locked (always allowed today);
+ * `enforced-off` — an explicitly non-production build has disabled gating;
  * `pro` — user is entitled (paid or in an active server-side trial);
  * `free-blocked` — gated, offer upgrade.
  */
@@ -83,11 +70,7 @@ export function decideGate(feature: ProFeature, inputs: GateInputs): GateResult 
 }
 
 /**
- * The gating-ready check. Until `GATING_ENFORCED` is true this resolves to
- * `{ allowed: true, reason: 'enforced-off' }` for every feature — call sites
- * can adopt it now with zero behavioural change. Never throws.
- *
- * When enforced, the dual-channel Pro status (offline license ‖ online signed
+ * The production gate check. The dual-channel Pro status (offline license ‖ online signed
  * credential, incl. an active server-side trial) decides. Entitlement is only
  * queried when enforcement is on — the off path stays a pure short-circuit.
  */

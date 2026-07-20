@@ -33,6 +33,7 @@ import { listCookiesInScope, reloadScopeTabs, switchProfile } from '../../lib/pr
 import { ConfirmDialog, ThemeToggle } from '@cookievault/ui';
 import { AccountPanel } from './AccountPanel.js';
 import { ProPanel } from './ProPanel.js';
+import { requireFeature } from '../../lib/gating.js';
 
 const VAULT_LOCAL_KEY = 'cookievault.profileVault.v1';
 const VAULT_SESSION_KEY = 'cookievault.profileVault.session';
@@ -467,6 +468,13 @@ function ProfileManager({
       setBusy('save');
       setBanner(null);
       try {
+        if (profiles.length >= 1) {
+          const gate = await requireFeature('multi-profile');
+          if (!gate.allowed) {
+            setBanner({ kind: 'error', message: t('proProfileLimit') });
+            return;
+          }
+        }
         const live = await listCookiesInScope(scope);
         const inScope = live.filter((c) => cookieInScope(c, scope));
         const now = new Date().toISOString();
@@ -500,6 +508,11 @@ function ProfileManager({
       setBusy(p.id);
       setBanner(null);
       try {
+        const gate = await requireFeature('profile-switching');
+        if (!gate.allowed) {
+          setBanner({ kind: 'error', message: t('proSwitchRequired') });
+          return;
+        }
         const out = await switchProfile(p, scope);
         if (out.rolledBack) {
           setBanner({

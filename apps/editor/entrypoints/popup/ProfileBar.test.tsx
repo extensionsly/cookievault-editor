@@ -23,6 +23,13 @@ vi.mock('../../lib/profile.js', () => ({
   switchProfile,
   reloadScopeTabs: vi.fn(async () => 0),
 }));
+vi.mock('../../lib/gating.js', () => ({
+  requireFeature: vi.fn(async (feature: string) => ({
+    allowed: true,
+    feature,
+    reason: 'pro',
+  })),
+}));
 
 import { ProfileBar } from './ProfileBar.js';
 
